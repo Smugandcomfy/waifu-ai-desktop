@@ -1,0 +1,160 @@
+WAIFU AI — PROPRIETARY SOFTWARE LICENSE
+Copyright (c) 2026 Smugandcomfy. All rights reserved.
+
+THIS IS NOT FREE SOFTWARE. It is not open-source software. Except for the
+third-party components identified in Section 5, no license to copy, use,
+modify, or distribute this software is granted by this file or by the
+publication of its source code. Access to the source code does not grant any
+right to use or redistribute it.
+
+By accessing, copying, compiling, running, or otherwise using this software or
+any part of it (the "Software"), you agree to the terms below. If you do not
+agree, you have no license and must not use the Software.
+
+--------------------------------------------------------------------------------
+1. DEFINITIONS
+
+  "Author" means Smugandcomfy, the copyright holder of the Application Code,
+  reachable for written-permission requests at smugandcomfy@gmail.com.
+
+  "IWEP" means International Waters Esports Palace, the owner of the Shopify
+  Dev Kit.
+
+  "Application Code" means all source code, build scripts, configuration,
+  documentation, assets, and compiled artifacts in this repository and its
+  distributions, EXCEPT the Shopify Dev Kit (Section 2.2) and the Third-Party
+  Components (Section 5).
+
+  "Shopify Dev Kit" means the IWEP / Shopify hand-off commerce integration
+  kit, including without limitation the files:
+      helper/src/core/iwep.ts
+      helper/src/core/iwepVendors.ts
+  together with the protocols, request/response shapes, surface and source
+  conventions, and gateway interface they implement, and any derivative of
+  them, wherever located in this repository or its distributions.
+
+  "Software" means the Application Code and the Shopify Dev Kit, together,
+  whether in source or compiled form.
+
+--------------------------------------------------------------------------------
+2. OWNERSHIP
+
+  2.1  The Application Code is owned by the Author. All right, title, and
+       interest in it, including all copyright and other intellectual property
+       rights, are and remain the Author's.
+
+  2.2  The Shopify Dev Kit is owned by International Waters Esports Palace
+       (IWEP). All right, title, and interest in it, including all copyright
+       and other intellectual property rights, are and remain IWEP's. It is
+       included in this repository under the Author's authorization and does
+       not pass to any other person by that inclusion.
+
+  2.3  No ownership, and no license except as expressly stated in this file,
+       is transferred to you. All rights not expressly granted are reserved to
+       the Author and to IWEP respectively.
+
+--------------------------------------------------------------------------------
+3. NO DISTRIBUTION; RESTRICTIONS
+
+  3.1  You may NOT distribute, publish, sublicense, sell, rent, lease, lend,
+       host for others, transmit, or otherwise make the Software, or any part
+       of it, available to any third party, in source or compiled form, in
+       whole or in part, WITHOUT THE PRIOR WRITTEN PERMISSION of the Author;
+       and, as to the Shopify Dev Kit, without the prior written permission of
+       IWEP as well.
+
+  3.2  You may NOT modify, adapt, translate, or create derivative works of the
+       Software, nor reverse engineer, decompile, or disassemble it, except to
+       the limited extent that applicable law expressly permits despite this
+       restriction.
+
+  3.3  You may NOT remove, obscure, or alter this license, the copyright
+       notices, or the attribution of the Application Code or the Shopify Dev
+       Kit.
+
+  3.4  Written permission, if given, applies only to the specific act, scope,
+       recipient, and period it states, and to no other. Silence, inaction, or
+       the public availability of the source is not permission.
+
+--------------------------------------------------------------------------------
+4. PERMITTED USE
+
+  Any right to use, run, or evaluate the Software exists only under a separate
+  written agreement with the Author (and, for the Shopify Dev Kit, consistent
+  with IWEP's terms). Absent such an agreement, no right of use is granted by
+  this file.
+
+--------------------------------------------------------------------------------
+5. THIRD-PARTY COMPONENTS (MIT AND OTHERS)
+
+  The Software's builds include third-party open-source components that are the
+  property of their respective authors and are licensed to you by those authors
+  under their own licenses — many under the MIT License — not by the Author or
+  IWEP. Those components, and only those components, remain governed by their
+  own licenses, whose terms (including redistribution rights) apply to those
+  components alone and NOT to the Application Code or the Shopify Dev Kit.
+
+  A list of such components and their license texts is provided in
+  THIRD_PARTY_NOTICES.txt in the distribution. Nothing in this license limits
+  your rights, or adds obligations, under those third-party licenses with
+  respect to those third-party components. The MIT licensing of a bundled
+  component does not make the Software, as a whole, free or redistributable.
+
+--------------------------------------------------------------------------------
+6. "AS IS" — NO WARRANTY
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND
+  WITHOUT WARRANTY OF ANY KIND. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE
+  AUTHOR AND IWEP DISCLAIM ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS,
+  IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+  NON-INFRINGEMENT, AND ANY WARRANTY THAT THE SOFTWARE WILL BE UNINTERRUPTED,
+  ERROR-FREE, SECURE, OR THAT DEFECTS WILL BE CORRECTED.
+
+  THE SOFTWARE INTERACTS WITH BLOCKCHAIN NETWORKS, DIGITAL ASSETS, CRYPTOGRAPHIC
+  KEYS, GOVERNANCE SYSTEMS, AND THIRD-PARTY SERVICES AND DEVICES. TRANSACTIONS
+  MAY BE IRREVERSIBLE AND ASSETS MAY BE LOST. YOU BEAR THE ENTIRE RISK OF USING
+  THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+7. LIMITATION OF LIABILITY; HOLD HARMLESS; INDEMNITY
+
+  7.1  TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL THE AUTHOR OR
+       IWEP, OR THEIR CONTRIBUTORS, BE LIABLE FOR ANY DIRECT, INDIRECT,
+       INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES, OR
+       FOR ANY LOSS OF PROFITS, REVENUE, DATA, DIGITAL ASSETS, TOKENS, OR
+       GOODWILL, ARISING OUT OF OR RELATED TO THE SOFTWARE OR ITS USE OR
+       INABILITY TO BE USED, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+       EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+  7.2  YOU WILL HOLD HARMLESS, DEFEND, AND INDEMNIFY THE AUTHOR AND IWEP, AND
+       THEIR CONTRIBUTORS, AGAINST ANY AND ALL CLAIMS, DEMANDS, LOSSES,
+       LIABILITIES, DAMAGES, COSTS, AND EXPENSES (INCLUDING REASONABLE
+       ATTORNEYS' FEES) ARISING OUT OF OR RELATED TO YOUR ACCESS TO, USE OF, OR
+       DISTRIBUTION OF THE SOFTWARE, OR YOUR BREACH OF THIS LICENSE.
+
+  7.3  Some jurisdictions do not allow certain warranty disclaimers or
+       liability limitations; in those jurisdictions the above apply to the
+       fullest extent permitted by law.
+
+--------------------------------------------------------------------------------
+8. TERMINATION
+
+  Any right you may have under a separate agreement, and any permission granted
+  under this license, terminates automatically and immediately upon any breach
+  of this license, without notice. Upon termination you must cease all use and
+  destroy all copies of the Software in your possession or control. Sections 2,
+  3, 6, 7, 8, and 9 survive termination.
+
+--------------------------------------------------------------------------------
+9. GENERAL
+
+  If any provision of this license is held unenforceable, it will be enforced
+  to the maximum extent permissible and the remaining provisions will remain in
+  full force. No waiver is effective unless in writing and signed by the party
+  waiving. This license is the entire statement of the rights granted in the
+  Software in the absence of a separate written agreement.
+
+  For written-permission requests or licensing inquiries, contact the Author at
+  smugandcomfy@gmail.com. Requests concerning the Shopify Dev Kit are also
+  subject to the approval of International Waters Esports Palace.

@@ -1,0 +1,23 @@
+Waifu AI — how to run
+==========================
+
+1. Keep this whole folder somewhere you'll leave it (e.g. move it out of
+   Downloads to your Documents). The app runs from here.
+
+2. You need Node.js 20.18 or newer. If you don't have it, get the "LTS"
+   installer from https://nodejs.org and run it once.
+
+3. Double-click  "Waifu AI"  (the file named Waifu AI.vbs).
+   The app opens in its own window. That's it.
+
+To make a desktop icon:
+   - Right-click "Waifu AI" -> Send to -> Desktop (create shortcut).
+   - (Optional) Right-click the new desktop shortcut -> Properties ->
+     Change Icon -> Browse to codie.ico in this folder.
+
+Your Codies, keys and settings are stored separately, under
+%APPDATA%\Code27Helper, so they stay safe if you move or replace this folder.
+Back them up from the app's "Keys & backup" panel.
+
+To update later: replace this folder's files with a newer version; your data
+under %APPDATA%\Code27Helper is untouched.

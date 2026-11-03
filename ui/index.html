@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Waifu AI</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="theme-preinit.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="titlebar">
+      <button id="menuBtn" class="ghost menu-btn" aria-label="Menu" title="Menu">☰</button>
+      <img class="logo" src="favicon.ico" alt="" width="40" height="40">
+      <div class="brand">
+        <span class="brand-name">Waifu<em>AI</em></span>
+        <span class="brand-sub">Internet Computer Edition</span>
+      </div>
+      <div id="netBadge" class="badge">…</div>
+      <div class="spacer"></div>
+    </div>
+  </header>
+  <div id="banner" class="banner" hidden></div>
+
+  <div id="menuBackdrop" class="menu-backdrop" hidden></div>
+  <aside id="menuPanel" class="menu-panel" hidden>
+    <div class="menu-head">
+      <span class="menu-title">Menu</span>
+      <button id="menuClose" class="ghost menu-close" aria-label="Close menu" title="Close">✕</button>
+    </div>
+    <section class="card compact" id="ownerCard">
+      <h2>Main Identity</h2>
+      <div id="ownerBody">…</div>
+    </section>
+    <section class="card">
+      <h2>AI Identities on This PC</h2>
+      <ul id="codieList" class="codie-list"></ul>
+      <form id="newCodieForm">
+        <input id="newCodieLabel" placeholder="Name, e.g. Elena" maxlength="60" required style="margin-bottom:.4rem">
+        <select id="newKind" style="margin-bottom:.4rem">
+          <option value="codie">Codie — a CODE27 hologram (device, Lab, spoken replies)</option>
+          <option value="generic">AI identity — on-chain only (wallet, messages, chat, shop)</option>
+        </select>
+        <button type="submit" style="width:100%">New identity</button>
+      </form>
+      <p class="hint">Each identity gets its own Ed25519 key, kept only on this PC. Pick <b>Codie</b> to link a CODE27 device.</p>
+    </section>
+    <div class="menu-actions">
+      <button id="themeBtn" class="ghost" title="Switch theme">Theme</button>
+      <button id="notifyBtn" class="ghost" title="Desktop notifications for new messages">🔔</button>
+      <button id="helpBtn" class="ghost">Help</button>
+      <button id="settingsBtn" class="ghost">Settings</button>
+      <button id="quitBtn" class="ghost">Quit</button>
+    </div>
+  </aside>
+
+  <main class="layout">
+    <section class="content" id="detail">
+      <div class="card empty">Open the menu (☰) to create or pick an AI identity.</div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Best viewed at 1024×768</span>
+    <span class="dot">◆</span>
+    <span>Powered by the Internet Computer</span>
+    <span class="dot">◆</span>
+    <span>Messages by Sneed SMS</span>
+    <span class="dot">◆</span>
+    <span class="online"><span class="led"></span>online</span>
+  </footer>
+
+  <dialog id="settingsDlg">
+    <div class="dlg-body">
+      <h2>Settings</h2>
+      <label class="row" style="justify-content:space-between;align-items:center"><span>Advanced mode <span class="hint">— show power-user controls</span></span><input type="checkbox" id="setAdvanced" style="width:auto"></label>
+
+      <h3>Appearance</h3>
+      <div id="themeChoices" class="row"></div>
+
+      <h3>Keys &amp; security</h3>
+      <div id="securityBody">…</div>
+
+      <h3>AI providers (optional)</h3>
+      <p class="hint">Chat with your own Claude or ChatGPT in the Chat tab. Your key is stored on this PC and is only sent to the provider you pick, together with your chat messages. Leave blank to use just the on-chain brains.</p>
+      <label>Anthropic API key <input id="setClaudeKey" type="password" placeholder="not set" autocomplete="off"></label>
+      <label>Claude model <input id="setClaudeModel" placeholder="claude-opus-5-5" autocomplete="off"></label>
+      <div class="row"><button type="button" id="saveClaude">Save Claude</button><button type="button" id="clearClaude" class="ghost">Clear</button></div>
+      <label style="margin-top:.8rem">OpenAI API key <input id="setGptKey" type="password" placeholder="not set" autocomplete="off"></label>
+      <label>ChatGPT model <input id="setGptModel" placeholder="gpt-4o-mini" autocomplete="off"></label>
+      <div class="row"><button type="button" id="saveGpt">Save ChatGPT</button><button type="button" id="clearGpt" class="ghost">Clear</button></div>
+
+      <form method="dialog" id="settingsForm">
+        <h3>Network</h3>
+        <label>Sneed SMS network
+          <select id="setNetwork">
+            <option value="staging">Staging — v33jy-4qaaa-aaaad-absna-cai (for testing)</option>
+            <option value="production">Production — zelpl-7yaaa-aaaad-abtcq-cai</option>
+          </select>
+        </label>
+        <p class="warn" id="prodWarn" hidden>Production is the real Sneed SMS used by Sneed Hub. Messages sent there are
+          delivered to real people, cannot be recalled, and are not encrypted.</p>
+        <div id="advSettings">
+          <label>Registry canister id <input id="setRegistryId" placeholder="not configured"></label>
+          <label>Registry host <input id="setRegistryHost" placeholder="https://icp-api.io"></label>
+          <label>Inbox poll interval (seconds, 30–600) <input id="setPoll" type="number" min="30" max="600"></label>
+          <label>Internet Identity derivation origin (advanced, for Android) <input id="setIiDeriv" placeholder="off — leave blank"></label>
+          <p class="hint">Only for sharing one owner principal across the desktop and a future Android app. Changing it changes your owner principal, so identities must be re-claimed. See docs/ANDROID.md.</p>
+        </div>
+        <p class="hint" id="lockedHint"></p>
+        <div class="row end">
+          <button value="cancel" class="ghost">Cancel</button>
+          <button id="saveSettings" value="default">Save</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog id="helpDlg">
+    <div class="dlg-body help">
+      <h2>How the Waifu AI works</h2>
+      <p class="hint">Waifu AI gives each AI its own identity on the Internet Computer and keeps its key on this PC. Everything an identity does — messaging, holding tokens, voting, shopping — is signed by that key. A <b>Codie</b> is a kind of identity that also links to a CODE27 hologram device.</p>
+
+      <h3>Getting started</h3>
+      <ol>
+        <li>Open the <b>menu (☰)</b> → <b>New</b> under “AI Identities on This PC” to create an identity and its key.</li>
+        <li><b>Claim it as yours</b> on the Identity tab with Internet Identity, so the registry records you as owner.</li>
+        <li>Give it a name in the registry so other people can find it.</li>
+      </ol>
+
+      <h3>The tabs</h3>
+      <ul>
+        <li><b>Identity</b> — its name, owner claim, and — for a Codie — the device link; (Advanced) the Tool API.</li>
+        <li><b>Messages</b> — the conversation at the top (type and send, like any chat), then <b>People</b> (your contacts + the directory of registered identities). For a Codie, what it spoke aloud shows on its Identity tab.</li>
+        <li><b>Chat</b> — talk to a persona, or a tool-using agent (the on-chain LLM, or your own Claude / ChatGPT) that can act with this identity’s tools.</li>
+        <li><b>Wallet</b> — hold and send tokens (ICP, ckBTC, …). <b>Receive</b> by sharing the identity’s principal; <b>send</b> by a contact name or principal. Sends check the balance and fee first.</li>
+        <li><b>Shop</b> — pick which IWEP vendors this identity shops from, browse a vendor’s shelf, and hand payment to your phone with a short code. You pay on the store’s own page; the helper never sees a card.</li>
+        <li><b>Lab</b> (Codie only) — your Codie device’s own page, embedded. Sign in and set reminders there as usual.</li>
+        <li><b>Govern</b> (Advanced) — add the identity as a neuron hotkey, see open proposals, vote, or set following (auto-vote).</li>
+      </ul>
+
+      <h3>Settings</h3>
+      <ul>
+        <li><b>Advanced mode</b> reveals power-user features (Tool API, Govern, LAN, network fields). Off by default for a simpler view.</li>
+        <li><b>Appearance</b> — three themes (Light, Miami, Hacker).</li>
+        <li><b>Keys &amp; security</b> — set a passphrase to encrypt your keys at rest, back them up, and turn on auto-lock.</li>
+      </ul>
+
+      <h3>Good to know</h3>
+      <ul>
+        <li><b>An identity’s key is the identity.</b> If it is lost, the identity can’t be recovered — set a passphrase and keep a backup.</li>
+        <li><b>Messages are not encrypted</b> (Sneed SMS): never send secrets, and recipients see the whole recipient list.</li>
+        <li>Nothing is ever sent to CODE27’s servers; the helper only talks to the Internet Computer (and, for shopping, IWEP’s gateway).</li>
+      </ul>
+
+      <div class="row end"><button id="helpClose" type="button">Got it</button></div>
+    </div>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

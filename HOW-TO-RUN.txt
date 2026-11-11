@@ -4,11 +4,23 @@ Waifu AI — how to run
 1. Keep this whole folder somewhere you'll leave it (e.g. move it out of
    Downloads to your Documents). The app runs from here.
 
-2. You need Node.js 20.18 or newer. If you don't have it, get the "LTS"
-   installer from https://nodejs.org and run it once.
+2. Nothing to install: this folder carries its own Node.js 24 (the "node"
+   folder). Only if your copy has no "node" folder do you need Node.js 24 LTS
+   from https://nodejs.org.
 
 3. Double-click  "Waifu AI"  (the file named Waifu AI.vbs).
    The app opens in its own window. That's it.
+   - If Windows shows a blue "Windows protected your PC" box the first time,
+     click "More info" -> "Run anyway". (It appears because the file came from
+     the internet; you can also right-click the file -> Properties -> tick
+     "Unblock" -> OK to stop it appearing.)
+   - If nothing happens, a message box will tell you what went wrong and point
+     to the log at %APPDATA%\Code27Helper\helper.log.
+
+To quit:
+   Use "Quit" inside the app, OR double-click  "Quit Waifu AI"  in this folder.
+   Just closing the app window leaves it running in the background — use Quit
+   before you move or update the folder.
 
 To make a desktop icon:
    - Right-click "Waifu AI" -> Send to -> Desktop (create shortcut).
@@ -17,7 +29,9 @@ To make a desktop icon:
 
 Your Codies, keys and settings are stored separately, under
 %APPDATA%\Code27Helper, so they stay safe if you move or replace this folder.
-Back them up from the app's "Keys & backup" panel.
+Back them up from Settings -> Security & backups.
 
-To update later: replace this folder's files with a newer version; your data
-under %APPDATA%\Code27Helper is untouched.
+To update later: unzip the new version into its own folder next to this one,
+Quit Waifu AI, and start it from the new folder. Your data under
+%APPDATA%\Code27Helper is untouched; keep the old folder until the new one
+works. (Settings -> Updates can check for and download new versions.)

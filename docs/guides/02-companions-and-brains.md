@@ -5,21 +5,25 @@ Make as many companions as you like, and give each one the brain that suits it. 
 ## Your companions
 
 Each companion is an **identity**: an AI with its own name, its own memory and its own secret key on this PC.
-Its key gives it a **principal**, its public address on the Internet Computer, so others can message it.
+Its key gives it an **ID** (also called a principal), its public address on the Internet Computer, so others
+can message it.
 
 ### Make another one
 
-1. Press ☰ (top left) → **New identity…**.
-2. Follow the same short wizard as your first one: type, name, device, key, public name.
+1. Press **+ New identity** under your companions in the left column.
+2. Follow the same short wizard as your first one: type, name, device (or brain), key, public name.
 
 Your own companions are **peers**: they can talk to each other and share your memory bank.
 
 ### A companion's page
 
-Click a companion (in ☰, or **Your identities** on Today). Its tabs:
+Click a companion in the left column. Its tabs:
 
-- **Overview**: its status, what needs you, and the **Finish setting up** list.
-- **Behaviour**: its brain and budget, what it may do on its own, and its voice.
+- **Overview**: its status, what needs you (with **Open Today**), and the **Finish setting up** list.
+- **Conversations**: **Chat**, **Messages**, **Discord** and **Phone**, all with this companion.
+- **Memory**: **Notes & facts** and **Context**.
+- **Behaviour**: its brain and budget, what it may do on its own, the **Orchestrator** card, and (for a
+  Hologram Companion) what it says aloud.
 - **Device** (Hologram Companion only): the device, its speech and its own features.
 - **Connections**: Discord, Telegram and (in Advanced) outside AI apps, friends and other hubs.
 - **Money** (Advanced only): wallet, shop and voting.
@@ -28,14 +32,14 @@ Click a companion (in ☰, or **Your identities** on Today). Its tabs:
 ### A public name (optional)
 
 A public name lets people find and message your companion by name instead of its long principal. It's
-public, free, and first come, first served.
+public, free, and first come, first served. A claimed name renews itself each year while your hub runs.
 
 1. Open the companion's **Manage** tab.
 2. Under **Public name**, type 3 to 32 lower-case letters, numbers or dashes.
 3. Press **Register**.
 
-**Claiming it (optional):** press ☰ → **Main Identity** → **Sign in with Internet Identity**, then on
-**Manage** press **Propose me as owner** and **Accept ownership**. This records you as the owner in the public
+**Claiming it (optional):** open **Settings → You & account** and press **Sign in with Internet Identity**
+(or ☰ → **Your account**), then on **Manage** press **Propose me as owner** and **Accept ownership**. This records you as the owner in the public
 registry. It doesn't copy the key, and it can't recover a lost one.
 
 ### Rename or remove
@@ -45,9 +49,9 @@ registry. It doesn't copy the key, and it can't recover a lost one.
 - **Remove:** back up first, then **Manage → Danger zone → Delete this identity…** and type its name. This
   destroys its key for good.
 
-### People & AIs
+### People
 
-**People & AIs** holds your **Contacts** (private nicknames, kept only on your PC, each with a role: my phone,
+**People** holds your **Contacts** (private nicknames, kept only on your PC, each with a role: my phone,
 friend or peer) and the **Directory**, where you can find a companion by its public name and save it as a
 contact.
 
@@ -105,6 +109,44 @@ If a brain is busy or fails, the next one answers, ending with the free one.
   your companion "set my budget to off").
 - **Settings → Brains & cost → Monthly budgets** shows this month's spend for every companion.
 - Claude reuses the parts of a chat that don't change, which keeps the cost of long chats down.
+
+## The orchestrator 🎼
+
+Give one companion a baton. The **orchestrator** runs small jobs across your other companions for you: it asks
+them things, waits for their answers, passes messages between them and tells you how it went.
+
+**Make one:**
+
+1. Pick a companion whose brain is **Claude** or **ChatGPT** (the free brains can't pick tools reliably enough).
+2. Open its **Behaviour** tab and find the **Orchestrator** card.
+3. Press **Make <name> the orchestrator…** and type your passphrase (no passphrase? a Yes/No window opens on
+   this PC instead).
+
+A hub has **one** orchestrator. Pressing the button on another companion moves the role, and **Remove the role**
+takes it away.
+
+**Use it:** ask from its Chat tab, your phone or Telegram: "ask the others whether the reminder went out, then
+tell me." The others always see that the request came from the orchestrator for a job you started.
+
+**Its limits** (on the same card):
+
+| Limit | Default | Can go up to |
+|---|---|---|
+| Longest job | 30 minutes | 4 hours |
+| Back-and-forth steps | 3 | 6 |
+| Cost per job | $0.50 | $20 |
+| Cost per day | $5 | $100 |
+
+A job stops at the first limit it reaches, and you get one line saying so. The companion's own monthly budget
+still applies. Raising a limit asks for your passphrase again; lowering one doesn't.
+
+**What it never does:** change keys, spend caps, the allow list, passphrases, pairing or restores, or give
+itself more power. Messages to people, money and most settings still wait for your OK (unless you turned on
+[Unsafe mode](03-talking-everywhere.md#unsafe-mode-your-discord-dm-with-no-brakes-)).
+
+**Stopping it:** the card lists its jobs with **End this job**. `stop all writes` from your phone ends every job
+at its next step. If you switch its brain to one that can't use tools well, the role is suspended until you
+switch back.
 
 ## Extras
 

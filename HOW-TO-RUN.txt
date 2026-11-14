@@ -10,10 +10,10 @@ Waifu AI Desktop - how to run
      time, click "More info" -> "Run anyway". The app isn't code-signed
      yet, so Windows asks.
    - The first time, accept the Terms of Use, then press
-     "Create your first identity".
+     "Create your first identity" on Today.
 
 To quit:
-   Use More -> Quit at the foot of the app's left-hand rail. Your
+   Open the menu (the three-line button at the top left) and press Quit. Your
    companions are offline until you start it again.
 
 To make a desktop icon:
@@ -21,7 +21,7 @@ To make a desktop icon:
 
 Your companions, keys and settings are stored separately, in Waifu AI's
 data folder under %APPDATA%, so they stay safe if you move or replace this
-folder. Back them up from Settings -> Security.
+folder. Back them up from Settings -> Security & backups.
 
 To update later: Settings -> Updates -> Download, unzip the new version
 into its own folder, Quit Waifu AI, and start it from the new folder. Keep

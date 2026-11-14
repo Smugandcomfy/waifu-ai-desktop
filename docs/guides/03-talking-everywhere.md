@@ -3,12 +3,13 @@
 In the app, on Discord, on Telegram or from your phone: your companion is the same everywhere, and it asks you
 before it does anything big. 💬
 
-**Conversations** has a tab for each place: **Chat** (here in the app), **Messages** (its Sneed SMS mailbox),
-**Discord** and **Phone** (Telegram and texts from your phone).
+Each companion's **Conversations** tab has a sub-tab for each place: **Chat** (here in the app), **Messages**
+(its Sneed SMS mailbox and any sends queued to go out), **Discord** and **Phone** (Telegram and texts from your
+phone). Long threads show a page at a time, with **Earlier** or **Show more** for the rest.
 
 ## Chat in the app
 
-1. Open **Conversations → Chat** and pick your companion at the top.
+1. Click your companion in the left column and open its **Conversations** tab (it opens on **Chat**).
 2. Pick a brain chip above the box (the first free one is fine).
 3. Type and press **Send**. **Stop generating** stops a reply mid-way; your draft is kept if you leave.
 
@@ -23,7 +24,7 @@ Anything that sends a message, sends tokens, votes, buys or changes settings **w
 allowed it. You'll see it:
 
 - on **Today → Waiting for you**, for every companion;
-- under **Approvals** on the companion's Overview;
+- as a count on the companion's Overview, with **Open Today** to see just that companion's;
 - right in Chat, under the reply.
 
 Press **Approve** to run it once, or **Don't** to drop it. What you approve is exactly what is sent: an
@@ -33,7 +34,8 @@ From your phone: reply **yes** within 10 minutes, or text `pending` and then `ye
 
 ### What it does on its own
 
-**Behaviour → Actions & autonomy** sets two things:
+**Behaviour → Actions & autonomy** has three sub-tabs: **Level**, **What it may do** and **History**. **Level**
+sets two things:
 
 - **On a new message**: **Off** (it only acts when you ask; the default), **Propose** (it suggests and waits
   for your OK), or **Auto** (it runs the actions you allowed, within caps you set).
@@ -58,40 +60,78 @@ Your companion can have its own Discord bot. In your server it chats with your m
 **You'll need:** a Discord account (turn on two-factor login), a Discord server you own (in Discord: **+** →
 **Create My Own**; it's free), and Waifu AI running on this PC.
 
-**The easy way:** the companion's **Connections → Discord → Guided setup** walks you through every step and
-checks each one.
+The Discord card on the companion's **Connections** tab has four sub-tabs: **Set up**, **Where it answers**,
+**You & guests** and **Persona**.
+
+**The easy way:** **Connections → Discord → Set up → Guided setup** walks you through every step and checks each
+one.
 
 **By hand:**
 
 1. Go to discord.com/developers, press **New Application**, name it after your companion, press **Create**.
 2. Open **Bot**. Add a picture if you like. Turn **Public Bot** off. Leave **Message Content** off.
 3. Press **Reset Token**, confirm, and **Copy**. Never share this token.
-4. In Waifu AI, on **Connections → Discord**, paste it under **Bot token** and press **Save**, then **Test**.
+4. In Waifu AI, on **Connections → Discord → Set up**, paste it under **Bot token** and press **Save**, then
+   **Test**.
 5. Press **Invite to a server**, pick your server and press **Authorize**.
 6. Under **To finish setting up**, press **Add this server** (or **allow #channel**).
-7. **Pair my Discord account**: send the bot the `pair …` line it shows, in a DM. Now it knows you're you.
+7. On **You & guests**, press **Pair my Discord account** and send the bot the `pair …` line it shows, in a DM.
+   Now it knows you're you.
 
 **Good to know:**
 
 - In a channel it answers when mentioned (or answers everything in a **listen** channel, which needs Message
-  Content switched on in the Developer Portal).
-- Everyone else in your server is a **guest**: chat only, no tools, no memory, no wallet. **Guest limits** caps
-  their daily cost (default $1.00 a day).
+  Content switched on in the Developer Portal). Channels are set on **Where it answers**.
+- Everyone else in your server is a **guest**: chat only, no tools, no memory, no wallet. **Guest limits** (on
+  **You & guests**) caps their daily cost (default $1.00 a day).
 - On Discord, anything more than a simple setting (a message, a post, a vote, a reminder, a payment) waits for
-  your OK **in the app or on your phone**. "yes" on Discord never approves it.
+  your OK **in the app or on your phone**. "yes" on Discord never approves it (unless you turned on
+  [Unsafe mode](#unsafe-mode-your-discord-dm-with-no-brakes-)).
+- A coding session asking to connect to your companion can be approved from your own Discord DM: reply
+  `connect` followed by the request's code and the 6-digit code your authenticator app shows now. It works only
+  in your DM, once per request, and needs an authenticator set up in **Settings → Security & backups → Task
+  approvals** (Advanced; it needs a passphrase). Telegram can't do this.
 - Money asked for in a server channel moves to your DM.
 - Send the bot a picture and a Claude or ChatGPT brain can look at it. Pictures are never saved.
 - The bot is online only while Waifu AI runs.
+
+## Unsafe mode: your Discord DM with no brakes ⚠️
+
+Normally, anything big you ask on Discord waits for your OK in the app or on your phone. **Unsafe mode** lifts
+that, for **you** only: what you ask from your own Discord DM runs at once, with **no confirmation**. Messages,
+settings and **money** included. So do the orchestrator's jobs for you. It's handy when you're away from your PC
+and trust your Discord account. It's also exactly as risky as it sounds: anyone who gets into your Discord
+account can then act as you.
+
+**Turn it on** (only in the app): **Settings → Security & backups → Unsafe mode**. Read both lists ("What it
+lifts" and "What it never lifts"), choose **Turn it off by itself** (after 1 hour up to 7 days, or until you turn
+it off), and press **Turn Unsafe mode on…**. It asks for your passphrase, or shows a Yes/No window on this PC.
+You can also list Discord channels it covers, but private things (your messages, notes, balances) still answer
+only in your DM.
+
+**What it never lifts:**
+
+- connected AI apps and devices still always ask;
+- anything that read someone else's words (a web page, an email, a forwarded message, someone else's post) still
+  waits for your OK;
+- doors and alarms: no unlocking, disarming, opening a garage or a camera from Discord;
+- nobody else gains anything: guests, friends, strangers and your other companions are treated as before;
+- keys, pairing and the orchestrator role stay in the app.
+
+**While it's on**, a red banner sits on every page, Today has a line about it, and **Activity** tags everything it
+let run as **unsafe mode**. Your phone and Discord DM are told when it goes on and when it ends.
+
+**Turn it off from anywhere:** the banner's **Turn it off**, **Turn Unsafe mode off** in Settings, a text or
+Discord DM saying `unsafe off`, `stop all writes`, or the auto-off time. Turning it off never needs a passphrase.
 
 ## Telegram 📱
 
 The easiest way to text a companion from your phone, with no send limits.
 
-The **Telegram** card on **Connections** has a **Guided setup**. Or by hand:
+**Settings → Your phone → Telegram** has a **Guided setup**. Or by hand:
 
 1. In Telegram, open **BotFather**, send `/newbot` and answer its questions. Copy the token.
-2. In Waifu AI, open **Settings → Connections → Your phone → Telegram (optional)**, paste the token and press
-   **Save token**.
+2. In Waifu AI, open **Settings → Your phone → Telegram**, paste the token and press **Save token**.
 3. Pick the **Identity that answers** and press **Test**.
 4. From your phone, message the bot. It says it doesn't know you yet.
 5. Back in Waifu AI, under **Waiting**, press **Trust this chat**.
@@ -105,11 +145,11 @@ Sneed SMS is a messaging service on the Internet Computer that your companions u
 write to them from Sneed Hub on your phone, signed in with Internet Identity.
 
 1. From your phone, send one of your companions a Sneed message (to its principal).
-2. In Waifu AI, open **Conversations → Messages**.
+2. In Waifu AI, open that companion's **Conversations → Messages**.
 3. On that message, press **Trust as my phone**.
 
 Your phone is now an **owner device**: every companion answers it with full access, and it can approve things.
-**Settings → Connections → Your phone → Guided setup** does this with you.
+**Settings → Your phone → Phones and apps → Guided setup** does this with you.
 
 ⚠️ Sneed messages are **not encrypted**: treat them like postcards. Each sender can send one every 10 minutes
 (Sneed Premium allows one a minute). Messages between your own companions stay inside the hub and skip the
@@ -125,14 +165,16 @@ limit.
 | `vacation on` / `vacation off` | Nobody acts on anything while you're away |
 | `pause Aria` / `resume Aria` | Stop or restart one companion acting on its own |
 | `stop all writes` / `resume writes` | The emergency brake for the whole hub |
+| `unsafe off` | Turn Unsafe mode off (it also works in your Discord DM) |
 | `run a dream` / `did the dream work?` | Tidy the memory now, or hear how the last one went |
 | `forget former names` | Let go of old names after a rename |
 | `help` | The list |
 
 A sentence that only *contains* a command word is just talk: "don't pause Aria" pauses nothing.
 
-**What your phone is told:** **Settings → Notifications & away** has quiet hours, vacation mode, a morning
-callback and the **owner feed** (a short digest of what your companions did, off until you switch it on).
+**What your phone is told:** **Settings → Quiet & away** has quiet hours, vacation mode, a morning callback and
+the **owner feed** (a short digest of what your companions did, off until you switch it on; its **Sent to you
+lately** fold shows the newest 30 lines).
 
 ## When your companions talk to each other
 

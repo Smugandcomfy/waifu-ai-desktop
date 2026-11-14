@@ -12,18 +12,19 @@ they're kept apart from the app.
 2. When a new version is offered, press **Download**. After a safety check (size and checksum) it's saved in
    Waifu AI's own updates folder; the screen shows where.
 3. Unzip it into a **new** folder.
-4. Quit Waifu AI: **More → Quit** at the foot of the rail.
+4. Quit Waifu AI: **☰ → Quit** (the menu at the top left).
 5. Start `Waifu AI.exe` from the new folder.
 
 Keep the old folder until the new one has run once. Prefer doing it by hand? Download the zip from the
 [latest release](../../../../releases/latest), check it against the `sha256` in the release notes, and follow
 steps 3 to 5.
 
-**Also offer test releases** adds early versions. Leave it off unless you want to try them.
+**Also offer test releases** (in Advanced mode, under **Settings → Developer → Release channel**) adds early
+versions. Leave it off unless you want to try them.
 
 ## Stop, start, uninstall
 
-- **Stop:** **More → Quit** at the foot of the rail. Your companions (and their bots) are offline until you
+- **Stop:** **☰ → Quit**. Your companions (and their bots) are offline until you
   start it again.
 - **Start:** double-click `Waifu AI.exe`. Starting a newer copy while an older one runs asks the older one to
   quit first.
@@ -34,12 +35,12 @@ steps 3 to 5.
 
 ### My companion doesn't answer
 
-1. Look at the status light at the foot of the rail. **Offline** means no internet: replies come when it's
+1. Look at the status light at the foot of the left column. **Offline** means no internet: replies come when it's
    back.
 2. Check **Today → Waiting for you** and **Fix these**: it may be waiting for your OK.
 3. On the companion's **Behaviour** tab, check the **Brain that answers messages**. "(no key)" means it needs a
    key in **Settings → Brains & cost → AI providers**, or pick the free **On-chain agent**.
-4. Texting from your phone? Check it's trusted in **Settings → Connections → Your phone**.
+4. Texting from your phone? Check it's trusted in **Settings → Your phone**.
 5. Two of your companions talking stop after 8 replies each. Start a new thread.
 
 A message that reached the hub more than half an hour late (the hub was off or locked) is shown but not acted
@@ -68,7 +69,7 @@ It can't be recovered or reset. If you have a key backup or a hub export:
 
 1. Quit Waifu AI.
 2. Move Waifu AI's data folder (under `%APPDATA%`) somewhere else, so the hub starts fresh.
-3. Start Waifu AI, open **Settings → Security**, and press **Restore…** (key backup) or **Restore hub…** (hub
+3. Start Waifu AI, open **Settings → Security & backups**, and press **Restore…** (key backup) or **Restore hub…** (hub
    export). Type the **backup's** passphrase.
 
 Without a backup, those companions can't be opened again.
@@ -90,18 +91,21 @@ Without a backup, those companions can't be opened again.
 | "One setting was reset" on Today | One saved setting couldn't be read and went back to its default. Set it again. |
 | A message was "not sent again" | The same text to the same place within 5 minutes counts as a repeat. Approve again if you really meant twice. |
 | My Discord bot said "approve it in the app" | Changes asked on Discord wait for your OK in the app or on your phone. That's on purpose. |
+| A red "Unsafe mode is on" banner | You turned on Unsafe mode. Press **Turn it off** on the banner, or text `unsafe off`. |
+| The orchestrator says its role is suspended | Its brain was switched to one that can't use tools well. Switch it back to Claude or ChatGPT on its **Behaviour** tab. |
+| A bookmark to an old Settings page | It still works: old addresses open the new tab. |
 | The Hologram Companion is unreachable | It must be on the same Wi-Fi as this PC, awake and signed in. Press **Test the connection**. |
 | Someone on Discord or Telegram stopped getting answers | Anyone who isn't you gets at most 60 replies a day from each companion. It resets the next day (or on restart). |
 
 ### A file was "damaged" or "stays closed"
 
-Open **Settings → Security → Health**. Plain history (conversations, day pages, caches) resets itself and keeps
+Open **Settings → Security & backups → Health**. Plain history (conversations, day pages, caches) resets itself and keeps
 a copy. A file that protects you (keys, contacts, approvals) stays closed until you restore a backup or press
 **Reset** on its line; Reset tells you what you'd lose first.
 
 ## Asking for help
 
-1. **Settings → Security → Sessions and diagnostics → Copy diagnostics** copies a short report (version,
+1. **Settings → Security & backups → Sessions and diagnostics → Copy diagnostics** copies a short report (version,
    settings summary, recent log lines) with keys and tokens removed. It does include your companions' names.
 2. Open an [issue](../../../../issues) and paste it in. Never post keys, passphrases, API keys, bot tokens or
    backup files.

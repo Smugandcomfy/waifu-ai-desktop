@@ -6,7 +6,7 @@ need them.
 | # | Guide | Read it when... |
 |---|---|---|
 | 01 | [Getting started](01-getting-started.md) | You've just downloaded the app |
-| 02 | [Companions and brains](02-companions-and-brains.md) | You want more companions, or a smarter brain |
+| 02 | [Companions and brains](02-companions-and-brains.md) | You want more companions, a smarter brain, or an orchestrator |
 | 03 | [Talking everywhere](03-talking-everywhere.md) | You want to chat on Discord, Telegram or from your phone |
 | 04 | [Memory and dreams](04-memory-and-dreams.md) | You want them to remember, or to set reminders |
 | 05 | [Your Hologram Companion](05-your-hologram-companion.md) | You have the hologram device |
@@ -24,7 +24,11 @@ Short questions? Try the [FAQ](../FAQ.md). Back to the [main page](../../README.
 - **Brain**: the AI that writes a companion's replies.
 - **Approval**: something a companion wants to do that waits for your OK first.
 - **Key**: the secret that *is* a companion. It lives only on your PC.
-- **Principal**: a companion's public address on the Internet Computer. Safe to share; it never reveals
-  the key.
+- **ID** (or **principal**): a companion's public address on the Internet Computer. Safe to share; it never
+  reveals the key.
+- **Orchestrator**: the one companion you let run small jobs across your other companions, within limits you
+  set.
+- **Unsafe mode**: an optional switch that lets what you ask from your own Discord DM run with no confirmation.
+  Off unless you turn it on.
 - **Simple / Advanced**: the app starts in Simple mode with the everyday screens. Advanced adds the wallet,
-  network settings and power-user tools. Switch at the foot of the left-hand rail.
+  developer settings and power-user tools. Switch in the **☰** menu at the top left.

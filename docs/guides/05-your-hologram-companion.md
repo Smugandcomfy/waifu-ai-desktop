@@ -19,7 +19,7 @@ pairs, and checks that you hear it speak.
 **By hand:**
 
 1. Open the companion's **Device** tab.
-2. Under **Device mode**, pick **Real**, then connect.
+2. Under **Device mode**, pick the real device instead of **Mock**, then connect.
 3. Enter the device's address (like `http://<the device's IP>:8081`) and its time zone. The device's IP is in
    its own network settings, or in your router's list of devices. (The new-identity wizard can also look for it
    on your Wi-Fi.)
@@ -54,7 +54,8 @@ answers, even if you texted from somewhere else.
 - **On the device:** the memory cards it made itself, read-only.
 - **Alarms & reminders:** set, switch off and delete alarms and reminders that the device rings itself, even
   with the hub closed.
-- **Clear chat history…:** deletes what the device keeps of its own chats.
+- **Clearing its chat history** (a button on the Device tab, which asks first): deletes what the device keeps
+  of its own chats.
 
 ## The lights 💡
 
@@ -68,10 +69,12 @@ Ask from your phone or your Discord DM, in your own words:
 
 ## Quiet hours and notifications
 
-- **Device quiet hours** (Device tab): when it says nothing except answers to what you asked. What came in
-  meanwhile becomes one line when quiet hours end.
-- **Voice & notifications** (Behaviour tab): how it tells you about new things: **Off**, **Chime**, or **Full**
-  (it speaks them).
+- **Quiet hours** live in one place: **Settings → Quiet & away → Quiet hours**. Tick the switch to also silence
+  your Hologram Companions there, and they keep the hub's hours: they say nothing except answers to what you
+  asked, and what came in meanwhile becomes one line when quiet hours end. With it off, each device keeps its own
+  hours, set on its **Device** tab.
+- **What it says aloud** (Behaviour tab): how it tells you about new things: **Off**, **Chime**, or **Speak** (it
+  says them). The same choice shapes your desktop pop-ups: Off shows none, Chime shows them without text.
 
 ## When it's offline
 

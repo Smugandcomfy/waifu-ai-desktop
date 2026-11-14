@@ -168,7 +168,7 @@ flowchart LR
     subgraph PC["🖥️ Your PC"]
         A["Counts during the day<br/>(features used, errors, timings)"] --> B["Daily report<br/>numbers and codes only"]
         B --> C{"App checks it<br/>against a fixed list"}
-        V["👀 Settings → Updates<br/>shows the exact last report"]
+        V["👀 Settings → Updates → Usage report<br/>shows the exact last report"]
         B -.-> V
     end
     C -- "random id, new every month" --> T["📊 Usage-report canister"]
@@ -187,7 +187,7 @@ flowchart LR
 | Country, language and time zone (to the hour) | Your IP address or precise location |
 
 The full, exact list is in the Terms of Use shown in the app. You can read the last report your hub sent, word for
-word, in **Settings → Updates**.
+word, in **Settings → Updates → Usage report**.
 
 ---
 

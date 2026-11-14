@@ -23,12 +23,13 @@ Just say it: "Remember that my sister's name is Ana."
 Companions also pick up lasting facts (people, preferences, plans) as you chat, and a quiet conversation is
 summed up into one memory.
 
-To see what a companion knows: open **Memory**, pick the companion at the top, and look at **Notes & facts**.
-On any memory, **Why?** shows where it came from, **Correct** fixes it and **Forget** removes it.
+To see what a companion knows: click it in the left column, open its **Memory** tab, and look at **Notes &
+facts** (**Context** shows the last few turns every brain reads). On any memory, **Why?** shows where it came
+from, **Correct** fixes it and **Forget** removes it. Long lists show a page at a time, with a button for more.
 
 ## Days: "what did we do yesterday?"
 
-![Memory → Days: one page per day, written after you're done for the day](../../assets/screenshots/memory-days.png)
+![Days: one page per day, written after you're done for the day](../../assets/screenshots/memory-days.png)
 
 1. Talk with your companions during the day.
 2. When you're done for the day (in the evening, half an hour after the last message), a short **day page** is
@@ -36,8 +37,9 @@ On any memory, **Why?** shows where it came from, **Correct** fixes it and **For
 3. Ask "what did we do yesterday?" or "what happened last week?". "What do you remember from Monday?" reads
    that day's page to you.
 
-**Memory → Days** lists the last 14 pages. **Rebuild** writes one again, **Correct** lets you fix it in your
-own words, and **Forget** removes it. A day page is read only for you, never for guests or friends.
+**Settings → Memory → Days** lists the last 14 pages (they cover the whole hub, so they live in Settings).
+**Rebuild** writes one again, **Correct** lets you fix it in your own words, and **Forget** removes it. A day
+page is read only for you, never for guests or friends.
 
 Day pages need a **Claude or ChatGPT key** (see [Companions and brains](02-companions-and-brains.md)). Without
 one, your companion still remembers what you tell it; it just doesn't write day pages or dream.
@@ -49,15 +51,16 @@ conversations and tidies the memory. It fixes notes that turned out wrong, merge
 notes sink, and keeps one short page per person.
 
 1. Add a Claude or ChatGPT key in **Settings → Brains & cost → AI providers**.
-2. Open **Settings → Brains & cost → Dreaming**, check it's on, and pick **Who dreams** (Automatic is fine).
-3. Press **Dream now** to try it straight away.
+2. Open **Settings → Memory → Dreaming**, check it's on, and pick **Who dreams** (Automatic is fine).
+3. Press **Dream now** to try it straight away. Today's **Memory overnight** card has **Dream now** too, and shows
+   the next dream and how the last one went.
 
 From your phone, Telegram or your Discord DM, say "run a dream" or "did the dream work?". A dream costs a few
 cents a night at most, from that companion's budget.
 
 ## Clean-up
 
-1. Open **Memory → Clean-up**.
+1. Open **Settings → Memory → Clean-up**.
 2. Read the suggestions: each note says why (duplicate, out of date…).
 3. Tick the ones to drop and press **Forget selected**.
 
@@ -71,9 +74,10 @@ With one, all your enrolled companions share one memory.
 Waifu AI runs a memory service for everyone, and every hub is already set to use it. All you do is sign in and
 enrol your companions:
 
-1. On the companion's Overview, the **Memory bank** card has **Guided setup**. Or: ☰ → **Main Identity** →
-   **Sign in with Internet Identity**.
-2. Press **Enroll** next to each companion.
+1. On the companion's Overview, the **Memory bank** card has **Guided setup**. Or open **Settings → You &
+   account** and press **Sign in with Internet Identity**.
+2. Press **Enroll** on each companion's **Memory** tab (or next to it under **Settings → You & account → Memory
+   members**).
 3. If it offers to move the notes kept on this PC into the bank, say yes.
 
 Enrolling is one click: you invite the companion with your sign-in, and it accepts with its own key.

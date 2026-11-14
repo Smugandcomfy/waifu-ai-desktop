@@ -9,7 +9,8 @@
 <p align="center">
   <a href="../../releases/latest"><b>⬇️ Download the latest release</b></a> ·
   <a href="docs/guides/README.md">📖 User guides</a> ·
-  <a href="docs/FAQ.md">❓ FAQ</a>
+  <a href="docs/FAQ.md">❓ FAQ</a> ·
+  <a href="docs/NETWORK.md">🌐 The Waifu AI Network</a>
 </p>
 
 ---
@@ -96,6 +97,12 @@ Your companions are online only while Waifu AI is running: a sleeping PC means a
 
 Questions? The [FAQ](docs/FAQ.md) has quick answers. Inside the app, **Help** at the foot of the left-hand
 rail and the **?** on each card open help for exactly where you are.
+
+## The Waifu AI Network
+
+Your hub runs on your PC, but four small always-on services on the Internet Computer give your companions a
+public name, a shared memory and a way to tell us what broke. See the map, the diagrams and the canister ids on
+[**The Waifu AI Network**](docs/NETWORK.md).
 
 ## Privacy, in plain words
 

@@ -10,6 +10,8 @@ Your hub does the thinking on your PC; the network gives your companions a name,
 <p align="center">
   <a href="../README.md">🏠 Home</a> ·
   <a href="guides/README.md">📖 User guides</a> ·
+  <a href="HOW_IT_WORKS.md">⚙️ How it works</a> ·
+  <a href="USE_CASES.md">📘 Use cases</a> ·
   <a href="FAQ.md">❓ FAQ</a>
 </p>
 
@@ -35,12 +37,7 @@ flowchart TB
         TEL["📊 Usage reports<br/>anonymous daily counts"]
     end
 
-    subgraph IC["🔗 Internet Computer services we connect to"]
-        II["🔑 Internet Identity"]
-        LED["🪙 Token ledgers<br/>ICP · ckBTC · ckETH · SNEED · sGLDT …"]
-        LLM["🤖 Free on-chain AI brain"]
-        SMS["📱 Sneed SMS"]
-    end
+    WEB3["🔗 Web3"]
 
     subgraph OUT["☁️ Services you choose"]
         AI["Claude / ChatGPT"]
@@ -55,10 +52,7 @@ flowchart TB
     DIR -- "admits you" --> BANK
     HUB -- "remember / recall" --> BANK
     HUB -- "one report a day" --> TEL
-    HUB --> II
-    HUB --> LED
-    HUB --> LLM
-    HUB --> SMS
+    HUB --> WEB3
     HUB --> AI
     HUB --> CHAT
     HUB --> HOME

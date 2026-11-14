@@ -1,7 +1,11 @@
 # 04 · Memory, dreams and reminders
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 4 of 7 · <a href="../../README.md">Home</a></sub>
+
 Your companions remember what you tell them and what you do together. It works from day one with nothing to
 set up. 🌙
+
+![A companion's Memory tab: Notes & facts, with Why?, Correct and Forget](../../assets/screenshots/memory.png)
 
 ## How memory works
 
@@ -116,3 +120,7 @@ Good to know:
 - A reminder your Hologram Companion keeps on the device still rings there after **Cancel** in the app, and the
   cancel says so. Delete it on the device's **Alarms & reminders** too.
 - Location reminders ("when I get to the office") aren't possible yet.
+
+---
+
+<p align="center"><a href="03-talking-everywhere.md">← Talking everywhere</a> · <a href="README.md">All guides</a> · <a href="05-your-hologram-companion.md">Your Hologram Companion →</a></p>

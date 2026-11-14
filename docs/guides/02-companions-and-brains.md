@@ -1,6 +1,10 @@
 # 02 · Companions and brains
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 2 of 7 · <a href="../../README.md">Home</a></sub>
+
 Make as many companions as you like, and give each one the brain that suits it. 🧠
+
+![Settings → Brains & cost: add a Claude or ChatGPT key, with a guided setup](../../assets/screenshots/brains.png)
 
 ## Your companions
 
@@ -16,6 +20,8 @@ can message it.
 Your own companions are **peers**: they can talk to each other and share your memory bank.
 
 ### A companion's page
+
+![A companion's Overview: its brain, phone, autonomy, device and memory at a glance](../../assets/screenshots/companion-overview.png)
 
 Click a companion in the left column. Its tabs:
 
@@ -158,3 +164,7 @@ switch back.
 - **Meaning search:** with an OpenAI key, memory search ranks by meaning, not just matching words.
 - **On Discord:** send `/model haiku` (or `opus`, `sonnet`, `gpt`, `local`, `onchain`) to switch the brain there
   for two hours; `/model auto` goes back.
+
+---
+
+<p align="center"><a href="01-getting-started.md">← Getting started</a> · <a href="README.md">All guides</a> · <a href="03-talking-everywhere.md">Talking everywhere →</a></p>

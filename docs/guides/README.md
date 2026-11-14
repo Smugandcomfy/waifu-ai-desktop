@@ -13,7 +13,7 @@ need them.
 | 06 | [Money and safety](06-money-and-safety.md) | Before anything important: passphrase, backups, the wallet |
 | 07 | [Updates and troubleshooting](07-updates-and-troubleshooting.md) | A new version is out, or something is off |
 
-Short questions? Try the [FAQ](../FAQ.md). Ideas for your setup? See the ten [use cases](../USE_CASES.md). Back to the [main page](../../README.md).
+Short questions? Try the [FAQ](../FAQ.md). Ideas for your setup? See the eleven [use cases](../USE_CASES.md). Back to the [main page](../../README.md).
 
 ## A few words you'll see
 

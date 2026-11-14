@@ -113,7 +113,7 @@ the **?** on each card open help for exactly where you are.
 
 ## Use cases
 
-From one Hologram Companion on a desk to a 50-bot creator network: ten case studies with diagrams, budgets and the
+From one Hologram Companion on a desk to a 50-bot creator network: eleven case studies with diagrams, budgets and the
 limits to plan around. See [**Use cases**](docs/USE_CASES.md).
 
 ## The Waifu AI Network

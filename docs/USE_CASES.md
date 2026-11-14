@@ -4,7 +4,7 @@
 
 <h1 align="center">📘 Waifu AI Desktop: Use Cases</h1>
 
-<p align="center"><b>Ten case studies, from one companion on a desk to fifty bots across a team.<br>
+<p align="center"><b>Eleven case studies, from one companion on a desk to fifty bots across a team.<br>
 How people set up Waifu AI Desktop, what each setup costs, and where the limits are.</b></p>
 
 <p align="center">
@@ -20,13 +20,13 @@ How people set up Waifu AI Desktop, what each setup costs, and where the limits 
 
 Waifu AI Desktop is one app with many shapes. The same building blocks make a quiet desk buddy, a
 private notebook that never touches the cloud, or a network of bots run by a whole team. This paper walks through
-**ten case studies** in three groups:
+**eleven case studies** in three groups:
 
 | Group | Case studies | Size |
 |---|---|---|
 | 🌱 **Simple** | 1 to 4 | 1 or 2 companions, set up in an evening |
 | ⚙️ **Advanced** | 5 to 7 | 3 to 4 identities, 1 to 2 Hologram Companions, automation and approvals |
-| 🏢 **Enterprise** | 8 to 10 | 14 to 50 identities, several hubs, a team of people |
+| 🏢 **Enterprise** | 8 to 11 | 11 to 50 identities, one big hub or several hubs |
 
 Every case study uses features that exist in **Waifu AI Desktop v0.99.14**. Where a setup reaches a limit of the
 app, we say so and show how the case study works around it. The people and businesses are illustrations, not
@@ -53,17 +53,17 @@ customers.
 ```mermaid
 xychart-beta
     title "Identities per case study"
-    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     y-axis "Identities" 0 --> 55
-    bar [1, 2, 1, 2, 3, 4, 3, 50, 16, 14]
+    bar [1, 2, 1, 2, 3, 4, 3, 50, 16, 14, 11]
 ```
 
 ```mermaid
 xychart-beta
     title "Monthly AI budgets set, in US dollars (the ceiling, not the bill)"
-    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
     y-axis "USD per month" 0 --> 250
-    bar [0, 20, 0, 20, 45, 45, 50, 220, 160, 130]
+    bar [0, 20, 0, 20, 45, 45, 50, 220, 160, 130, 120]
 ```
 
 A monthly budget is a **ceiling** you set per identity. When an identity reaches it, the free brain answers until
@@ -88,6 +88,7 @@ quadrantChart
     "Case 8 Influencer": [0.95, 0.7]
     "Case 9 Retailer": [0.75, 0.45]
     "Case 10 Esports org": [0.7, 0.4]
+    "Case 11 Remote network": [0.6, 0.55]
 ```
 
 ---
@@ -508,25 +509,84 @@ independent stores, and it is in early access.
 
 **Ceiling:** $130 a month in budgets.
 
+## Case study 11: The remote network (10 sites, one server)
+
+**Who:** Kai runs ten small sites: pop-up shops, studios and a couple of offices, each on its own Wi-Fi. Every site
+has one Hologram Companion. Kai wants **one hub on one always-on server** and to run the whole network from a single
+**orchestrator** while on the move.
+
+**Setup:** one hub on an always-on Windows server. Each site connects its Hologram Companion back to the server,
+either through a small **bridge box** on the site's Wi-Fi or by putting every site on one **private network** (such
+as Tailscale). One AI identity, **"Control"**, is the orchestrator.
+
+```mermaid
+flowchart TB
+    KAI(["🙋 Kai, on the move"]) -- "Telegram: jobs" --> CTRL
+    KAI -. "Discord DM: only while<br/>Unsafe mode is on" .-> CTRL
+    subgraph SRV["🖥️ Always-on server"]
+        HUB["💖 Hub"]
+        CTRL["🎼 'Control'<br/>orchestrator<br/>Claude · $40/mo"]
+        HUB --- CTRL
+    end
+    subgraph NET["🔐 Private network or bridge boxes"]
+        S1["✨ Site 1"]
+        S2["✨ Site 2"]
+        S3["✨ Site 3"]
+        S4["✨ Site 4"]
+        S5["✨ Site 5"]
+        S6["✨ Site 6"]
+        S7["✨ Site 7"]
+        S8["✨ Site 8"]
+        S9["✨ Site 9"]
+        S10["✨ Site 10"]
+    end
+    HUB <--> NET
+    CTRL -- "speak · status · ask · pause" --> NET
+```
+
+| | Control | 10 site companions |
+|---|---|---|
+| Kind | AI identity | Hologram Companions, one per site |
+| Brain | Claude, $40/mo | ChatGPT, $8/mo each |
+| Role | Orchestrator for the whole network | The voice of each site, with its own short character prompt |
+| Quiet hours | n/a | Each follows its site's hours |
+| Control channel | Telegram (or Discord with Unsafe mode on) | n/a |
+
+**A day:** from Telegram, Kai sends Control: "Tell every site we close at 4 today for the holiday." Control runs one
+job and each site's companion says the line (up to 300 characters, never in its quiet hours). "Which sites are
+quiet?" gets a status answer. "Pause site 7" stops that companion until Kai resumes it in the app.
+
+**Running it from Discord:** the orchestrator takes jobs from Kai's own Discord DM **only while Unsafe mode is on**.
+Unsafe mode is switched on in the app, turns itself off after at most 7 days, and while it's on, everything Kai asks
+from that DM runs without confirmation, money included. That's why **Telegram** is the everyday control channel here.
+
+**What it can't do yet:**
+- **Change a site companion's settings from afar.** Prompts, quiet hours and the rest are set in the app on the server.
+- **Take ordinary Discord jobs without Unsafe mode.** A safer Discord route, limited to announcements, status and
+  pausing, is a requested feature; watch the [Releases](https://github.com/Smugandcomfy/waifu-ai-desktop/releases) page.
+
+**Ceiling:** $120 a month (Control $40 + 10 × $8). The server must stay on: when the hub stops, all ten sites go
+quiet.
+
 ---
 
 # 🔍 Analysis
 
-## What the ten case studies use
+## What the eleven case studies use
 
-| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Hologram Companions | 1 | 1 | | | 1 | 2 | 1 | | 16 | 2 |
-| AI identities | | 1 | 1 | 2 | 2 | 2 | 2 | 50 | | 12 |
-| Hubs | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 1 | 2 |
-| Orchestrator | | | | | ✅ | ✅ | ✅ | ✅ ×3 | ✅ | ✅ ×2 |
-| Paid brain | | ✅ | | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Free / local brain | ✅ | | ✅ | | ✅ | ✅ | ✅ | ✅ | | ✅ |
-| Discord bots | | 1 | | | | 2 | | 47 | | 9 |
-| Telegram / phone | | | | ✅ | ✅ | | | | | |
-| Memory bank | | | | ✅ | | | ✅ | ✅ | | |
-| Connected apps | | | | | ✅ | | ✅ | | | |
-| Unsafe mode | | | | | | ✅ | | | | |
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Hologram Companions | 1 | 1 | | | 1 | 2 | 1 | | 16 | 2 | 10 |
+| AI identities | | 1 | 1 | 2 | 2 | 2 | 2 | 50 | | 12 | 1 |
+| Hubs | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 1 | 2 | 1 |
+| Orchestrator | | | | | ✅ | ✅ | ✅ | ✅ ×3 | ✅ | ✅ ×2 | ✅ |
+| Paid brain | | ✅ | | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Free / local brain | ✅ | | ✅ | | ✅ | ✅ | ✅ | ✅ | | ✅ | |
+| Discord bots | | 1 | | | | 2 | | 47 | | 9 | |
+| Telegram / phone | | | | ✅ | ✅ | | | | | | ✅ |
+| Memory bank | | | | ✅ | | | ✅ | ✅ | | | |
+| Connected apps | | | | | ✅ | | ✅ | | | | |
+| Unsafe mode | | | | | | ✅ | | | | | optional |
 
 ## Patterns
 
@@ -581,7 +641,7 @@ flowchart TD
     Q1 -- no --> Q3{"Must everything<br/>stay on your PC?"}
     Q2 -- "no" --> C1["Case study 1 or 2"]
     Q2 -- "yes, one building" --> C6["Case study 6"]
-    Q2 -- "yes, several sites" --> C9["Case study 9"]
+    Q2 -- "yes, several sites" --> C9["Case study 9 or 11"]
     Q3 -- yes --> C3["Case study 3"]
     Q3 -- no --> Q4{"How many companions?"}
     Q4 -- "1 to 3" --> Q5{"Automation or<br/>your own scripts?"}

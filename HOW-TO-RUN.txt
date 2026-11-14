@@ -1,37 +1,31 @@
-Waifu AI — how to run
-==========================
+Waifu AI Desktop - how to run
+=============================
 
-1. Keep this whole folder somewhere you'll leave it (e.g. move it out of
-   Downloads to your Documents). The app runs from here.
+1. Download waifu-ai-vX.Y.Z-win-x64.zip from the Releases page and unzip it
+   into a folder you'll keep (for example Documents\Waifu AI, not
+   Downloads). The app runs from this folder. Nothing else to install.
 
-2. Nothing to install: this folder carries its own Node.js 24 (the "node"
-   folder). Only if your copy has no "node" folder do you need Node.js 24 LTS
-   from https://nodejs.org.
-
-3. Double-click  "Waifu AI"  (the file named Waifu AI.vbs).
-   The app opens in its own window. That's it.
-   - If Windows shows a blue "Windows protected your PC" box the first time,
-     click "More info" -> "Run anyway". (It appears because the file came from
-     the internet; you can also right-click the file -> Properties -> tick
-     "Unblock" -> OK to stop it appearing.)
-   - If nothing happens, a message box will tell you what went wrong and point
-     to the log at %APPDATA%\Code27Helper\helper.log.
+2. Double-click "Waifu AI.exe". The app opens.
+   - If Windows shows a blue "Windows protected your PC" box the first
+     time, click "More info" -> "Run anyway". The app isn't code-signed
+     yet, so Windows asks.
+   - The first time, accept the Terms of Use, then press
+     "Create your first identity".
 
 To quit:
-   Use "Quit" inside the app, OR double-click  "Quit Waifu AI"  in this folder.
-   Just closing the app window leaves it running in the background — use Quit
-   before you move or update the folder.
+   Use More -> Quit at the foot of the app's left-hand rail. Your
+   companions are offline until you start it again.
 
 To make a desktop icon:
-   - Right-click "Waifu AI" -> Send to -> Desktop (create shortcut).
-   - (Optional) Right-click the new desktop shortcut -> Properties ->
-     Change Icon -> Browse to codie.ico in this folder.
+   Right-click "Waifu AI.exe" -> Send to -> Desktop (create shortcut).
 
-Your Codies, keys and settings are stored separately, under
-%APPDATA%\Code27Helper, so they stay safe if you move or replace this folder.
-Back them up from Settings -> Security & backups.
+Your companions, keys and settings are stored separately, in Waifu AI's
+data folder under %APPDATA%, so they stay safe if you move or replace this
+folder. Back them up from Settings -> Security.
 
-To update later: unzip the new version into its own folder next to this one,
-Quit Waifu AI, and start it from the new folder. Your data under
-%APPDATA%\Code27Helper is untouched; keep the old folder until the new one
-works. (Settings -> Updates can check for and download new versions.)
+To update later: Settings -> Updates -> Download, unzip the new version
+into its own folder, Quit Waifu AI, and start it from the new folder. Keep
+the old folder until the new one works.
+
+Guides and FAQ: see README.md and the docs folder on the project's
+GitHub page.

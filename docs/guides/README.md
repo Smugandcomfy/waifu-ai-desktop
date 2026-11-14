@@ -15,6 +15,7 @@ need them.
 | 🛡️ | 06 | [Money and safety](06-money-and-safety.md) | Before anything important: passphrase, backups, the wallet |
 | 🔧 | 07 | [Updates and troubleshooting](07-updates-and-troubleshooting.md) | A new version is out, or something is off |
 
+All seven guides on one page, with screenshots: the [Waifu AI Handbook](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
 Short questions? Try the [FAQ](../FAQ.md). The big picture? [How it works](../HOW_IT_WORKS.md). Ideas for your setup? See the eleven [use cases](../USE_CASES.md). Back to the [main page](../../README.md).
 
 ## A few words you'll see

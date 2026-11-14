@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="../README.md">🏠 Home</a> ·
+  <a href="https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ">📗 Handbook</a> ·
   <a href="guides/README.md">📖 User guides</a> ·
   <a href="USE_CASES.md">📘 Use cases</a> ·
   <a href="NETWORK.md">🌐 Network</a> ·
@@ -43,6 +44,8 @@ There is only one place to check, so a new feature can't forget a check. Every w
 shows who asked, what ran and how it ended.
 
 ## Who may do what
+
+> 📗 The [Handbook](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ) has an interactive version: switch situations and watch the cells change.
 
 <p align="center"><img src="../assets/diagrams/permissions.svg" alt="Who may do what on a normal day" width="100%"></p>
 

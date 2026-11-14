@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="../../releases/latest"><b>⬇️ Download for Windows</b></a> ·
+  <a href="https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ"><b>📗 Handbook</b></a> ·
   <a href="docs/guides/README.md">📖 User guides</a> ·
   <a href="docs/HOW_IT_WORKS.md">⚙️ How it works</a> ·
   <a href="docs/USE_CASES.md">📘 Use cases</a> ·
@@ -124,6 +125,7 @@ Your companions are online only while Waifu AI runs: a sleeping PC means a sleep
 | 🛡️ | [06 · Money and safety](docs/guides/06-money-and-safety.md) | Passphrase, backups, the wallet, approvals, limits |
 | 🔧 | [07 · Updates and troubleshooting](docs/guides/07-updates-and-troubleshooting.md) | A new version is out, or something is off |
 
+Prefer one page with charts and screenshots? Read the [**Waifu AI Handbook**](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
 Inside the app, **Help** in the **☰** menu and the **?** on each card open help for exactly where you are.
 From one Hologram Companion on a desk to a 50-bot creator network: eleven [**use cases**](docs/USE_CASES.md)
 with diagrams, budgets and the limits to plan around.

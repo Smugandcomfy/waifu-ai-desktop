@@ -1,7 +1,11 @@
 # 05 · Your Hologram Companion
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 5 of 7 · <a href="../../README.md">Home</a></sub>
+
 Give your companion a body. A Hologram Companion speaks its replies out loud, rings its own alarms and can
 change the room's lights. ✨
+
+![The Device tab: a practice device, a real one, or one through a relay box](../../assets/screenshots/device.png)
 
 No device yet? Start with the **practice (mock) device**: everything works the same, and spoken replies show as
 text in the app. Switch to the real thing any time.
@@ -88,3 +92,7 @@ Ask from your phone or your Discord DM, in your own words:
 
 On another network (a holiday home, the office)? Use a private network such as Tailscale or WireGuard that gives
 the device an address your PC can reach, and put that address in the Device card.
+
+---
+
+<p align="center"><a href="04-memory-and-dreams.md">← Memory and dreams</a> · <a href="README.md">All guides</a> · <a href="06-money-and-safety.md">Money and safety →</a></p>

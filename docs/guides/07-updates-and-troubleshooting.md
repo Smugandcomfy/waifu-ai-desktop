@@ -1,6 +1,10 @@
 # 07 · Updates and troubleshooting
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 7 of 7 · <a href="../../README.md">Home</a></sub>
+
 Staying up to date, stopping the app, and fixing the usual hiccups. 🔧
+
+![Today, in the Kawaii Night theme: Waiting for you is the first place to look](../../assets/screenshots/today-night.png)
 
 ## Updating
 
@@ -109,3 +113,7 @@ a copy. A file that protects you (keys, contacts, approvals) stays closed until 
    settings summary, recent log lines) with keys and tokens removed. It does include your companions' names.
 2. Open an [issue](../../../../issues) and paste it in. Never post keys, passphrases, API keys, bot tokens or
    backup files.
+
+---
+
+<p align="center"><a href="06-money-and-safety.md">← Money and safety</a> · <a href="README.md">All guides</a> · <a href="../FAQ.md">FAQ →</a></p>

@@ -10,6 +10,7 @@ How people set up Waifu AI Desktop, what each setup costs, and where the limits 
 <p align="center">
   <a href="../README.md">🏠 Home</a> ·
   <a href="guides/README.md">📖 User guides</a> ·
+  <a href="HOW_IT_WORKS.md">⚙️ How it works</a> ·
   <a href="FAQ.md">❓ FAQ</a> ·
   <a href="NETWORK.md">🌐 The Waifu AI Network</a>
 </p>
@@ -557,7 +558,8 @@ job and each site's companion says the line (up to 300 characters, never in its 
 quiet?" gets a status answer. "Pause site 7" stops that companion until Kai resumes it in the app.
 
 **Running it from Discord:** the orchestrator takes jobs from Kai's own Discord DM **only while Unsafe mode is on**.
-Unsafe mode is switched on in the app, turns itself off after at most 7 days, and while it's on, everything Kai asks
+Unsafe mode is switched on in the app, turns itself off after the time Kai picks (1 hour to 7 days) or stays on
+until he turns it off, and while it's on, everything Kai asks
 from that DM runs without confirmation, money included. That's why **Telegram** is the everyday control channel here.
 
 **What it can't do yet:**
@@ -649,7 +651,7 @@ flowchart TD
     Q5 -- yes --> C57["Case study 5 or 7"]
     Q4 -- "10 or more" --> Q6{"Several people<br/>running it?"}
     Q6 -- yes --> C810["Case study 8 or 10"]
-    Q6 -- no --> C9b["Start with one hub and<br/>grow to more"]
+    Q6 -- no --> C9b["Case study 9 or 11:<br/>one hub, grow to more"]
 ```
 
 ---

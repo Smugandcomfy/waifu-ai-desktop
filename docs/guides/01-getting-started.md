@@ -1,6 +1,10 @@
 # 01 · Getting started
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 1 of 7 · <a href="../../README.md">Home</a></sub>
+
 From download to your first "hello" in about five minutes. ✨
+
+![The new-companion wizard: pick a type, name it, protect its key](../../assets/screenshots/wizard.png)
 
 ## You'll need
 
@@ -28,6 +32,8 @@ There's no installer. Inside the folder you'll find `Waifu AI.exe` (the app), it
 **Desktop icon (optional):** right-click `Waifu AI.exe` → **Send to → Desktop (create shortcut)**.
 
 ## 3. Find your way around
+
+![Today: the Start here checklist, what waits for you, and what's coming up](../../assets/screenshots/today.png)
 
 The column on the left has the main places, with your companions in the middle:
 
@@ -100,3 +106,7 @@ Do it again each time you make a new companion. More in [Money and safety](06-mo
 
 **Make it yours:** **Settings → Appearance → Theme** has six looks: Kawaii (the default), Kawaii Night,
 Daylight, Sandstone, Slate and Midnight.
+
+---
+
+<p align="center"><a href="../../README.md">← Main page</a> · <a href="README.md">All guides</a> · <a href="02-companions-and-brains.md">Companions and brains →</a></p>

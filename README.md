@@ -1,62 +1,152 @@
-# Waifu AI
+<p align="center">
+  <img src="assets/waifu-ai-hero.png" alt="Eight stylish anime-style AI companions posing together: the Waifu AI Desktop crew" width="100%">
+</p>
 
-A hub for your AI companions and hologram Codies that runs on your own Windows PC. Each
-companion gets its own identity on the Internet Computer, with a wallet, messages, a shared
-memory and a Discord bot, and they work together for you. No account and no cloud: the hub
-listens on your own machine and opens in its own window.
+<h1 align="center">Waifu AI Desktop</h1>
 
-What it does today (0.98):
+<p align="center"><b>Your AI companions, living on your own PC. They remember you, they work together, and they only ever spend what you allow.</b></p>
 
-- **Companions that remember.** Ask "what did we do yesterday?" and get a real answer: every
-  day gets its own page of memories, tidied every night.
-- **Your Codie on Discord.** The hologram herself answers as your companion, in your server
-  and in DMs, and what she says out loud is what you read.
-- **Reminders and timers** you can type, text or say.
-- **Messages, wallet and shopping** for each identity, with your approval for anything that
-  spends or sends.
+<p align="center">
+  <a href="../../releases/latest"><b>⬇️ Download the latest release</b></a> ·
+  <a href="docs/guides/README.md">📖 User guides</a> ·
+  <a href="docs/FAQ.md">❓ FAQ</a>
+</p>
 
-This repository holds the **ready-to-run Windows build only**. The source is private.
+---
 
-## Run it (Windows)
+## What is Waifu AI Desktop?
 
-1. **Download** the latest `waifu-ai-vX.Y.Z-win-x64.zip` from
-   [**Releases**](../../releases/latest).
-2. **Unzip it** into a folder you'll keep (for example in Documents, not Downloads).
-3. **Double-click `Waifu AI.vbs`.** The hub starts with no console window and opens in its own
-   window. Nothing else to install: the zip carries its own Node.js.
+Waifu AI Desktop is a little **hub** that runs on your Windows PC. In it you make **companions**: AIs with
+their own name, their own memory, their own personality and their own secret key. Each one is a real
+identity on the Internet Computer, so it can send and receive messages, hold tokens and be found by name.
 
-If Windows shows a blue "Windows protected your PC" box the first time, click
-**More info → Run anyway**. It appears because the file came from the internet. To stop it,
-right-click the file → **Properties** → tick **Unblock** → **OK**.
+Talk to them in the app, on Discord, on Telegram or by message from your phone. Give one a body: a
+**Hologram Companion** on your Wi-Fi speaks its replies out loud. Your companions talk to each other, share
+one memory, set your reminders, and ask before they do anything that sends, spends or changes things.
 
-To quit, use **Quit** in the app, or double-click `Quit Waifu AI.vbs`. Closing the window
-leaves the hub running in the background.
+No account to sign up for, no subscription, and no cloud server holding your stuff. The hub runs on your PC,
+and the window you see is its page.
 
-Full details are in [`HOW-TO-RUN.txt`](HOW-TO-RUN.txt).
+## Highlights
 
-### Desktop icon (optional)
+- 💬 **Chat anywhere.** The app's own Chat, a Discord bot of its own, a Telegram bot, or Sneed SMS messages
+  from your phone.
+- 🧠 **Companions that remember.** "Remember that my sister's name is Ana." Every evening a short **day page**
+  sums up the day, so "what did we do yesterday?" gets a real answer.
+- 🌙 **Dreams.** Once a day a companion rereads the day and tidies its memory: it fixes wrong notes and merges
+  duplicates.
+- 🤝 **A team, not a single bot.** Your companions message each other, share one optional **memory bank**,
+  and pick up where another left off.
+- ⏰ **Reminders and timers** in your own words: "remind me at 7:30 to call mum", "in 20 minutes".
+- ✨ **A Hologram Companion** can speak its answers, ring its own alarms and change the room's lights.
+- 🪙 **A wallet** for each companion (ICP, ckBTC, ckETH, SNEED, sGLDT and more), plus voting with a neuron
+  you share. Optional, in Advanced mode.
+- ✅ **You stay in charge.** Anything that sends, spends or changes things waits for your OK in the app or
+  on your phone. Money asked for by a connected app always waits.
+- 🧩 **Pick the brain.** A free on-chain AI out of the box, your own Claude or ChatGPT key with a monthly
+  budget per companion, or a model on your own PC.
+- 🎀 **Six themes**, from Kawaii (the default) and Kawaii Night to calm Daylight, Sandstone, Slate and
+  Midnight.
 
-Right-click `Waifu AI.vbs` → **Send to → Desktop (create shortcut)**. For the app's icon,
-right-click the shortcut → **Properties → Change Icon** → browse to `codie.ico` in the folder.
+## Get started in 5 minutes
+
+1. **Download** `waifu-ai-vX.Y.Z-win-x64.zip` from [**Releases**](../../releases/latest).
+2. **Unzip it** into a folder you'll keep, for example in Documents (not Downloads).
+3. **Double-click `Waifu AI.exe`.** Nothing else to install and no installer: the app runs from its folder.
+4. **Accept the Terms of Use.** They are shown once, the first time.
+5. **Make your first companion.** Today shows **Create your first identity**. The short wizard asks for:
+   - **Type**: a Hologram Companion (works without the device too, as a practice "mock" one) or an AI
+     identity (no device at all);
+   - **Name**: what you'll call it, like "Aria";
+   - **Protect the key**: set a passphrase (recommended) and write it down somewhere safe;
+   - **Public name**: optional; press **Finish without a name** to skip it.
+6. **Say hello** in **Conversations → Chat**: "Hi! What can you do?"
+
+The free on-chain brain answers straight away, no key needed. Add a Claude or ChatGPT key later for smarter
+answers, day pages and dreams.
+
+> 🛡️ **"Windows protected your PC"?** The app isn't code-signed yet, so Windows SmartScreen may ask the
+> first time. Click **More info → Run anyway**.
+
+Want the full walkthrough? See [Getting started](docs/guides/01-getting-started.md).
+
+## What you need
+
+- A **Windows PC, 64-bit (x64)**, with an internet connection. The unzipped app is about 100 MB.
+- That's all to start. Optional extras, only if you want them:
+  - an **Anthropic (Claude)** or **OpenAI (ChatGPT)** API key for a smarter brain;
+  - a **Discord** account and a server you own, for your companion's own bot;
+  - **Telegram** on your phone;
+  - an **Internet Identity** (free) to claim your companions and use the shared memory bank;
+  - a **Hologram Companion** on the same Wi-Fi as your PC.
+
+Your companions are online only while Waifu AI is running: a sleeping PC means a sleeping bot.
+
+## Guides
+
+| Guide | What's in it |
+|---|---|
+| [01 · Getting started](docs/guides/01-getting-started.md) | Download, first run, your first companion |
+| [02 · Companions and brains](docs/guides/02-companions-and-brains.md) | Identities, choosing a brain, costs and budgets |
+| [03 · Talking everywhere](docs/guides/03-talking-everywhere.md) | Chat, Discord, Telegram, your phone, approvals |
+| [04 · Memory and dreams](docs/guides/04-memory-and-dreams.md) | Notes, day pages, dreaming, the memory bank, reminders |
+| [05 · Your Hologram Companion](docs/guides/05-your-hologram-companion.md) | Connecting the device, voice, lights, quiet hours |
+| [06 · Money and safety](docs/guides/06-money-and-safety.md) | Passphrase, backups, the wallet, approvals, limits |
+| [07 · Updates and troubleshooting](docs/guides/07-updates-and-troubleshooting.md) | Updating, quitting, common problems |
+
+Questions? The [FAQ](docs/FAQ.md) has quick answers. Inside the app, **Help** at the foot of the left-hand
+rail and the **?** on each card open help for exactly where you are.
+
+## Privacy, in plain words
+
+**What stays on your PC:** your companions' keys, your passphrase, your API keys and bot tokens, your
+conversations, the notes kept on this PC, and your contacts. On Windows these are encrypted even before you
+set a passphrase; a passphrase locks them tighter.
+
+**What leaves your PC, and only when you use it:**
+
+- a message goes through the service that carries it (Discord, Telegram or Sneed SMS);
+- a reply written by Claude or ChatGPT goes to that provider, with your key;
+- memories you put in the shared memory bank are stored there, readable only by you and your own enrolled
+  companions.
+
+⚠️ Sneed SMS messages are **not encrypted**. Treat them like postcards: no passwords, no secrets.
+
+**The anonymous daily usage report.** To fix bugs, the app sends a small report once a day with **counts
+only**: the app version and system type, which features and kinds of brain are used, roughly how many
+companions you have, how often actions succeed or fail, error codes, timing ranges and crash signatures. It
+**never** includes your messages, memories, contacts, names, keys, addresses, Discord or phone ids, or anything
+you type. It carries no permanent id, just a random number that changes every month. You can read the last
+report, exactly as sent, in **Settings → Updates**. The details are in the Terms of Use (section 5), shown in
+the app.
 
 ## Updating
 
-A running hub checks this page for new versions: **Settings → Updates → Check now** shows
-"Version X.Y.Z is available". To update by hand, unzip the new release into its own folder,
-quit Waifu AI, and start it from the new folder. Keep the old folder until the new one is
-running well.
+Waifu AI checks for new versions once a day (it sends nothing about you, and you can untick the check in
+**Settings → Updates**).
 
-Each release lists the zip's `sha256` so the hub (and you) can check the download.
+1. When **Settings → Updates** offers a new version, press **Download**. It is checked before it is kept.
+2. Unzip it into a **new** folder.
+3. Quit Waifu AI (**More → Quit** at the foot of the rail).
+4. Start `Waifu AI.exe` from the new folder.
 
-## Your data
+Your companions, keys and settings live apart from the app folder, so nothing is lost. Keep the old folder
+until the new one has run once. Each release lists the zip's `sha256` so you can check the download yourself.
 
-Your companions, keys and settings live in your Windows user's app-data folder (`%APPDATA%`),
-separate from the app folder, so they're kept when you move, update or replace it. Back them up from
-**Settings → Security** (Back up keys, or Export hub).
+## Your data and backups
 
-## Version
+Everything your companions are lives in Waifu AI's data folder in your Windows profile (under `%APPDATA%`),
+not in the app folder. That's why updating or moving the app is safe.
 
-See [`VERSION`](VERSION) and the [Releases](../../releases) page.
+But a companion **is** its key: lose the key without a backup and that companion is gone for good. So:
+
+1. **Set a passphrase**: Settings → Security → Keys → **Set a passphrase**. A forgotten passphrase can't be
+   recovered, so also...
+2. **Back up**: **Back up keys** (just the companions), or **Export hub** (everything: companions, settings,
+   contacts, brains, reminders), which is also how you move to a new PC.
+3. **Turn on scheduled backups**, daily or weekly, and point them at a drive that isn't this PC's disk.
+
+More in [Money and safety](docs/guides/06-money-and-safety.md).
 
 ## License
 
@@ -68,3 +158,14 @@ Palace; bundled third-party open-source components keep their own licenses, list
 files does not grant any right to redistribute them.
 
 For licensing inquiries: smugandcomfy@gmail.com
+
+## Support and contact
+
+- **Something not working?** Check [Troubleshooting](docs/guides/07-updates-and-troubleshooting.md) and the
+  [FAQ](docs/FAQ.md) first.
+- **Still stuck?** Open an [issue](../../issues). **Settings → Security → Copy diagnostics** makes a short
+  report to paste in (keys and tokens are removed; it does include your companions' names, so trim those if you
+  like). Never post your keys, passphrase, API keys, bot tokens or backup files.
+- **What's new:** every version's notes are on the [Releases](../../releases) page.
+
+More is on the way. 💖

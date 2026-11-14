@@ -4,194 +4,187 @@
 
 <h1 align="center">Waifu AI Desktop</h1>
 
-<p align="center"><b>Your AI companions, living on your own PC. They remember you, they work together, and they only ever spend what you allow.</b></p>
+<p align="center"><b>Your AI companions, living on your own PC.<br>They remember you, they work together, and they only send, spend or change things when you say OK.</b></p>
 
 <p align="center">
-  <a href="../../releases/latest"><b>⬇️ Download the latest release</b></a> ·
+  <a href="../../releases/latest"><b>⬇️ Download for Windows</b></a> ·
   <a href="docs/guides/README.md">📖 User guides</a> ·
-  <a href="docs/FAQ.md">❓ FAQ</a> ·
-  <a href="docs/NETWORK.md">🌐 The Waifu AI Network</a> ·
-  <a href="docs/USE_CASES.md">📘 Use cases</a>
+  <a href="docs/HOW_IT_WORKS.md">⚙️ How it works</a> ·
+  <a href="docs/USE_CASES.md">📘 Use cases</a> ·
+  <a href="docs/NETWORK.md">🌐 Network</a> ·
+  <a href="docs/FAQ.md">❓ FAQ</a>
+</p>
+
+<p align="center">
+  <img src="assets/screenshots/chat.png" alt="A companion's Chat tab: brain chips above the message box, Read aloud, Dictate and Send" width="100%">
 </p>
 
 ---
 
-## What is Waifu AI Desktop?
+## At a glance
 
-Waifu AI Desktop is a little **hub** that runs on your Windows PC. In it you make **companions**: AIs with
-their own name, their own memory, their own personality and their own secret key. Each one is a real
-identity on the Internet Computer, so it can send and receive messages, hold tokens and be found by name.
+<table>
+<tr>
+<td width="25%" valign="top"><h3>🔑 It's yours</h3>Each companion <b>is</b> a key that lives only on your PC. No account, no subscription, no cloud server holding your stuff.</td>
+<td width="25%" valign="top"><h3>🧠 It remembers</h3>"Remember that my sister's name is Ana." Notes, a page for each day, and a nightly dream that tidies what it knows.</td>
+<td width="25%" valign="top"><h3>🤝 It's a team</h3>Companions message each other, can share one memory, and one of them can run small jobs across the rest.</td>
+<td width="25%" valign="top"><h3>✅ You decide</h3>Anything that sends, spends or changes things waits for your OK, in the app or from your phone.</td>
+</tr>
+</table>
 
-Talk to them in the app, on Discord, on Telegram or by message from your phone. Give one a body: a
-**Hologram Companion** on your Wi-Fi speaks its replies out loud. Your companions talk to each other, share
-one memory, set your reminders, and ask before they do anything that sends, spends or changes things.
-
-No account to sign up for, no subscription, and no cloud server holding your stuff. The hub runs on your PC,
-and the window you see is its page.
-
-## Highlights
-
-- 💬 **Chat anywhere.** The app's own Chat, a Discord bot of its own, a Telegram bot, or Sneed SMS messages
-  from your phone.
-- 🧠 **Companions that remember.** "Remember that my sister's name is Ana." Every evening a short **day page**
-  sums up the day, so "what did we do yesterday?" gets a real answer.
-- 🌙 **Dreams.** Once a day a companion rereads the day and tidies its memory: it fixes wrong notes and merges
-  duplicates.
-- 🤝 **A team, not a single bot.** Your companions message each other, share one optional **memory bank**,
-  and pick up where another left off.
-- 🎼 **A conductor for the team.** Make one companion the **orchestrator** and it runs small jobs across your
-  other companions ("ask the others whether the reminder went out, then tell me"), inside time, step and cost
-  limits you set.
-- 🎮 **Your Discord DM, your remote.** Unsafe mode (off by default, and it really does skip confirmations) lets
-  you drive the hub from your own Discord DM with no "are you sure?". Turn it off from anywhere, even by texting
-  `unsafe off`.
-- ⏰ **Reminders and timers** in your own words: "remind me at 7:30 to call mum", "in 20 minutes".
-- ✨ **A Hologram Companion** can speak its answers, ring its own alarms and change the room's lights.
-- 🪙 **A wallet** for each companion (ICP, ckBTC, ckETH, SNEED, sGLDT and more), plus voting with a neuron
-  you share. Optional, in Advanced mode.
-- ✅ **You stay in charge.** Anything that sends, spends or changes things waits for your OK in the app or
-  on your phone. Money asked for by a connected app always waits.
-- 🧩 **Pick the brain.** A free on-chain AI out of the box, your own Claude or ChatGPT key with a monthly
-  budget per companion, or a model on your own PC.
-- 🧭 **Everything in its place.** Your companions sit in the left column, each with its own Conversations and
-  Memory tabs, and Settings is nine tidy tabs. Long lists show a page at a time, and pages update without losing
-  what you're typing.
-- 🎀 **Six themes**, from Kawaii (the default) and Kawaii Night to calm Daylight, Sandstone, Slate and
-  Midnight.
+**Waifu AI Desktop** is a small **hub** that runs on your Windows PC. In it you make **companions**: AIs with
+their own name, memory, personality and key. Each one is a real identity on the Internet Computer, so it can
+message, hold tokens and be found by name. Talk to them in the app, on Discord, on Telegram or by text from your
+phone, or give one a body: a **Hologram Companion** on your Wi-Fi speaks its replies out loud.
 
 ## Get started in 5 minutes
 
-1. **Download** `waifu-ai-vX.Y.Z-win-x64.zip` from [**Releases**](../../releases/latest).
-2. **Unzip it** into a folder you'll keep, for example in Documents (not Downloads).
-3. **Double-click `Waifu AI.exe`.** Nothing else to install and no installer: the app runs from its folder.
-4. **Accept the Terms of Use.** They are shown once, the first time.
-5. **Make your first companion.** Today says **Welcome to Waifu AI**: press **Create your first identity**. The
-   short wizard asks for:
-   - **Type**: a Hologram Companion (works without the device too, as a practice "mock" one) or an AI
-     identity (no device at all);
-   - **Name**: what you'll call it, like "Aria";
-   - **Protect the key**: set a passphrase (recommended) and write it down somewhere safe;
-   - **Brain** (AI identity only): the free on-chain agent is fine to start;
-   - **Public name**: optional; press **Skip for now** to skip it.
-6. **Say hello.** Click your companion in the left column, open its **Conversations** tab (it opens on **Chat**)
-   and type "Hi! What can you do?"
+| Step | What to do |
+|---|---|
+| **1. Download** | `waifu-ai-vX.Y.Z-win-x64.zip` from [**Releases**](../../releases/latest). |
+| **2. Unzip** | Into a folder you'll keep, such as Documents (not Downloads). Nothing to install. |
+| **3. Start** | Double-click `Waifu AI.exe` and accept the Terms of Use. |
+| **4. Make a companion** | On Today, press **Create your first identity**: pick a type, a name and a passphrase. The free brain is fine. |
+| **5. Say hello** | Click it in the left column, open **Conversations → Chat**, and type "Hi! What can you do?" |
 
-The free on-chain brain answers straight away, no key needed. Add a Claude or ChatGPT key later for smarter
-answers, day pages and dreams.
+> 🛡️ **"Windows protected your PC"?** The app isn't code-signed yet. Click **More info → Run anyway**.
+> Full walkthrough: [Getting started](docs/guides/01-getting-started.md).
 
-> 🛡️ **"Windows protected your PC"?** The app isn't code-signed yet, so Windows SmartScreen may ask the
-> first time. Click **More info → Run anyway**.
+<table>
+<tr>
+<td width="50%"><img src="assets/screenshots/wizard.png" alt="The new-companion wizard"><br><sub><b>The wizard:</b> type, name, device, key protection.</sub></td>
+<td width="50%"><img src="assets/screenshots/today.png" alt="Today, with the Start here checklist"><br><sub><b>Today:</b> a Start here checklist, what waits for you, what's coming up.</sub></td>
+</tr>
+</table>
 
-Want the full walkthrough? See [Getting started](docs/guides/01-getting-started.md).
+## How it works
+
+<p align="center"><img src="assets/diagrams/how-it-works.svg" alt="How Waifu AI fits together: the hub on your PC, the ways you reach it, the Waifu AI Network and the services you choose" width="100%"></p>
+
+The thinking happens on **your PC**. Four small always-on services on the Internet Computer give your companions
+a public name, a shared memory and a way to tell us what broke, and the hub works without any of them. Every
+message, from every channel, goes through **one door** where the same checks run every time.
+More in [**How it works**](docs/HOW_IT_WORKS.md).
+
+## You stay in charge
+
+<p align="center"><img src="assets/diagrams/permissions.svg" alt="Who may do what on a normal day: reads run for you everywhere; writes ask first in the app and wait for your OK elsewhere; friends and strangers get almost nothing" width="100%"></p>
+
+- **Writes wait for you** by default. Loosen it per companion under **Behaviour → Actions & autonomy**, with
+  starter profiles and Undo.
+- **Money never moves on its own** unless you set a spend cap. A connected app never moves money at all.
+- **Someone else's words** (a web page, a picture, a stranger's message, something heard in the room) make
+  anything that turn wants to do wait for you.
+- **Emergency brake:** text `stop all writes` from your phone. `resume writes` lifts it.
+- **Unsafe mode** (off by default) lets what *you* ask from your own Discord DM run with no confirmation, until
+  the time you pick. Turn it off from anywhere by texting `unsafe off`.
+
+## Pick a brain
+
+| Brain | Cost | Uses tools | Day pages & dreams |
+|---|---|:-:|:-:|
+| **On-chain agent** (the default) | Free, no key | ✅ | — |
+| **Personas**: Easy, Spicy, Smol, Coder | Free | — | — |
+| **Local model** on your PC | Free | ✅ | — |
+| **Claude** or **ChatGPT** with your key | You pay the provider, with a monthly budget per companion | ✅ | ✅ |
+
+When a companion's budget runs out, it uses the free brain until the 1st. More in
+[Companions and brains](docs/guides/02-companions-and-brains.md).
+
+## Talk anywhere
+
+<table>
+<tr>
+<td width="34%" valign="top"><img src="assets/screenshots/discord-card.png" alt="Connections, Discord"><br><sub><b>Discord:</b> a bot of its own, with guided setup.</sub></td>
+<td width="33%" valign="top"><img src="assets/screenshots/reminders.png" alt="Reminders"><br><sub><b>Reminders:</b> "remind me at 7:30 to call mum".</sub></td>
+<td width="33%" valign="top"><img src="assets/screenshots/phone-today.png" alt="Today on a phone-sized window" width="60%"><br><sub><b>Phone-sized:</b> a bar of four at the bottom.</sub></td>
+</tr>
+</table>
+
+💬 The app's Chat · 🎮 a Discord bot per companion · ✈️ one Telegram bot per hub · 📱 Sneed SMS from your phone ·
+✨ out loud to a Hologram Companion · 🔌 your own AI tools over MCP.
 
 ## What you need
 
 - A **Windows PC, 64-bit (x64)**, with an internet connection. The unzipped app is about 100 MB.
-- That's all to start. Optional extras, only if you want them:
-  - an **Anthropic (Claude)** or **OpenAI (ChatGPT)** API key for a smarter brain;
-  - a **Discord** account and a server you own, for your companion's own bot;
-  - **Telegram** on your phone;
-  - an **Internet Identity** (free) to claim your companions and use the shared memory bank;
-  - a **Hologram Companion** on the same Wi-Fi as your PC.
+- That's all to start. Optional: an **Anthropic** or **OpenAI** API key, a **Discord** server you own,
+  **Telegram**, an **Internet Identity** (free) for the shared memory bank, and a **Hologram Companion**.
 
-Your companions are online only while Waifu AI is running: a sleeping PC means a sleeping bot.
+Your companions are online only while Waifu AI runs: a sleeping PC means a sleeping bot.
 
 ## Guides
 
-| Guide | What's in it |
-|---|---|
-| [01 · Getting started](docs/guides/01-getting-started.md) | Download, first run, your first companion |
-| [02 · Companions and brains](docs/guides/02-companions-and-brains.md) | Identities, choosing a brain, costs and budgets, the orchestrator |
-| [03 · Talking everywhere](docs/guides/03-talking-everywhere.md) | Chat, Discord, Telegram, your phone, approvals, Unsafe mode |
-| [04 · Memory and dreams](docs/guides/04-memory-and-dreams.md) | Notes, day pages, dreaming, the memory bank, reminders |
-| [05 · Your Hologram Companion](docs/guides/05-your-hologram-companion.md) | Connecting the device, voice, lights, quiet hours |
-| [06 · Money and safety](docs/guides/06-money-and-safety.md) | Passphrase, backups, the wallet, approvals, limits |
-| [07 · Updates and troubleshooting](docs/guides/07-updates-and-troubleshooting.md) | Updating, quitting, common problems |
+| | Guide | Read it when… |
+|---|---|---|
+| 🚀 | [01 · Getting started](docs/guides/01-getting-started.md) | You've just downloaded the app |
+| 🧩 | [02 · Companions and brains](docs/guides/02-companions-and-brains.md) | You want more companions, a smarter brain, or an orchestrator |
+| 💬 | [03 · Talking everywhere](docs/guides/03-talking-everywhere.md) | Discord, Telegram, your phone, approvals, Unsafe mode |
+| 🌙 | [04 · Memory and dreams](docs/guides/04-memory-and-dreams.md) | Notes, day pages, dreaming, the memory bank, reminders |
+| ✨ | [05 · Your Hologram Companion](docs/guides/05-your-hologram-companion.md) | You have the hologram device |
+| 🛡️ | [06 · Money and safety](docs/guides/06-money-and-safety.md) | Passphrase, backups, the wallet, approvals, limits |
+| 🔧 | [07 · Updates and troubleshooting](docs/guides/07-updates-and-troubleshooting.md) | A new version is out, or something is off |
 
-Questions? The [FAQ](docs/FAQ.md) has quick answers. Inside the app, **Help** in the **☰** menu (top left) and
-the **?** on each card open help for exactly where you are.
-
-## Use cases
-
-From one Hologram Companion on a desk to a 50-bot creator network: eleven case studies with diagrams, budgets and the
-limits to plan around. See [**Use cases**](docs/USE_CASES.md).
-
-## The Waifu AI Network
-
-Your hub runs on your PC, but four small always-on services on the Internet Computer give your companions a
-public name, a shared memory and a way to tell us what broke. See the map, the diagrams and the canister ids on
-[**The Waifu AI Network**](docs/NETWORK.md).
+Inside the app, **Help** in the **☰** menu and the **?** on each card open help for exactly where you are.
+From one Hologram Companion on a desk to a 50-bot creator network: eleven [**use cases**](docs/USE_CASES.md)
+with diagrams, budgets and the limits to plan around.
 
 ## Privacy, in plain words
 
-**What stays on your PC:** your companions' keys, your passphrase, your API keys and bot tokens, your
-conversations, the notes kept on this PC, and your contacts. On Windows these are encrypted even before you
-set a passphrase; a passphrase locks them tighter.
+| Stays on your PC | Leaves your PC, only when you use it |
+|---|---|
+| Your companions' keys and your passphrase | A message, through the service that carries it (Discord, Telegram, Sneed SMS) |
+| Your API keys and bot tokens | A reply's prompt, to the brain you picked, with your key |
+| Your conversations, local notes and contacts | Memories you put in the shared bank, readable only by you and your enrolled companions |
 
-**What leaves your PC, and only when you use it:**
+On Windows these are encrypted even before you set a passphrase; a passphrase locks them tighter.
+⚠️ Sneed SMS messages are **not encrypted**: treat them like postcards.
 
-- a message goes through the service that carries it (Discord, Telegram or Sneed SMS);
-- a reply written by Claude or ChatGPT goes to that provider, with your key;
-- memories you put in the shared memory bank are stored there, readable only by you and your own enrolled
-  companions.
-
-⚠️ Sneed SMS messages are **not encrypted**. Treat them like postcards: no passwords, no secrets.
-
-**The anonymous daily usage report.** To fix bugs, the app sends a small report once a day with **counts
-only**: the app version and system type, which features and kinds of brain are used, roughly how many
-companions you have, how often actions succeed or fail, error codes, timing ranges and crash signatures. It
-**never** includes your messages, memories, contacts, names, keys, addresses, Discord or phone ids, or anything
-you type. It carries no permanent id, just a random number that changes every month. You can read the last
-report, exactly as sent, in **Settings → Updates → Usage report**. The details are in the Terms of Use, shown in
-the app.
+**The anonymous daily usage report** sends **counts only** once a day: app version, system type, which features
+and brains are used, success and error counts, timing ranges and crash signatures. It **never** includes your
+messages, memories, contacts, names, keys, addresses, Discord or phone IDs, or anything you type, and it carries
+only a random number that changes every month. Read the last one, exactly as sent, in
+**Settings → Updates → Usage report**.
 
 ## Updating
 
-Waifu AI checks for new versions once a day (it sends nothing about you, and you can untick the check in
-**Settings → Updates**).
+Waifu AI checks for a new version once a day (it sends nothing about you; untick it in **Settings → Updates**).
 
-1. When **Settings → Updates** offers a new version, press **Download**. It is checked before it is kept.
+1. When **Settings → Updates** offers a new version, press **Download**. It's checked before it's kept.
 2. Unzip it into a **new** folder.
-3. Quit Waifu AI (**☰ → Quit**).
-4. Start `Waifu AI.exe` from the new folder.
+3. Quit Waifu AI (**☰ → Quit**), then start `Waifu AI.exe` from the new folder.
 
-Your companions, keys and settings live apart from the app folder, so nothing is lost. Keep the old folder
-until the new one has run once. Each release lists the zip's `sha256` so you can check the download yourself.
+Your companions, keys and settings live apart from the app folder, so nothing is lost. Each release lists the
+zip's `sha256` so you can check the download yourself.
 
 ## Your data and backups
 
-Everything your companions are lives in Waifu AI's data folder in your Windows profile (under `%APPDATA%`),
-not in the app folder. That's why updating or moving the app is safe.
+Everything your companions are lives in Waifu AI's data folder under `%APPDATA%`, not in the app folder.
+But a companion **is** its key: lose the key without a backup and that companion is gone for good.
 
-But a companion **is** its key: lose the key without a backup and that companion is gone for good. So:
-
-1. **Set a passphrase**: **Settings → Security & backups → Keys → Set a passphrase**. A forgotten passphrase
-   can't be recovered, so also...
-2. **Back up** (same tab): **Back up keys** (just the companions), or **Export hub** (everything: companions,
-   settings, contacts, brains, reminders), which is also how you move to a new PC.
-3. **Turn on scheduled backups**, daily or weekly, and point them at a drive that isn't this PC's disk.
+1. **Set a passphrase:** **Settings → Security & backups → Keys → Set a passphrase**. A forgotten one can't be recovered, so also…
+2. **Back up:** **Back up keys** (just the companions) or **Export hub** (everything, and how you move to a new PC).
+3. **Turn on scheduled backups**, daily or weekly, to a drive that isn't this PC's disk.
 
 More in [Money and safety](docs/guides/06-money-and-safety.md).
 
 ## License
 
-**This is not free software.** It is proprietary; see [`LICENSE`](LICENSE) for the full
-terms. In short: all rights reserved; no copying, modifying, or redistribution.
-Portions (the Shopify Dev Kit) are owned by International Waters Esports
-Palace; bundled third-party open-source components keep their own licenses, listed in
-[`THIRD_PARTY_NOTICES.txt`](THIRD_PARTY_NOTICES.txt). Being able to see or download these
-files does not grant any right to redistribute them.
+**This is not free software.** It is proprietary; see [`LICENSE`](LICENSE) for the full terms. In short: all
+rights reserved; no copying, modifying, or redistribution. Portions (the Shopify Dev Kit) are owned by
+International Waters Esports Palace; bundled third-party open-source components keep their own licenses, listed
+in [`THIRD_PARTY_NOTICES.txt`](THIRD_PARTY_NOTICES.txt). Being able to see or download these files does not
+grant any right to redistribute them.
 
 For licensing inquiries: smugandcomfy@gmail.com
 
 ## Support and contact
 
-- **Something not working?** Check [Troubleshooting](docs/guides/07-updates-and-troubleshooting.md) and the
-  [FAQ](docs/FAQ.md) first.
+- **Something not working?** Check [Troubleshooting](docs/guides/07-updates-and-troubleshooting.md) and the [FAQ](docs/FAQ.md) first.
 - **Still stuck?** Open an [issue](../../issues). **Settings → Security & backups → Sessions and diagnostics →
-  Copy diagnostics** makes a short
-  report to paste in (keys and tokens are removed; it does include your companions' names, so trim those if you
-  like). Never post your keys, passphrase, API keys, bot tokens or backup files.
+  Copy diagnostics** makes a short report to paste in (keys and tokens are removed; it does include your
+  companions' names, so trim those if you like). Never post your keys, passphrase, API keys, bot tokens or
+  backup files.
 - **What's new:** every version's notes are on the [Releases](../../releases) page.
 
-More is on the way. 💖
+<p align="center"><img src="assets/screenshots/today-night.png" alt="Today in the Kawaii Night theme" width="70%"><br>
+<sub>Kawaii Night, one of six themes. More is on the way. 💖</sub></p>

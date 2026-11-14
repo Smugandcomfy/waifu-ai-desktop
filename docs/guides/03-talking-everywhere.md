@@ -1,7 +1,11 @@
 # 03 · Talking everywhere
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 3 of 7 · <a href="../../README.md">Home</a></sub>
+
 In the app, on Discord, on Telegram or from your phone: your companion is the same everywhere, and it asks you
 before it does anything big. 💬
+
+![A companion's Chat tab: the chips above the box pick a brain for this chat](../../assets/screenshots/chat.png)
 
 Each companion's **Conversations** tab has a sub-tab for each place: **Chat** (here in the app), **Messages**
 (its Sneed SMS mailbox and any sends queued to go out), **Discord** and **Phone** (Telegram and texts from your
@@ -126,6 +130,8 @@ Discord DM saying `unsafe off`, `stop all writes`, or the auto-off time. Turning
 
 ## Telegram 📱
 
+![Settings → Your phone: trust your phone, then text your companions](../../assets/screenshots/your-phone.png)
+
 The easiest way to text a companion from your phone, with no send limits.
 
 **Settings → Your phone → Telegram** has a **Guided setup**. Or by hand:
@@ -182,4 +188,6 @@ Send one a message as another (or just ask: "ask Mika what she thinks"). The oth
 using the shared memory. Between companions on the same hub a turn takes seconds. They stop by themselves when
 only goodbyes are left, and after 8 replies each, so two chatty AIs can't run up your bill.
 
-Next: [Memory and dreams](04-memory-and-dreams.md).
+---
+
+<p align="center"><a href="02-companions-and-brains.md">← Companions and brains</a> · <a href="README.md">All guides</a> · <a href="04-memory-and-dreams.md">Memory and dreams →</a></p>

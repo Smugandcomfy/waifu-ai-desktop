@@ -1,6 +1,7 @@
 # Waifu AI Desktop: FAQ
 
-Quick answers to the questions people ask most. For step-by-step help, see the [user guides](guides/README.md).
+Quick answers to the questions people ask most. For step-by-step help, see the [user guides](guides/README.md);
+for the big picture, [how it works](HOW_IT_WORKS.md).
 
 **Jump to:** [The basics](#the-basics) · [Getting set up](#getting-set-up) · [Brains and cost](#brains-and-cost) ·
 [Talking](#talking) · [Memory](#memory) · [Your Hologram Companion](#your-hologram-companion) ·

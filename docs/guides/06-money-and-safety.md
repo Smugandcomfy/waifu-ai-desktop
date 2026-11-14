@@ -1,5 +1,7 @@
 # 06 · Money and safety
 
+<sub>📖 <a href="README.md">All guides</a> · Guide 6 of 7 · <a href="../../README.md">Home</a></sub>
+
 Keys, passphrase, backups, and the wallet. The serious bit, kept short. 🛡️
 
 ## Your keys
@@ -86,6 +88,8 @@ won't let it go twice).
 
 ### Approvals and limits
 
+![Behaviour: the brain and its budget, then Actions & autonomy](../../assets/screenshots/behaviour.png)
+
 - **Every send waits for your OK by default.** The approval shows the full address it pays, your name for it,
   and whose it is, and it's fixed to that address and amount.
 - **Spend caps:** **Behaviour → Actions & autonomy** (Advanced) can give each token a cap per send and per 24
@@ -128,3 +132,7 @@ jobs. `resume writes` lifts it. `vacation on` pauses all actions while you're aw
 - Never send passwords, seed phrases or anything private over Sneed messages: they're not encrypted.
 - Turn on two-factor login on the Discord account you pair.
 - Leave Unsafe mode off unless you need it, and when you do, give it an auto-off time.
+
+---
+
+<p align="center"><a href="05-your-hologram-companion.md">← Your Hologram Companion</a> · <a href="README.md">All guides</a> · <a href="07-updates-and-troubleshooting.md">Updates and troubleshooting →</a></p>

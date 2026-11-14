@@ -10,7 +10,8 @@
   <a href="../../releases/latest"><b>⬇️ Download the latest release</b></a> ·
   <a href="docs/guides/README.md">📖 User guides</a> ·
   <a href="docs/FAQ.md">❓ FAQ</a> ·
-  <a href="docs/NETWORK.md">🌐 The Waifu AI Network</a>
+  <a href="docs/NETWORK.md">🌐 The Waifu AI Network</a> ·
+  <a href="docs/USE_CASES.md">📘 Use cases</a>
 </p>
 
 ---
@@ -109,6 +110,11 @@ Your companions are online only while Waifu AI is running: a sleeping PC means a
 
 Questions? The [FAQ](docs/FAQ.md) has quick answers. Inside the app, **Help** in the **☰** menu (top left) and
 the **?** on each card open help for exactly where you are.
+
+## Use cases
+
+From one Hologram Companion on a desk to a 50-bot creator network: ten case studies with diagrams, budgets and the
+limits to plan around. See [**Use cases**](docs/USE_CASES.md).
 
 ## The Waifu AI Network
 

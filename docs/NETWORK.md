@@ -45,7 +45,7 @@ flowchart TB
     subgraph OUT["☁️ Services you choose"]
         AI["Claude / ChatGPT"]
         CHAT["Discord · Telegram"]
-        HOME["Home Assistant · email"]
+        HOME["Home Assistant · email<br/>(coming in a later version)"]
     end
 
     HOLO["✨ Hologram Companion<br/>on your Wi-Fi"]

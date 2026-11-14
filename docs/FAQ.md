@@ -34,9 +34,17 @@ chats, messages, remembers and goes on Discord all the same. Not sure? Pick the 
 practice device.
 
 ### What are Simple and Advanced?
-The app starts in **Simple** mode with the everyday screens: Today, Conversations, Memory, Reminders, People &
-AIs and Settings. **Advanced** adds the wallet, voting, the shop, network settings, outside AI apps and developer
-tools. It hides nothing for safety; it just keeps things tidy. Switch at the foot of the left-hand rail.
+The app starts in **Simple** mode with the everyday screens: Today, your companions, Reminders, People and
+Settings. **Advanced** adds the wallet, voting, the shop, outside AI apps and developer settings. It hides nothing
+for safety; it just keeps things tidy. Switch in the **☰** menu at the top left, or in **Settings → Appearance →
+Mode**.
+
+### Where did everything go?
+Since 0.99.14, your companions sit in the left column between **Today** and **Reminders**. Each one's
+**Conversations** (Chat, Messages, Discord, Phone) and **Memory** (Notes & facts, Context) are tabs on its own
+page. The hub's tools (Activity, Help, Appearance, Desktop pop-ups, Your account, Quit) are in the **☰** menu.
+**Settings** has nine tabs: You & account, Your phone, Brains & cost, Quiet & away, Security & backups, Memory,
+Updates, Appearance and Developer (Advanced). Old bookmarks still open the right place.
 
 ### Can I change how it looks?
 Yes! **Settings → Appearance → Theme** has six: **Kawaii** (the default), **Kawaii Night**, **Daylight**,
@@ -52,9 +60,9 @@ there's no installer.
 Yes. The app isn't code-signed yet, so SmartScreen asks the first time. Click **More info → Run anyway**.
 
 ### How do I make a companion?
-☰ (top left) → **New identity…** (or **Create your first identity** on Today). Pick the type, give it a name,
+**+ New identity** under your companions in the left column (or **Create your first identity** on Today). Pick the type, give it a name,
 choose a device (practice or real), protect the key, and optionally give it a public name. If you close the
-window halfway, press **Resume**: nothing is ever created twice. See [Getting started](guides/01-getting-started.md).
+window halfway, press **Resume setting up**: nothing is ever created twice. See [Getting started](guides/01-getting-started.md).
 
 ### Can I run it on two PCs, or on my phone?
 Run **one hub** per person: two hubs with the same companion would both answer the same messages. Your phone is
@@ -63,10 +71,12 @@ hub** and **Restore hub…**, then stop the old one.
 
 ### What is a public name?
 An optional name in the public registry, so people can find and message your companion by name instead of its
-long address. Names are 3 to 32 lower-case letters, numbers and dashes, free, and first come, first served.
+long address. Names are 3 to 32 lower-case letters, numbers and dashes, free, and first come, first served. A
+name you've claimed with Internet Identity renews itself each year while your hub runs: nothing to do.
 
-### What's a principal?
-Your companion's public address on the Internet Computer, a bit like an account number. Share it so others can
+### What's an ID (or principal)?
+Your companion's public address on the Internet Computer, a bit like an account number. The app calls it the
+**ID**. Share it so others can
 message it. It never reveals the key.
 
 ## Brains and cost
@@ -94,6 +104,14 @@ A budget of 0 turns paid brains off for that companion.
 Writing a good summary of your day takes a strong brain. Without a key your companion still remembers what you
 tell it; it just doesn't write day pages or dream.
 
+### What is the orchestrator?
+One companion you let run small jobs across the others: "ask the others whether the reminder went out, then
+tell me." Give the role on a companion's **Behaviour** tab → **Orchestrator** card (it needs a Claude or ChatGPT
+brain and your passphrase). A hub has one. Each job stops at the first limit it reaches: by default 30 minutes, 3
+back-and-forth steps, $0.50 a job and $5 a day, all changeable on the card. It never touches keys, spend caps,
+passphrases, pairing or its own role, and messages to people, money and most settings still wait for your OK.
+See [Companions and brains](guides/02-companions-and-brains.md#the-orchestrator-).
+
 ### My companion said its key is missing. Why?
 Its brain is set to Claude or ChatGPT but there's no key in **Settings → Brains & cost**. Paste the key, or
 switch its brain to the free **On-chain agent**.
@@ -101,8 +119,8 @@ switch its brain to the free **On-chain agent**.
 ## Talking
 
 ### Where can I talk to my companions?
-In the app's **Chat**, on **Discord** (each companion can have its own bot), on **Telegram**, and over **Sneed
-SMS** from your phone. A Hologram Companion can also be spoken to out loud. See
+In each companion's **Conversations → Chat** in the app, on **Discord** (each companion can have its own bot), on
+**Telegram**, and over **Sneed SMS** from your phone. A Hologram Companion can also be spoken to out loud. See
 [Talking everywhere](guides/03-talking-everywhere.md).
 
 ### What is Sneed SMS?
@@ -127,7 +145,22 @@ Buying always waits, and money asked for by a connected app always waits.
 ### On Discord my bot said "approve it in the app". Why?
 On Discord, anything more than a simple setting (a message, a post, a vote, a reminder, a payment) waits for
 your OK in the app or on your phone. A Discord account is a weaker lock than your phone, so "yes" on Discord
-never approves it. Questions still get answered at once.
+never approves it. Questions still get answered at once. The one exception is Unsafe mode, below.
+
+### What is Unsafe mode?
+An optional switch, off by default, that lets what **you** ask from your own Discord DM run at once with **no
+confirmation**, money included, and lets the orchestrator's jobs run the same way. ⚠️ It really does skip the
+"are you sure?", so anyone who gets into your Discord account could act as you. Connected AI apps still always
+ask, anything that read someone else's words still waits, doors and alarms never run from Discord, and nobody
+else gains anything. Turn it on in **Settings → Security & backups → Unsafe mode** (with your passphrase, and
+ideally an auto-off time). While it's on, a red banner shows on every page. **Turn it off from anywhere**: the
+banner's **Turn it off**, a text or Discord DM saying `unsafe off`, or `stop all writes`. See
+[Talking everywhere](guides/03-talking-everywhere.md#unsafe-mode-your-discord-dm-with-no-brakes-).
+
+### Can I connect a coding session from Discord?
+Yes, from your own Discord DM: reply `connect`, the request's code, and the 6-digit code your authenticator app
+shows now. It needs an authenticator set up in **Settings → Security & backups → Task approvals** (Advanced mode,
+with a passphrase). It works once per request, only in your DM, and never from Telegram.
 
 ### Can strangers talk to my companion?
 On Discord, people in your server are **guests**: chat only, no tools, no memory, no wallet, within a daily
@@ -149,7 +182,7 @@ you text "forget former names".
 
 ### What can I text from my phone?
 `pending`, `yes 2` / `no 2`, `remind me at 7 to …`, `vacation on` / `off`, `pause <name>` / `resume <name>`,
-`stop all writes` / `resume writes`, `run a dream`, `did the dream work?`, and `help`. The full list is in
+`stop all writes` / `resume writes`, `unsafe off`, `run a dream`, `did the dream work?`, and `help`. The full list is in
 [Talking everywhere](guides/03-talking-everywhere.md#texts-your-phone-understands).
 
 ### Can other AI apps connect to my companion?
@@ -165,19 +198,21 @@ day page sums up the day. See [Memory and dreams](guides/04-memory-and-dreams.md
 
 ### What is dreaming?
 Once a day, one companion with a Claude or ChatGPT key rereads the day and tidies the memory: fixes wrong notes,
-merges duplicates, and keeps a short page per person. It costs a few cents a night at most.
+merges duplicates, and keeps a short page per person. It costs a few cents a night at most. Set it up in
+**Settings → Memory → Dreaming**, or press **Dream now** on Today's **Memory overnight** card.
 
 ### What is the memory bank?
 An optional shared memory on the Internet Computer. Enrol your companions and what you tell one, the others
 know too. Waifu AI runs a memory service for everyone and every hub is already set to use it: sign in with
-Internet Identity and press **Enroll**.
+Internet Identity in **Settings → You & account** and press **Enroll** on each companion's **Memory**
+tab.
 
 ### Is my memory shared with other people?
 No. Only you and your own enrolled companions can read your memories. Guests and friends never get them.
 
 ### Can I fix or delete a memory?
-Yes. In **Memory**, every note has **Why?**, **Correct** and **Forget**. **Memory → Clean-up** suggests notes
-worth dropping, and nothing is forgotten until you tick it.
+Yes. On a companion's **Memory** tab, every note has **Why?**, **Correct** and **Forget**. **Settings → Memory
+→ Clean-up** suggests notes worth dropping, and nothing is forgotten until you tick it.
 
 ### Can it set reminders?
 Yes: "remind me at 7:30 to call mum", "in 20 minutes", "every weekday at 9". In Chat, from your phone, on
@@ -245,8 +280,8 @@ the anonymous daily usage report (below). The app's own page is reachable only f
 Counts only, once a day: the app version and system type, which features and kinds of brain are used, roughly
 how many companions you have, how often actions succeed or fail, error codes, timing ranges and crash signatures.
 **Never** your messages, memories, contacts, names, keys, addresses, Discord or phone ids, or anything you type.
-It has no permanent id, just a random number replaced every month. **Settings → Updates** shows the last report
-exactly as sent. The Terms of Use (section 5) describe it.
+It has no permanent id, just a random number replaced every month. **Settings → Updates → Usage report** shows
+the last report exactly as sent. The Terms of Use describe it.
 
 ### Are my keys encrypted?
 On Windows, yes, from the first start, with a key Windows keeps for your account. Setting a passphrase encrypts
@@ -258,8 +293,8 @@ It can't be recovered. With a key backup or hub export you can bring your compan
 [Troubleshooting](guides/07-updates-and-troubleshooting.md#i-forgot-my-passphrase)). Without one, they're gone.
 
 ### Is there an emergency stop?
-Text `stop all writes` from your phone: the whole hub stops acting on its own and connected apps are refused any
-change, until you text `resume writes`.
+Text `stop all writes` from your phone: the whole hub stops acting on its own, connected apps are refused any
+change, Unsafe mode ends and the orchestrator's jobs stop, until you text `resume writes`.
 
 ## Updates and data
 
@@ -273,11 +308,11 @@ In Waifu AI's data folder in your Windows profile (under `%APPDATA%`), separate 
 or updating the app is safe.
 
 ### How do I back up?
-**Settings → Security**: **Back up keys** (just your companions) or **Export hub** (everything). **Scheduled
-backups** can do it daily or weekly. Keep the files off this PC.
+**Settings → Security & backups**: **Back up keys** (just your companions) or **Export hub** (everything, up to
+128 MB). **Scheduled backups** can do it daily or weekly. Keep the files off this PC.
 
 ### How do I stop or uninstall it?
-**More → Quit** at the foot of the rail stops it. To uninstall, quit and delete the app folder. Your companions
+**☰ → Quit** (the menu at the top left) stops it. To uninstall, quit and delete the app folder. Your companions
 stay in the data folder until you delete that too, so back up first.
 
 ## When something goes wrong
@@ -294,9 +329,9 @@ Your PC's clock is off. Turn on automatic time in Windows settings.
 Sneed allows one message every 10 minutes per companion. It goes when the window opens.
 
 ### A companion stopped answering for the rest of the day
-It reached a daily cap (**Settings → Notifications & away → Away**, default 200 messages a day per companion,
+It reached a daily cap (**Settings → Quiet & away → Away**, default 200 messages a day per companion,
 fewer for unknown senders). You were told when it happened. Your own phone is never held by it.
 
 ### Where do I get help?
-Press **Help** in the app, or the **?** on any card. Still stuck? **Settings → Security → Copy diagnostics** and
-open an [issue](../../../issues). Never post keys, passphrases, API keys or bot tokens.
+Press **☰ → Help** in the app, or the **?** on any card. Still stuck? **Settings → Security & backups →
+Sessions and diagnostics → Copy diagnostics**, and open an [issue](../../../issues). Never post keys, passphrases, API keys or bot tokens.

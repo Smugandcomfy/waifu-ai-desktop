@@ -1,6 +1,6 @@
 # 02 · Companions and brains
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 2 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 2 of 9 · <a href="../../README.md">Home</a></sub>
 
 Make as many companions as you like, and give each one the brain that suits it. 🧠
 

@@ -1,6 +1,6 @@
 # 03 · Talking everywhere
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 3 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 3 of 9 · <a href="../../README.md">Home</a></sub>
 
 In the app, on Discord, on Telegram or from your phone: your companion is the same everywhere, and it asks you
 before it does anything big. 💬

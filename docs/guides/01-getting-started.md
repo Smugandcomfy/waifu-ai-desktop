@@ -1,6 +1,6 @@
 # 01 · Getting started
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 1 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 1 of 9 · <a href="../../README.md">Home</a></sub>
 
 From download to your first "hello" in about five minutes. ✨
 

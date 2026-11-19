@@ -124,8 +124,8 @@ authenticator code, and type the one-time code into the bridge.
 Connect Home Assistant and tick the devices your companion may use:
 > "Turn on the living room lights." · "Is the front door locked?"
 
-Lights and comfort devices can just work. Locks, alarms and garages always wait for your OK, and "unlock" never runs
-from a voice alone.
+Lights and comfort devices can just work, and unlocking always waits for your OK. Step by step:
+[09 · Your home](docs/guides/09-home-assistant.md).
 
 ### 🤝 A team of companions
 Make a few companions with different jobs: one for chat, one for coding, one as your orchestrator. They can message
@@ -139,7 +139,8 @@ companion to send a message, which waits for your OK.
 Each companion can hold tokens on the Internet Computer. Sending always shows you exactly what goes where and waits
 for your OK, unless you set a spending cap. A connected app can never move money.
 
-Eleven bigger setups, from one companion on a desk to a 50-bot creator network, with diagrams and budgets:
+Fourteen bigger setups, from one companion on a desk to a 50-bot creator network, a café counter and a family
+across two homes, with diagrams and budgets:
 [**Use cases**](docs/USE_CASES.md).
 
 ## Waifu AI Bridge (new in 0.99.18)
@@ -155,7 +156,7 @@ The bridge lets a Hologram Companion **somewhere else** talk to your hub at home
 4. From another network, connect both PCs with **Tailscale** (free); the Device card shows the address to use.
 
 Revoke a bridge any time from the Device card, or from your phone: *"revoke the bridge for Mika"*. You can also give
-a bridge an expiry date. Full steps are in `HOW-TO-RUN.txt` inside the bridge zip.
+a bridge an expiry date. The full walkthrough is in [08 · Waifu AI Bridge](docs/guides/08-waifu-ai-bridge.md).
 
 ## You stay in charge
 
@@ -202,6 +203,8 @@ Your companions are online only while Waifu AI runs: a sleeping PC means a sleep
 | ✨ | [05 · Your Hologram Companion](docs/guides/05-your-hologram-companion.md) | You have the hologram device, or a bridge |
 | 🛡️ | [06 · Money and safety](docs/guides/06-money-and-safety.md) | Passphrase, backups, the wallet, approvals, limits |
 | 🔧 | [07 · Updates and troubleshooting](docs/guides/07-updates-and-troubleshooting.md) | A new version is out, or something is off |
+| 🌉 | [08 · Waifu AI Bridge](docs/guides/08-waifu-ai-bridge.md) | You want a Hologram Companion in another place |
+| 🏠 | [09 · Your home (Home Assistant)](docs/guides/09-home-assistant.md) | You'd like your companions to run the lights and heating |
 
 Inside the app, **Help** in the **☰** menu and the **?** on each card open help for exactly where you are.
 More: [How it works](docs/HOW_IT_WORKS.md) · [The Waifu AI Network](docs/NETWORK.md) ·

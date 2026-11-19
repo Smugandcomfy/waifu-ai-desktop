@@ -1,6 +1,6 @@
 # 07 · Updates and troubleshooting
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 7 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 7 of 9 · <a href="../../README.md">Home</a></sub>
 
 Staying up to date, stopping the app, and fixing the usual hiccups. 🔧
 
@@ -116,4 +116,4 @@ a copy. A file that protects you (keys, contacts, approvals) stays closed until 
 
 ---
 
-<p align="center"><a href="06-money-and-safety.md">← Money and safety</a> · <a href="README.md">All guides</a> · <a href="../FAQ.md">FAQ →</a></p>
+<p align="center"><a href="06-money-and-safety.md">← Money and safety</a> · <a href="README.md">All guides</a> · <a href="08-waifu-ai-bridge.md">Waifu AI Bridge →</a></p>

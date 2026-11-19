@@ -26,8 +26,16 @@ blockchain network. Nobody has to keep a server switched on, and anyone can chec
 
 ```mermaid
 flowchart TB
-    subgraph PC["🖥️ Your PC"]
+    subgraph PC["🖥️ Your PC at home"]
         HUB["💖 Waifu AI hub<br/>companions · keys · chats · settings"]
+    end
+
+    HOLO["✨ Hologram Companion<br/>on your Wi-Fi"]
+    HA["🏠 Home Assistant<br/>the devices you ticked"]
+
+    subgraph AWAY["📍 Other places"]
+        BR1["🌉 Bridge · My place<br/>✨ a second home"]
+        BR2["🌉 Bridge · Public companion<br/>✨ a shop counter"]
     end
 
     subgraph WAN["🌐 Waifu AI Network (Internet Computer)"]
@@ -37,16 +45,18 @@ flowchart TB
         TEL["📊 Usage reports<br/>anonymous daily counts"]
     end
 
-    WEB3["🔗 Web3"]
+    WEB3["🔗 Web3<br/>messages between IDs · tokens"]
 
     subgraph OUT["☁️ Services you choose"]
-        AI["Claude / ChatGPT"]
-        CHAT["Discord · Telegram"]
-        HOME["Home Assistant · email<br/>(coming in a later version)"]
+        AI["🧠 Claude · ChatGPT"]
+        CHAT["💬 Discord · Telegram · Sneed SMS"]
+        GPT["🔗 ChatGPT, through your gateway"]
     end
 
-    HOLO["✨ Hologram Companion<br/>on your Wi-Fi"]
-
+    HUB <--> HOLO
+    HUB --> HA
+    BR1 -- "connects out (Tailscale)" --> HUB
+    BR2 -- "connects out (Tailscale)" --> HUB
     HUB -- "register / find a name" --> REG
     HUB -- "which bank?" --> DIR
     DIR -- "admits you" --> BANK
@@ -54,18 +64,20 @@ flowchart TB
     HUB -- "one report a day" --> TEL
     HUB --> WEB3
     HUB --> AI
-    HUB --> CHAT
-    HUB --> HOME
-    HUB <--> HOLO
+    HUB <--> CHAT
+    GPT --> HUB
 
     classDef ours fill:#ffd6ec,stroke:#e0559b,color:#3a0d24;
     classDef pc fill:#e8e0ff,stroke:#7a5cff,color:#1f1340;
+    classDef bridge fill:#dff7ee,stroke:#2bb27a,color:#0d3a26;
     class REG,DIR,BANK,TEL ours;
     class HUB pc;
+    class BR1,BR2 bridge;
 ```
 
-The pink boxes are **the Waifu AI Network**: four canisters we run for every user. Everything else is either your
-own PC or a service you choose to switch on.
+The pink boxes are **the Waifu AI Network**: four canisters we run for every user. The green boxes are **Waifu AI
+Bridges**, carrying your companions to other places. Everything else is your own PC, your own home, or a service you
+choose to switch on.
 
 ## The four canisters
 
@@ -137,7 +149,7 @@ sequenceDiagram
     Note over Hub,Bank: From now on every companion remembers into, and recalls from, your space in bank 1
 ```
 
-**Built to grow.** A bank holds a few thousand people. When one fills up we open a new bank from the same
+**Built to grow.** Each bank welcomes hundreds of people. When one fills up we open a new bank from the same
 program and point newcomers at it. You are assigned once and never moved, so your memories always stay together.
 
 ```mermaid
@@ -185,6 +197,90 @@ word, in **Settings → Updates → Usage report**.
 
 ---
 
+## 🌉 Bridges: your companions in other places
+
+A bridge is a small Windows program on a PC beside a Hologram Companion in another place. It connects **out** to
+your hub, so nothing at home needs opening up, and it holds none of your hub's keys: just its own bridge token. Over
+the internet, Tailscale (free) gives the two PCs a private, encrypted path to each other.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Holo as ✨ Hologram Companion
+    participant Bridge as 🌉 Waifu AI Bridge
+    participant Hub as 💖 Your hub
+    Bridge->>Hub: Hello, here is my bridge token
+    Hub-->>Bridge: Welcome: you speak for Mika (My place)
+    loop All day
+        Bridge->>Hub: Anything to say?
+        Hub-->>Bridge: "Your 6 pm reminder: Dad's tablets"
+        Bridge->>Holo: Speak it
+        Holo-->>Bridge: Someone said "Mika, what's on tomorrow?"
+        Bridge->>Hub: Here's what was said
+        Hub-->>Bridge: The answer to speak
+        Bridge->>Hub: Heartbeat every minute
+    end
+    Note over Bridge,Hub: Hub away for 10 minutes? The bridge says so once, then reconnects by itself.
+```
+
+### My place or Public companion
+
+```mermaid
+flowchart LR
+    subgraph MP["🏡 My place"]
+        direction TB
+        Y(["🙋 You, recently in the app"]) --> YB["Your companion's own brain"]
+        YB --> YR["Reads your messages, notes,<br/>wallet balance; recalls"]
+        G1(["🙂 Anyone else there"]) --> GB1["Guest brain"]
+    end
+    subgraph PUB["🏪 Public companion"]
+        direction TB
+        V(["🙂 Every visitor"]) --> GB2["Guest brain<br/>within the daily guest budget"]
+        GB2 --> VR["Chat in character · public answers ·<br/>reminders that ring right there"]
+    end
+    LOCK["🔒 Never at any bridge: approving things,<br/>moving money, unlocking doors"]
+    MP --- LOCK
+    PUB --- LOCK
+```
+
+### A bridge code from your phone
+
+Setting up a bridge while you're away from your PC? Your phone can make a one-time code, so the real token never
+travels in a message.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor You as 🙋 You (phone or Discord DM)
+    participant Orch as 🎼 Your orchestrator
+    participant Hub as 💖 Your hub
+    participant Bridge as 🌉 New bridge
+    You->>Orch: "bridge code for Nana, my place"
+    Orch-->>You: Approve with: yes 1234 + your authenticator code
+    You->>Orch: yes 1234 123456
+    Orch-->>You: Your code: K7P2-9WXZ (10 minutes, one use)
+    You->>Bridge: Type in K7P2-9WXZ
+    Bridge->>Hub: Swap this code for my token
+    Hub-->>Bridge: Here's your token ✅
+    Hub-->>You: "Your code was just used" 
+```
+
+## 🧠 Which brain answers whom
+
+Every reply is written by a brain. Your companion picks one in order, and always has the free one to fall back on.
+
+```mermaid
+flowchart TD
+    Q{"Who is talking?"} -- "You" --> O1["Your companion's brain<br/>(the one you picked)"]
+    O1 -. "busy or failed" .-> O2["Claude Haiku"] -.-> O3["ChatGPT"] -.-> O4["Free on-chain brain"]
+    Q -- "A friend" --> F1["Claude Haiku"] -.-> F2["Free on-chain brain"]
+    Q -- "A guest on Discord,<br/>or a visitor at a bridge" --> G1["Claude Haiku, short answers,<br/>within the daily guest budget"]
+    G1 -. "budget used up for today" .-> G2["Free on-chain brain"]
+```
+
+A companion's monthly budget is a ceiling: when it's reached, the free brain answers until the 1st. A companion on
+a free brain stays free for everyone.
+
 ## Why canisters?
 
 - 🔌 **Always on, without a server.** The Internet Computer keeps them running; there is no box in a cupboard that
@@ -197,8 +293,11 @@ word, in **Settings → Updates → Usage report**.
 
 ## Questions
 
-**Do I need the network to use Waifu AI?** No. Chat, reminders, Discord, Telegram and local notes all work from
-your PC. The network adds public names, the shared memory and the daily usage report.
+**Do I need the network to use Waifu AI?** No. Chat, reminders, Discord, Telegram, Home Assistant, bridges and
+local notes all work from your PC. The network adds public names, the shared memory and the daily usage report.
+
+**Does a bridge see my private things?** Only what its role allows: a My place bridge reads your messages and notes
+to *you* when you're there; a Public companion bridge never sees them. Neither holds your hub's keys.
 
 **Does the network see my chats?** No. Chats stay on your PC and go only through the services that carry them
 (Discord, Telegram, Sneed SMS) and the AI brain you picked.

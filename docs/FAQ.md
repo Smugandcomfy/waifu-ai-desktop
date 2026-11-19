@@ -5,7 +5,7 @@ for the big picture, [how it works](HOW_IT_WORKS.md).
 
 **Jump to:** [The basics](#the-basics) · [Getting set up](#getting-set-up) · [Brains and cost](#brains-and-cost) ·
 [Talking](#talking) · [Memory](#memory) · [Your Hologram Companion](#your-hologram-companion) ·
-[Money](#money) · [Privacy and safety](#privacy-and-safety) · [Updates and data](#updates-and-data) ·
+[Waifu AI Bridge](#waifu-ai-bridge) · [Your home](#your-home-home-assistant) · [Money](#money) · [Privacy and safety](#privacy-and-safety) · [Updates and data](#updates-and-data) ·
 [When something goes wrong](#when-something-goes-wrong)
 
 ## The basics
@@ -67,7 +67,8 @@ window halfway, press **Resume setting up**: nothing is ever created twice. See 
 
 ### Can I run it on two PCs, or on my phone?
 Run **one hub** per person: two hubs with the same companion would both answer the same messages. Your phone is
-a remote control instead: text your companions over Telegram or Sneed SMS. To move to a new PC, use **Export
+a remote control instead: text your companions over Telegram or Sneed SMS. To put a Hologram Companion in
+another place, use [Waifu AI Bridge](guides/08-waifu-ai-bridge.md) on a PC beside it: still one hub. To move to a new PC, use **Export
 hub** and **Restore hub…**, then stop the old one.
 
 ### What is a public name?
@@ -166,7 +167,8 @@ with a passphrase). It works once per request, only in your DM, and never from T
 ### Can strangers talk to my companion?
 On Discord, people in your server are **guests**: chat only, no tools, no memory, no wallet, within a daily
 budget (default $1.00). On Telegram, an untrusted chat gets one polite sentence and nothing else. Strangers on
-Sneed land in the inbox; a short in-character reply is off unless you turn on **Reply to strangers**.
+Sneed land in the inbox; a short in-character reply is off unless you turn on **Reply to strangers**. Visitors at a
+Public companion bridge chat as friendly guests, within the same kind of daily guest budget.
 
 ### Why did my message get "not sent again"?
 The same text to the same place within 5 minutes counts as a repeat. If you approve it yourself, you're asked
@@ -242,6 +244,59 @@ wake word and you've used the app or texted from your phone in the last 15 minut
 ### What happens when the device is offline?
 You're told once, by text, after about ten minutes. Messages are still answered, just not spoken, and old
 announcements become one short line when it's back.
+
+## Waifu AI Bridge
+
+### What is Waifu AI Bridge?
+A small Windows program that lets a Hologram Companion in **another place** (your parents' house, a studio, a shop
+counter) talk to your hub at home. It runs on a PC beside the device and connects out to your hub. See
+[08 · Waifu AI Bridge](guides/08-waifu-ai-bridge.md).
+
+### Do I need a second PC?
+Yes, a Windows PC that stays on at the other place, on the same Wi-Fi as the Hologram Companion. A small mini-PC is
+ideal. One bridge looks after one Hologram Companion.
+
+### What's the difference between My place and Public companion?
+**My place** is for somewhere you control: when you've used the app in the last 15 minutes, the companion there
+knows it's you and can read you your messages, notes and wallet balance. **Public companion** is for places with
+visitors: it chats with everyone as friendly guests, and nobody there can change your hub.
+
+### Do I need Tailscale?
+Only when the other place is on a different network from your hub. Tailscale is free, takes a few minutes to set
+up on both PCs, and gives them a private, encrypted path to each other.
+
+### What does a Public companion cost me?
+Visitors are answered by the guest brain (Claude Haiku with short answers, if you've added a Claude key) within the
+companion's **daily guest budget**, $1.00 unless you change it. Once that's used up for the day, it carries on with
+the free brain. Your own companion's brain is kept for you.
+
+### Can I set a bridge up when I'm away from my PC?
+Yes. Text your phone or message your Discord DM: *"bridge code for Mika"*. Approve it, and you get a one-time code to
+type into the bridge. The real token never appears in a chat.
+
+### How do I stop a bridge?
+Press **Revoke** on the companion's Device card, or text *"revoke the bridge for Mika"*. It stops at once. You can
+also give a bridge an expiry date when you make it.
+
+### Can I change things out loud through a bridge?
+Not yet: asking for changes by voice through a bridge comes in a later update. Questions, reminders and, at My
+place, reading you your messages all work today. For changes, use the app or your phone.
+
+## Your home (Home Assistant)
+
+### Can my companions control my lights and heating?
+Yes, if you use Home Assistant. Connect it in **Settings → Home**, tick the devices your companions may use, and
+say "turn on the living room lights". See [09 · Your home](guides/09-home-assistant.md).
+
+### Can a companion unlock my front door?
+Only with your OK: unlocking, disarming and opening always ask you in the app, or need your authenticator code by
+text. It never happens by voice or from Discord, and between 01:00 and 06:00 it's done in the app only.
+
+### Can guests or visitors control my home?
+No. Only you control your home. Friends, guests, Discord servers and visitors at a bridge never do.
+
+### Can it tell me when a door is left open?
+Yes: set an alert in **Settings → Home → Alerts** for a door, a lock, a sensor or a device going offline.
 
 ## Money
 

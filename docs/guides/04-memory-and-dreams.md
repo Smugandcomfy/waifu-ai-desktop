@@ -1,6 +1,6 @@
 # 04 · Memory, dreams and reminders
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 4 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 4 of 9 · <a href="../../README.md">Home</a></sub>
 
 Your companions remember what you tell them and what you do together. It works from day one with nothing to
 set up. 🌙

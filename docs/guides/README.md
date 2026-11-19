@@ -14,9 +14,11 @@ need them.
 | ✨ | 05 | [Your Hologram Companion](05-your-hologram-companion.md) | You have the hologram device |
 | 🛡️ | 06 | [Money and safety](06-money-and-safety.md) | Before anything important: passphrase, backups, the wallet |
 | 🔧 | 07 | [Updates and troubleshooting](07-updates-and-troubleshooting.md) | A new version is out, or something is off |
+| 🌉 | 08 | [Waifu AI Bridge](08-waifu-ai-bridge.md) | You want a Hologram Companion in another place: a second home, a studio, a shop |
+| 🏠 | 09 | [Your home (Home Assistant)](09-home-assistant.md) | You'd like your companions to run the lights, the heating and more |
 
-All seven guides on one page, with screenshots: the [Waifu AI Handbook](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
-Short questions? Try the [FAQ](../FAQ.md). The big picture? [How it works](../HOW_IT_WORKS.md). Ideas for your setup? See the eleven [use cases](../USE_CASES.md). Back to the [main page](../../README.md).
+The first seven guides on one page, with screenshots: the [Waifu AI Handbook](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
+Short questions? Try the [FAQ](../FAQ.md). The big picture? [How it works](../HOW_IT_WORKS.md). Ideas for your setup? See the thirteen [use cases](../USE_CASES.md). Back to the [main page](../../README.md).
 
 ## A few words you'll see
 
@@ -34,5 +36,7 @@ Short questions? Try the [FAQ](../FAQ.md). The big picture? [How it works](../HO
   set.
 - **Unsafe mode**: an optional switch that lets what you ask from your own Discord DM run with no confirmation.
   Off unless you turn it on.
+- **Bridge**: Waifu AI Bridge, a small Windows program that connects a Hologram Companion in another place to
+  your hub. Each bridge is **My place** (somewhere you control) or **Public companion** (it greets visitors).
 - **Simple / Advanced**: the app starts in Simple mode with the everyday screens. Advanced adds the wallet,
   developer settings and power-user tools. Switch in the **☰** menu at the top left.

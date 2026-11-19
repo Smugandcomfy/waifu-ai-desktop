@@ -1,18 +1,18 @@
 # 05 · Your Hologram Companion
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 5 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 5 of 9 · <a href="../../README.md">Home</a></sub>
 
 Give your companion a body. A Hologram Companion speaks its replies out loud, rings its own alarms and can
 change the room's lights. ✨
 
-![The Device tab: a practice device, a real one, or one through a relay box](../../assets/screenshots/device.png)
+![The Device tab: a practice device, a real one, or one through Waifu AI Bridge](../../assets/screenshots/device.png)
 
 No device yet? Start with the **practice (mock) device**: everything works the same, and spoken replies show as
 text in the app. Switch to the real thing any time.
 
 ## You'll need (for a real device)
 
-- Your Hologram Companion on the **same Wi-Fi** as this PC (or reachable over a private network, below).
+- Your Hologram Companion on the **same Wi-Fi** as this PC (or in another place with Waifu AI Bridge, below).
 - The device awake, unlocked and signed in.
 
 ## Connect it
@@ -88,10 +88,13 @@ Ask from your phone or your Discord DM, in your own words:
   read them."
 - **Retry** on the Device card, or **Test the connection**, checks straight away.
 
-## A device in another place
+## A device in another place 🌉
 
-On another network (a holiday home, the office)? Use a private network such as Tailscale or WireGuard that gives
-the device an address your PC can reach, and put that address in the Device card.
+Your Hologram Companion doesn't have to live next to your PC. Put it at your parents' house, your studio or a shop
+counter, run **Waifu AI Bridge** on a PC beside it, and it's still your companion, connected to your hub at home.
+Choose **My place** for somewhere you control, or **Public companion** to greet visitors.
+
+The full walkthrough: [08 · Waifu AI Bridge](08-waifu-ai-bridge.md).
 
 ---
 

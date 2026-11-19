@@ -1,6 +1,6 @@
 # 06 · Money and safety
 
-<sub>📖 <a href="README.md">All guides</a> · Guide 6 of 7 · <a href="../../README.md">Home</a></sub>
+<sub>📖 <a href="README.md">All guides</a> · Guide 6 of 9 · <a href="../../README.md">Home</a></sub>
 
 Keys, passphrase, backups, and the wallet. The serious bit, kept short. 🛡️
 

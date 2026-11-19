@@ -19,7 +19,8 @@
 
 Waifu AI is one program on your PC: the **hub**. The window you see is its page. The hub holds a key for every
 companion, writes their replies with the brain you picked, keeps your conversations and notes, and runs your
-reminders. It listens only on `127.0.0.1`, so only your PC can reach it.
+reminders. The app window is for this PC only. A Waifu AI Bridge in another place, or a device on your Wi-Fi
+that you allowed, reaches just its own small door, with its own token, and never the app itself.
 
 A few things need a place that is always on and that every hub can reach, so they run as four small
 **canisters** on the Internet Computer: a registry of public names, a memory directory, the shared memory bank,
@@ -29,12 +30,13 @@ and the anonymous usage reports. The hub works without any of them. See [The Wai
 
 <p align="center"><img src="../assets/diagrams/one-door.svg" alt="One door for every action: it arrives, who is asking, the checks, the answer" width="100%"></p>
 
-A message can reach a companion eight ways: the app's Chat, voice, the Hologram Companion itself, Sneed SMS,
-Telegram, Discord, an AI app over MCP, and the local tool API. Whichever way it comes, it goes through the same
+A message can reach a companion nine ways: the app's Chat, voice, the Hologram Companion itself, a Hologram
+Companion in another place through **Waifu AI Bridge**, Sneed SMS, Telegram, Discord, an AI app over MCP, and the
+local tool API. Whichever way it comes, it goes through the same
 door, and the hub asks the same questions:
 
 1. **Who is asking?** You (proven by the app or a phone you trusted), your orchestrator inside a job you
-   started, a connected app with its own key, or a peer, a friend or a stranger.
+   started, a connected app with its own key, someone at a bridge, or a peer, a friend or a stranger.
 2. **What kind of action?** A read, a change to the companion's own state, a write that reaches out, or a move
    of money.
 3. **What did you allow?** The companion's autonomy settings, its allow list and its spend caps.
@@ -71,8 +73,12 @@ orchestrator role change only in the app.
 | **Peer** | A companion on a hub paired with yours: public reads and a balance check. Never your notes or wallet. |
 | **Friend** | Public reads, such as who your companion is. Chat only. |
 | **Stranger** | Nothing, unless you turn on "Reply to strangers": then chat in character, with no tools. |
+| **At a My place bridge** | You, when you've used the app in the last 15 minutes: your messages, notes and wallet can be read to you there. Anyone else there is a guest. |
+| **At a Public companion bridge** | A friendly guest: chat in character, public answers, a reminder that rings right there. Nothing can be changed. |
 
-You set roles under **People**. Discord guests in your server get chat only: no tools, memory or wallet.
+You set roles under **People**. Discord guests in your server, and visitors at a bridge, get chat only: no tools,
+memory or wallet. They're answered by the guest brain (Claude Haiku with short answers, when you have a Claude
+key) within each companion's daily guest budget, then by the free brain.
 
 ## Brains
 
@@ -97,7 +103,9 @@ ceiling: when it's spent, that companion uses the free brain until the 1st.
 | **A brain** | On-chain, your provider, or your PC | Nothing between turns | The hub sends it one turn at a time |
 | **The Waifu AI Network** | Internet Computer | Public names, shared memories, daily totals | See [Network](NETWORK.md) |
 | **Web3** | Internet Computer | Messages between IDs, tokens, your sign-in | Signed by your companions or by you |
-| **Hologram Companion** | Its room, on your Wi-Fi | Its character, voice, alarms, memory cards | The hub, or a bridge box beside it |
+| **Hologram Companion** | Its room, on your Wi-Fi | Its character, voice, alarms, memory cards | The hub, or Waifu AI Bridge beside it |
+| **Waifu AI Bridge** | A Windows PC beside a Hologram Companion in another place | Its pairing and its bridge tokens; none of your hub's keys | It connects out to your hub, over your network or Tailscale |
+| **Home Assistant** | Your home network | Your home's devices | The hub, only for the devices you ticked |
 | **Your phone** | Anywhere | Nothing of the hub's | It messages your companions |
 
 **Your data folder** is under `%APPDATA%`, apart from the app folder, which is why updating is safe. Back it up
@@ -105,4 +113,4 @@ from **Settings → Security & backups**. Never copy files out of it by hand whi
 
 <p align="center">Ready? Start with <a href="guides/01-getting-started.md"><b>Getting started</b></a>. 💖</p>
 
-<sub>Waifu AI Desktop v0.99.14. Defaults and limits may change in later versions.</sub>
+<sub>Waifu AI Desktop v0.99.18. Defaults and limits may change in later versions.</sub>

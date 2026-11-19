@@ -4,8 +4,8 @@
 
 <h1 align="center">📘 Waifu AI Desktop: Use Cases</h1>
 
-<p align="center"><b>Eleven case studies, from one companion on a desk to fifty bots across a team.<br>
-How people set up Waifu AI Desktop, what each setup costs, and where the limits are.</b></p>
+<p align="center"><b>Fourteen case studies, from one companion on a desk to fifty bots across a team, a café counter and a family across two homes.<br>
+How people set up Waifu AI Desktop, what each setup costs, and how to make the most of it.</b></p>
 
 <p align="center">
   <a href="../README.md">🏠 Home</a> ·
@@ -21,16 +21,17 @@ How people set up Waifu AI Desktop, what each setup costs, and where the limits 
 
 Waifu AI Desktop is one app with many shapes. The same building blocks make a quiet desk buddy, a
 private notebook that never touches the cloud, or a network of bots run by a whole team. This paper walks through
-**eleven case studies** in three groups:
+**fourteen case studies** in four groups:
 
 | Group | Case studies | Size |
 |---|---|---|
 | 🌱 **Simple** | 1 to 4 | 1 or 2 companions, set up in an evening |
 | ⚙️ **Advanced** | 5 to 7 | 3 to 4 identities, 1 to 2 Hologram Companions, automation and approvals |
-| 🏢 **Enterprise** | 8 to 11 | 11 to 50 identities, one big hub or several hubs |
+| 🏢 **Enterprise** | 8 to 11 | 6 to 50 identities, one big hub or several hubs |
+| 🌉 **Bridges and smart homes** | 12 to 14 | A companion in another place, a public greeter, a home that listens |
 
-Every case study uses features that exist in **Waifu AI Desktop v0.99.14**. Where a setup reaches a limit of the
-app, we say so and show how the case study works around it. The people and businesses are illustrations, not
+Every case study uses features that exist in **Waifu AI Desktop v0.99.18**. Where a setup reaches a limit of the
+app, we say so and show how the case study plans around it. The people and businesses are illustrations, not
 customers.
 
 ### The building blocks
@@ -45,6 +46,8 @@ customers.
 | 💬 **Channels** | The app's Chat, a Discord bot per identity, one Telegram bot per hub, and Sneed SMS from your phone. | [Talking everywhere](guides/03-talking-everywhere.md) |
 | ✅ **Approvals** | Anything that sends, spends or changes things waits for your OK in the app or on your phone. | [Money and safety](guides/06-money-and-safety.md) |
 | 🗂️ **Memory bank** | One shared memory for all the companions you enroll (optional). | [Memory and dreams](guides/04-memory-and-dreams.md) |
+| 🌉 **Waifu AI Bridge** | A small Windows program that connects a Hologram Companion in another place to your hub. **My place** for somewhere you control, **Public companion** to greet visitors. | [Waifu AI Bridge](guides/08-waifu-ai-bridge.md) |
+| 🏠 **Home Assistant** | Your companions run the lights, heating and more, from the devices you tick, with locks always asking you. | [Your home](guides/09-home-assistant.md) |
 | 🔌 **Connected apps** | Your own scripts and AI tools can talk to a companion through the hub's local tool API or MCP, with a key you control. | [FAQ](FAQ.md) |
 
 ---
@@ -54,21 +57,22 @@ customers.
 ```mermaid
 xychart-beta
     title "Identities per case study"
-    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
+    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
     y-axis "Identities" 0 --> 55
-    bar [1, 2, 1, 2, 3, 4, 3, 50, 16, 14, 11]
+    bar [1, 2, 1, 2, 3, 4, 3, 50, 6, 14, 11, 2, 1, 1]
 ```
 
 ```mermaid
 xychart-beta
     title "Monthly AI budgets set, in US dollars (the ceiling, not the bill)"
-    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"]
-    y-axis "USD per month" 0 --> 250
-    bar [0, 20, 0, 20, 45, 45, 50, 220, 160, 130, 120]
+    x-axis ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"]
+    y-axis "USD per month" 0 --> 350
+    bar [0, 20, 0, 20, 45, 45, 50, 220, 190, 130, 340, 15, 30, 10]
 ```
 
 A monthly budget is a **ceiling** you set per identity. When an identity reaches it, the free brain answers until
 the 1st. Most months cost well under the ceiling. Free brains (the on-chain AI and local models) cost nothing.
+For a Public companion, the ceiling is its daily guest budget for visitors ($1 a day unless you change it).
 
 ```mermaid
 quadrantChart
@@ -90,6 +94,9 @@ quadrantChart
     "Case 9 Retailer": [0.75, 0.45]
     "Case 10 Esports org": [0.7, 0.4]
     "Case 11 Remote network": [0.6, 0.55]
+    "Case 12 Two homes": [0.15, 0.3]
+    "Case 13 Shop window": [0.08, 0.5]
+    "Case 14 Smart flat": [0.1, 0.4]
 ```
 
 ---
@@ -407,14 +414,15 @@ store link from their persona; the sale happens in Nova's own store.
 
 **Ceiling:** about $220 a month in budgets (3 × $40 + 20 × $5). The 27 free-brain bots cost nothing.
 
-## Case study 9: The retail floor (15 Hologram Companions)
+## Case study 9: The retail floor (5 stores, one voice)
 
-**Who:** Willow & Thread, a clothing retailer with **five stores**. Each store has three Hologram Companions as
-friendly product guides: one at the door, one in the fitting area, one at the counter. Head office runs one
-**orchestrator**, itself a Hologram Companion, that keeps all 15 on message.
+**Who:** Willow & Thread, a clothing retailer with **five stores**. Each store has a Hologram Companion at the door
+as a friendly greeter and product guide. Head office runs one **orchestrator**, itself a Hologram Companion, that
+keeps every store on message.
 
-**Setup:** one hub at head office. Each store has a small **bridge box** (for example a Raspberry Pi) on the store's
-Wi-Fi that connects its Hologram Companions back to the hub over a private network (such as Tailscale).
+**Setup:** one hub at head office. In each store, a small always-on Windows PC beside the greeter runs **Waifu AI
+Bridge** with a **Public companion** token. The stores and head office share one **Tailscale** network, so every
+bridge finds the hub privately.
 
 ```mermaid
 flowchart TB
@@ -424,43 +432,46 @@ flowchart TB
         HUB --- ORCH
     end
     subgraph S1["🏬 Store 1"]
-        BR1["📦 Bridge"] --- A1["✨ Door"] & A2["✨ Fitting"] & A3["✨ Counter"]
+        BR1["🌉 Bridge<br/>Public companion"] --- A1["✨ 'Fern'<br/>greeter"]
     end
     subgraph S2["🏬 Store 2"]
-        BR2["📦 Bridge"] --- C1["✨ Door"] & C2["✨ Fitting"] & C3["✨ Counter"]
+        BR2["🌉 Bridge<br/>Public companion"] --- A2["✨ 'Ivy'<br/>greeter"]
     end
     subgraph S3["🏬 Stores 3–5"]
-        BR3["📦 Bridges"] --- D1["✨ × 9"]
+        BR3["🌉 Bridges"] --- A3["✨ × 3"]
     end
-    HUB <-- "private network" --> BR1
-    HUB <-- "private network" --> BR2
-    HUB <-- "private network" --> BR3
-    ORCH -- "the same line,<br/>all stores at once" --> A1 & C1 & D1
+    HUB <-- "Tailscale" --> BR1
+    HUB <-- "Tailscale" --> BR2
+    HUB <-- "Tailscale" --> BR3
+    ORCH -- "the same line,<br/>all stores at once" --> A1 & A2 & A3
 ```
 
-**Short prompts, one voice:** each store companion has a **short character prompt** in its character slots (the
-device keeps a small budget for it). For example:
+**Short prompts, one voice:** each greeter has a short character prompt. For example:
 
-> You are Fern, a guide at Willow & Thread. Be warm and brief. Help shoppers find sizes and styles. Today's
-> highlights are in your notes. For prices and payment, invite them to the counter.
+> You are Fern, a guide at Willow & Thread. Be warm and brief. Help shoppers find sizes and styles. Mention
+> this week's offers when it fits. For prices and payment, invite them to the counter.
 
-| | Maven (head office) | 15 store companions |
+| | Maven (head office) | 5 store greeters |
 |---|---|---|
-| Kind | Hologram Companion | Hologram Companions |
-| Brain | Claude, $40/mo | ChatGPT, $8/mo each |
-| Role | Orchestrator | Product guides |
+| Kind | Hologram Companion | Hologram Companions, each through a bridge |
+| Bridge role | n/a | Public companion |
+| Who they talk to | The team, in the app | Shoppers, as friendly guests |
+| Brain | Claude, $40/mo | For shoppers: the guest brain (Claude Haiku, short answers), $1 a day guest budget each |
+| Role | Orchestrator | Greeters and product guides |
 | Quiet hours | Store hours | Follow the hub: silent after closing |
-| Approvals | The owner, in the app | Shoppers chat only |
 
-**A morning:** the manager tells Maven in the app, "Announce the scarf sale in every store at 10." Maven runs a job
-and has each store's door companion say the line (up to 300 characters, never in quiet hours).
+**A morning:** the manager tells Maven in the app, "Announce the scarf sale in every store at 10." Maven runs one
+job, and every greeter says the line through its bridge. Shoppers then ask the greeter about the sale, sizes and
+where the fitting rooms are, and get quick, friendly answers in Fern's voice.
 
-**What it can't do:** the companions **don't take payments** and don't ring up sales; the till does. They don't read
-live stock levels for shoppers either: they talk from their prompt and the notes head office gives them. Waifu AI's
-Shop feature is for **buying**, not selling, and is still in early access. The value here is a consistent,
-friendly voice in every store, updated from one place.
+**Peace of mind:** shoppers can chat as much as they like, but nobody in a store can change the hub, read the team's
+messages or move money. If a store's internet drops, its bridge reconnects by itself as soon as it's back.
 
-**Ceiling:** $160 a month (Maven $40 + 15 × $8).
+**Good to know:** the greeters chat from their personality and the announcements head office sends; payments stay
+at the till. Each greeter answers up to six questions a minute.
+
+**Ceiling:** $190 a month (Maven $40 + 5 greeters × $30 guest budget). Lower a store's daily guest budget to spend
+less; once it's used up for the day, that greeter carries on with the free brain.
 
 ## Case study 10: The esports org
 
@@ -516,79 +527,206 @@ independent stores, and it is in early access.
 has one Hologram Companion. Kai wants **one hub on one always-on server** and to run the whole network from a single
 **orchestrator** while on the move.
 
-**Setup:** one hub on an always-on Windows server. Each site connects its Hologram Companion back to the server,
-either through a small **bridge box** on the site's Wi-Fi or by putting every site on one **private network** (such
-as Tailscale). One AI identity, **"Control"**, is the orchestrator.
+**Setup:** one hub on an always-on Windows server. Each site has a small PC running **Waifu AI Bridge** next to its
+Hologram Companion, and every site joins one **Tailscale** network with the server. Shops and studios use **Public
+companion** tokens; the two offices Kai works from use **My place**. One AI identity, **"Control"**, is the
+orchestrator.
 
 ```mermaid
 flowchart TB
-    KAI(["🙋 Kai, on the move"]) -- "Telegram: jobs" --> CTRL
-    KAI -. "Discord DM: only while<br/>Unsafe mode is on" .-> CTRL
+    KAI(["🙋 Kai, on the move"]) -- "Telegram: jobs,<br/>bridge codes" --> CTRL
     subgraph SRV["🖥️ Always-on server"]
         HUB["💖 Hub"]
         CTRL["🎼 'Control'<br/>orchestrator<br/>Claude · $40/mo"]
         HUB --- CTRL
     end
-    subgraph NET["🔐 Private network or bridge boxes"]
-        S1["✨ Site 1"]
-        S2["✨ Site 2"]
-        S3["✨ Site 3"]
-        S4["✨ Site 4"]
-        S5["✨ Site 5"]
-        S6["✨ Site 6"]
-        S7["✨ Site 7"]
-        S8["✨ Site 8"]
-        S9["✨ Site 9"]
-        S10["✨ Site 10"]
+    subgraph TS["🔐 One Tailscale network"]
+        subgraph PUB["🏪 8 shops and studios"]
+            P1["🌉 Bridge · Public companion<br/>✨ site companion"]
+        end
+        subgraph MP["🏡 2 offices"]
+            M1["🌉 Bridge · My place<br/>✨ site companion"]
+        end
     end
-    HUB <--> NET
-    CTRL -- "speak · status · ask · pause" --> NET
+    HUB <--> TS
+    CTRL -- "speak · status · ask · pause" --> TS
 ```
 
 | | Control | 10 site companions |
 |---|---|---|
-| Kind | AI identity | Hologram Companions, one per site |
-| Brain | Claude, $40/mo | ChatGPT, $8/mo each |
+| Kind | AI identity | Hologram Companions, one per site, each through a bridge |
+| Bridge role | n/a | Public companion (8), My place (2) |
+| Brain | Claude, $40/mo | For visitors: the guest brain within each site's guest budget; for Kai at an office: his own brain |
 | Role | Orchestrator for the whole network | The voice of each site, with its own short character prompt |
 | Quiet hours | n/a | Each follows its site's hours |
-| Control channel | Telegram (or Discord with Unsafe mode on) | n/a |
+| Control channel | Telegram | n/a |
 
 **A day:** from Telegram, Kai sends Control: "Tell every site we close at 4 today for the holiday." Control runs one
-job and each site's companion says the line (up to 300 characters, never in its quiet hours). "Which sites are
-quiet?" gets a status answer. "Pause site 7" stops that companion until Kai resumes it in the app.
+job and each site's companion says the line. "Which sites are quiet?" gets a status answer. "Pause site 7" rests
+that companion until Kai resumes it in the app.
 
-**Running it from Discord:** the orchestrator takes jobs from Kai's own Discord DM **only while Unsafe mode is on**.
-Unsafe mode is switched on in the app, turns itself off after the time Kai picks (1 hour to 7 days) or stays on
-until he turns it off, and while it's on, everything Kai asks
-from that DM runs without confirmation, money included. That's why **Telegram** is the everyday control channel here.
+**Opening a new pop-up:** Kai sets up the bridge PC on site and texts Control *"bridge code for Site 11"*. He
+approves it with his code, types the one-time code into the bridge, and the new site is live in minutes. He gives the
+token an expiry date for the last day of the pop-up, so it tidies itself up.
 
-**What it can't do yet:**
-- **Change a site companion's settings from afar.** Prompts, quiet hours and the rest are set in the app on the server.
-- **Take ordinary Discord jobs without Unsafe mode.** A safer Discord route, limited to announcements, status and
-  pausing, is a requested feature; watch the [Releases](https://github.com/Smugandcomfy/waifu-ai-desktop/releases) page.
+**At an office:** with a My place bridge, Kai can ask the office companion "Echo, read me my messages" when he's
+been using the app recently, and it reads them out.
 
-**Ceiling:** $120 a month (Control $40 + 10 × $8). The server must stay on: when the hub stops, all ten sites go
-quiet.
+**Good to know:** prompts, quiet hours and the rest are set in the app on the server, which Kai opens from anywhere
+over Tailscale. Telegram is his everyday control channel; from his Discord DM the orchestrator takes jobs while he
+has Unsafe mode switched on.
+
+**Ceiling:** about $340 a month (Control $40 + 10 sites × $30 guest budget). Lower the daily guest budget for quiet
+sites to spend less. The server needs to stay on: it's the heart of all ten sites.
+
+---
+
+# 🌉 Bridges and smart homes
+
+Waifu AI Bridge takes a Hologram Companion anywhere: one hub at home, companions wherever you need them. Home
+Assistant lets your companions look after the house. These three setups show both.
+
+## Case study 12: Two homes, one family
+
+**Who:** Sam lives in the city; Sam's parents live two hours away. Sam already has **Mika**, a Hologram Companion on
+the desk at home. Now Sam wants a companion at the parents' house too, to ring reminders, read out Sam's messages
+when Sam visits, and keep everyone a little more connected.
+
+**Setup:** one hub on Sam's PC. A second companion, **Nana**, lives at the parents' house: a Hologram Companion
+with **Waifu AI Bridge** on the parents' always-on PC. Both PCs are on Sam's **Tailscale** network. Nana's bridge is
+**My place**, because it's family and Sam controls it.
+
+```mermaid
+flowchart LR
+    subgraph CITY["🏙️ Sam's flat"]
+        HUB["💖 Hub"] --- MIKA["✨ 'Mika'<br/>on the desk"]
+    end
+    subgraph PARENTS["🏡 The parents' house"]
+        BR["🌉 Bridge<br/>My place"] --- NANA["✨ 'Nana'<br/>in the kitchen"]
+    end
+    HUB <-- "Tailscale" --> BR
+    PHONE(["📱 Sam's phone"]) -- "reminders · bridge code" --> HUB
+```
+
+| | Mika | Nana |
+|---|---|---|
+| Kind | Hologram Companion, on the hub's Wi-Fi | Hologram Companion, through a bridge |
+| Bridge role | n/a | My place |
+| Brain | Claude, $15/mo | Free on-chain brain (guests chat for free) |
+| Talks to | Sam | Sam's parents as friendly guests; Sam, when visiting |
+| Reminders | Ring on the desk | Ring in the kitchen |
+
+**A week:**
+- From the train, Sam opens the app and adds a reminder for Nana: 6 pm, "Dad's tablets". At 6, Nana says it in
+  the kitchen.
+- Mum asks Nana, "Nana, what's the weather tomorrow?" and gets a cheerful answer.
+- Visiting at the weekend, Sam says "Nana, read me my messages" and hears them right there, because Sam has used
+  the app in the last 15 minutes.
+
+**Setting it up from afar:** Sam's parents only had to plug things in. Sam texted *"bridge code for Nana, my place"*,
+approved it with the authenticator code, and read the one-time code to Dad over the phone to type in.
+
+**Ceiling:** $15 a month (Mika's budget). Nana costs nothing.
+
+## Case study 13: The shop window
+
+**Who:** Bean There, a neighbourhood café. The owner, Priya, wants a friendly face on the counter that greets
+customers, tells them today's specials and chats while they wait, without her having to watch it.
+
+**Setup:** Priya's hub runs on her PC at home. At the café, **Poppy**, a Hologram Companion, sits on the counter
+with **Waifu AI Bridge** on the café's back-office PC, as a **Public companion**. The two PCs share a **Tailscale**
+network. Priya has a Claude key on her hub, so customers get quick, natural answers from the guest brain.
+
+```mermaid
+flowchart LR
+    subgraph CAFE["☕ The café"]
+        CUST(["🙂 Customers"]) -- "chat" --> POPPY["✨ 'Poppy'<br/>on the counter"]
+        POPPY --- BR["🌉 Bridge<br/>Public companion"]
+    end
+    subgraph HOME["🏠 Priya's home"]
+        HUB["💖 Hub"]
+    end
+    BR <-- "Tailscale" --> HUB
+    PRIYA(["🙋 Priya"]) -- "today's specials,<br/>announcements" --> HUB
+```
+
+| | Poppy |
+|---|---|
+| Kind | Hologram Companion, through a bridge |
+| Bridge role | Public companion |
+| Who it talks to | Customers, as friendly guests |
+| Brain for customers | The guest brain: Claude Haiku with short answers, $1 a day guest budget |
+| Quiet hours | Café hours: silent after closing |
+
+**A day:** at opening, Poppy announces the day's specials, which Priya queued from the app at home. Customers chat
+with her while they wait: "Poppy, what do you recommend?" At 3 pm Priya has Poppy announce "Happy hour: half-price
+iced lattes until 5!"
+
+**Peace of mind:** customers can chat all day, but nobody at the counter can reach Priya's messages, change her
+hub or spend her money. Poppy answers up to six questions a minute, and when the day's guest budget is used up she
+carries on with the free brain.
+
+**Ceiling:** about $30 a month (the $1-a-day guest budget). Priya could lower it on quiet days.
+
+## Case study 14: The smart flat
+
+**Who:** Alex lives alone in a flat full of smart lights and a smart lock, all in **Home Assistant**. Alex wants
+**Juno**, a Hologram Companion, to be the friendly voice of the flat.
+
+**Setup:** one hub on Alex's PC; Juno on the same Wi-Fi; Home Assistant connected with its own non-admin user.
+Alex ticks the lights, the heating, the front-door lock and the door sensor, and makes a group called "All the
+lights".
+
+```mermaid
+flowchart LR
+    ALEX(["🙋 Alex"]) -- "voice" --> JUNO["✨ 'Juno'"]
+    ALEX -- "texts when out" --> HUB
+    JUNO --- HUB["💖 Hub"]
+    HUB -- "only the devices Alex ticked" --> HA["🏠 Home Assistant"]
+    HA --- L["💡 Lights"] & T["🌡️ Heating"] & D["🔒 Front door"]
+```
+
+| | Juno |
+|---|---|
+| Kind | Hologram Companion, on the hub's Wi-Fi |
+| Brain | Claude, $10/mo |
+| Home devices | Lights (a group), heating, front-door lock, door sensor |
+| Alerts | "Tell me if the front door is left open for 5 minutes" |
+
+**An evening:**
+- "Juno, turn on all the lights." Every light comes on, and Activity shows one tidy line.
+- "Juno, set the living room to 21." Done.
+- "Juno, lock the front door." Locked.
+- Out with friends, Alex texts *"is the front door locked?"* and gets the answer.
+- Off on holiday, Alex switches on **vacation mode**, and the home actions rest until Alex is back.
+
+**Peace of mind:** unlocking never happens by voice, and between 01:00 and 06:00 it's done in the app only. Guests
+and visitors never control the flat.
+
+**Ceiling:** $10 a month.
 
 ---
 
 # 🔍 Analysis
 
-## What the eleven case studies use
+## What the fourteen case studies use
 
-| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hologram Companions | 1 | 1 | | | 1 | 2 | 1 | | 16 | 2 | 10 |
-| AI identities | | 1 | 1 | 2 | 2 | 2 | 2 | 50 | | 12 | 1 |
-| Hubs | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 1 | 2 | 1 |
-| Orchestrator | | | | | ✅ | ✅ | ✅ | ✅ ×3 | ✅ | ✅ ×2 | ✅ |
-| Paid brain | | ✅ | | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Free / local brain | ✅ | | ✅ | | ✅ | ✅ | ✅ | ✅ | | ✅ | |
-| Discord bots | | 1 | | | | 2 | | 47 | | 9 | |
-| Telegram / phone | | | | ✅ | ✅ | | | | | | ✅ |
-| Memory bank | | | | ✅ | | | ✅ | ✅ | | | |
-| Connected apps | | | | | ✅ | | ✅ | | | | |
-| Unsafe mode | | | | | | ✅ | | | | | optional |
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Hologram Companions | 1 | 1 | | | 1 | 2 | 1 | | 6 | 2 | 10 | 2 | 1 | 1 |
+| AI identities | | 1 | 1 | 2 | 2 | 2 | 2 | 50 | | 12 | 1 | | | |
+| Hubs | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 1 | 2 | 1 | 1 | 1 | 1 |
+| Bridges | | | | | | | | | 5 | | 10 | 1 | 1 | |
+| Bridge roles | | | | | | | | | Public | | Public, My place | My place | Public | |
+| Orchestrator | | | | | ✅ | ✅ | ✅ | ✅ ×3 | ✅ | ✅ ×2 | ✅ | | | |
+| Paid brain | | ✅ | | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Free / local brain | ✅ | | ✅ | | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | |
+| Discord bots | | 1 | | | | 2 | | 47 | | 9 | | | | |
+| Telegram / phone | | | | ✅ | ✅ | | | | | | ✅ | ✅ | | ✅ |
+| Home Assistant | | | | | | | | | | | | | | ✅ |
+| Memory bank | | | | ✅ | | | ✅ | ✅ | | | | | | |
+| Connected apps | | | | | ✅ | | ✅ | | | | | | | |
+| Unsafe mode | | | | | | ✅ | | | | | optional | | | |
 
 ## Patterns
 
@@ -605,7 +743,10 @@ brings its own orchestrator, AI keys, reply allowance, public names and memory s
 **4. Approvals stay with a person.** Even the 50-bot network sends nothing, spends nothing and changes nothing without
 its hub owner, unless that owner switches Unsafe mode on for a short window.
 
-## The limits to plan around (v0.99.14)
+**5. Bridges take your companion anywhere.** One hub at home or head office can power companions in shops, studios
+and family homes. Choose **Public companion** where visitors chat, and **My place** where it should know you.
+
+## The limits to plan around (v0.99.18)
 
 ```mermaid
 xychart-beta
@@ -628,12 +769,12 @@ xychart-beta
 | Claimed public names | 25 per person | Unclaimed names are 72-hour leases the hub renews |
 | Memory bank | 32 companions per person's space | Spread big teams across people |
 | Local notes | 200 per identity | The bank holds more |
-| Hologram Companions | On the hub's network, a private network, or through a bridge box | Remote stores need a bridge |
+| Hologram Companions | On the hub's Wi-Fi, or anywhere with Waifu AI Bridge | One bridge (a Windows PC that stays on) per Hologram Companion; several of your companions can share that device |
+| Bridge visitors | The guest brain within the companion's daily guest budget ($1 a day by default); up to six questions a minute per bridge | Everyone at a Public companion is a friendly guest |
 | Shop | Buying only, early access, every buy approved in the app | No selling or payment taking |
 | Uptime | While the PC is on | Use an always-on PC for business setups |
 
-**Not in v0.99.14:** selling or taking payments, trading or market prices, email, and Home Assistant. Email and
-Home Assistant are planned. Watch the [Releases](https://github.com/Smugandcomfy/waifu-ai-desktop/releases) page.
+**Not in v0.99.18:** selling or taking payments, trading or market prices, and email. Email is planned. Watch the [Releases](https://github.com/Smugandcomfy/waifu-ai-desktop/releases) page.
 
 ## Choosing your setup
 
@@ -641,8 +782,10 @@ Home Assistant are planned. Watch the [Releases](https://github.com/Smugandcomfy
 flowchart TD
     Q1{"Do you want a<br/>device that talks?"} -- yes --> Q2{"More than one<br/>place or room?"}
     Q1 -- no --> Q3{"Must everything<br/>stay on your PC?"}
-    Q2 -- "no" --> C1["Case study 1 or 2"]
+    Q2 -- "no" --> C1["Case study 1 or 2<br/>(14 with Home Assistant)"]
     Q2 -- "yes, one building" --> C6["Case study 6"]
+    Q2 -- "yes, a home you control" --> C12["Case study 12"]
+    Q2 -- "yes, a shop or a counter" --> C13["Case study 13"]
     Q2 -- "yes, several sites" --> C9["Case study 9 or 11"]
     Q3 -- yes --> C3["Case study 3"]
     Q3 -- no --> Q4{"How many companions?"}
@@ -658,6 +801,6 @@ flowchart TD
 
 <p align="center">Ready to build yours? Start with <a href="guides/01-getting-started.md"><b>Getting started</b></a>. 💖</p>
 
-<sub>The case studies are illustrations. Features, limits and defaults are those of Waifu AI Desktop v0.99.14 and
+<sub>The case studies are illustrations. Features, limits and defaults are those of Waifu AI Desktop v0.99.18 and
 may change in later versions. Budgets are ceilings you set, not prices; AI providers bill you directly for your own
 keys.</sub>

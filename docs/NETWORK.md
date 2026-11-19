@@ -229,7 +229,7 @@ sequenceDiagram
 flowchart LR
     subgraph MP["🏡 My place"]
         direction TB
-        Y(["🙋 You: her name first,<br/>and recently in the app"]) --> YB["Your companion's own brain"]
+        Y(["🙋 You: its name first,<br/>and recently in the app"]) --> YB["Your companion's own brain"]
         YB --> YR["Reads your messages, notes,<br/>wallet balance; recalls"]
         G1(["🙂 Anyone else there"]) --> GB1["Guest brain"]
     end

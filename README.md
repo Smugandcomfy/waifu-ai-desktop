@@ -111,8 +111,8 @@ People in the room can chat with it, but only *you* can make it send messages or
 ### 🌉 Your companion in another place (new)
 Put a Hologram Companion at your parents' house, your studio or a holiday flat, with **Waifu AI Bridge** on a PC
 next to it.
-- Choose **My place** for somewhere you control: your companion knows it's you (after you've used the app in the last
-  15 minutes) and can read you your messages, notes and wallet. Asking it to change things out loud through a bridge
+- Choose **My place** for somewhere you control: your companion knows it's you (when you say its name and you've used
+  the app in the last 15 minutes) and can read you your messages, notes and wallet. Asking it to change things out loud through a bridge
   comes in a later update; until then, use the app or your phone for that.
 - Choose **Public companion** for a shop window or a waiting room: it chats with visitors in character, but nobody
   there can change your hub.

@@ -73,7 +73,7 @@ orchestrator role change only in the app.
 | **Peer** | A companion on a hub paired with yours: public reads and a balance check. Never your notes or wallet. |
 | **Friend** | Public reads, such as who your companion is. Chat only. |
 | **Stranger** | Nothing, unless you turn on "Reply to strangers": then chat in character, with no tools. |
-| **At a My place bridge** | You, when you've used the app in the last 15 minutes: your messages, notes and wallet can be read to you there. Anyone else there is a guest. |
+| **At a My place bridge** | You, when you start with the companion's name and you've used the app in the last 15 minutes: your messages, notes and wallet can be read to you there. Anyone else there is a guest. |
 | **At a Public companion bridge** | A friendly guest: chat in character, public answers, a reminder that rings right there. Nothing can be changed. |
 
 You set roles under **People**. Discord guests in your server, and visitors at a bridge, get chat only: no tools,

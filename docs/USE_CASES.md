@@ -620,8 +620,8 @@ flowchart LR
 - From the train, Sam opens the app and adds a reminder for Nana: 6 pm, "Dad's tablets". At 6, Nana says it in
   the kitchen.
 - Mum asks Nana, "Nana, what's the weather tomorrow?" and gets a cheerful answer.
-- Visiting at the weekend, Sam says "Nana, read me my messages" and hears them right there, because Sam has used
-  the app in the last 15 minutes.
+- Visiting at the weekend, Sam says "Nana, read me my messages" and hears them right there, because Sam said Nana's
+  name and has used the app in the last 15 minutes.
 
 **Setting it up from afar:** Sam's parents only had to plug things in. Sam texted *"bridge code for Nana, my place"*,
 approved it with the authenticator code, and read the one-time code to Dad over the phone to type in.

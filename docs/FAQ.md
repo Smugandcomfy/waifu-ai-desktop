@@ -257,8 +257,8 @@ Yes, a Windows PC that stays on at the other place, on the same Wi-Fi as the Hol
 ideal. One bridge looks after one Hologram Companion.
 
 ### What's the difference between My place and Public companion?
-**My place** is for somewhere you control: when you've used the app in the last 15 minutes, the companion there
-knows it's you and can read you your messages, notes and wallet balance. **Public companion** is for places with
+**My place** is for somewhere you control: when you start with the companion's name and you've used the app in
+the last 15 minutes, the companion there knows it's you and can read you your messages, notes and wallet balance. **Public companion** is for places with
 visitors: it chats with everyone as friendly guests, and nobody there can change your hub.
 
 ### Do I need Tailscale?

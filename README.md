@@ -8,11 +8,10 @@
 
 <p align="center">
   <a href="../../releases/latest"><b>⬇️ Download for Windows</b></a> ·
-  <a href="https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ"><b>📗 Handbook</b></a> ·
+  <a href="#get-started-in-5-minutes"><b>🚀 Get started</b></a> ·
+  <a href="#things-you-can-do">💡 Things you can do</a> ·
   <a href="docs/guides/README.md">📖 User guides</a> ·
-  <a href="docs/HOW_IT_WORKS.md">⚙️ How it works</a> ·
   <a href="docs/USE_CASES.md">📘 Use cases</a> ·
-  <a href="docs/NETWORK.md">🌐 Network</a> ·
   <a href="docs/FAQ.md">❓ FAQ</a>
 </p>
 
@@ -22,33 +21,56 @@
 
 ---
 
-## At a glance
+## What is it?
+
+**Waifu AI Desktop** is a small app (we call it the **hub**) that runs on your Windows PC. In it you create
+**companions**: AI characters with their own name, personality, memory and key. You can talk to them in the app,
+on Discord, on Telegram, by text from your phone, or out loud through a **Hologram Companion** on your Wi-Fi.
 
 <table>
 <tr>
-<td width="25%" valign="top"><h3>🔑 It's yours</h3>Each companion <b>is</b> a key that lives only on your PC. No account, no subscription, no cloud server holding your stuff.</td>
+<td width="25%" valign="top"><h3>🔑 It's yours</h3>Each companion's key lives only on your PC. No account, no subscription, no cloud server holding your stuff.</td>
 <td width="25%" valign="top"><h3>🧠 It remembers</h3>"Remember that my sister's name is Ana." Notes, a page for each day, and a nightly dream that tidies what it knows.</td>
 <td width="25%" valign="top"><h3>🤝 It's a team</h3>Companions message each other, can share one memory, and one of them can run small jobs across the rest.</td>
 <td width="25%" valign="top"><h3>✅ You decide</h3>Anything that sends, spends or changes things waits for your OK, in the app or from your phone.</td>
 </tr>
 </table>
 
-**Waifu AI Desktop** is a small **hub** that runs on your Windows PC. In it you make **companions**: AIs with
-their own name, memory, personality and key. Each one is a real identity on the Internet Computer, so it can
-message, hold tokens and be found by name. Talk to them in the app, on Discord, on Telegram or by text from your
-phone, or give one a body: a **Hologram Companion** on your Wi-Fi speaks its replies out loud.
+## What's new in 0.99.18 (pre-release)
+
+> 🧪 **0.99.18 is a pre-release for testers.** Download it from the [**v0.99.18 release**](../../releases/tag/v0.99.18).
+> The newest stable version is always under [**Latest**](../../releases/latest). Your hub keeps offering stable
+> versions only, unless you tick **Also offer test releases** in **Settings → Updates**.
+
+- 🌉 **Waifu AI Bridge**, a separate Windows program: put a Hologram Companion in another room, another house or a
+  shop, and it still talks to your hub. It sets itself up and starts with Windows.
+- 🗣️ **Talk to your companion through the bridge.** Choose per bridge: **My place** (for somewhere you control: it
+  can read you your messages, notes and wallet) or **Public companion** (it chats with visitors but can't change
+  anything). Asking for changes out loud through a bridge comes in a later update.
+- 📲 **Away from your PC?** Text your phone or message your Discord DM: "bridge code for Mika". You get a one-time
+  code to type into the bridge. The real key never appears in a chat.
+- 💾 **Weekly backups are on by default** once your hub has a passphrase, and uninstalling keeps your backups.
+- 🔒 **Safer approvals:** what you approve is exactly what runs, once. Private notes stay out of what your companion
+  says out loud.
+- 🔗 **Linking ChatGPT** now works from a normal browser (update your gateway first).
+- 📊 **Usage reports can be switched off** in **Settings → Updates**. Updated Terms of Use.
+
+Full details are on the [Releases](../../releases) page.
 
 ## Get started in 5 minutes
 
 | Step | What to do |
 |---|---|
-| **1. Download** | `waifu-ai-vX.Y.Z-win-x64.zip` from [**Releases**](../../releases/latest). |
-| **2. Unzip** | Into a folder you'll keep, such as Documents (not Downloads). Nothing to install. |
-| **3. Start** | Double-click `Waifu AI.exe` and accept the Terms of Use. |
-| **4. Make a companion** | On Today, press **Create your first identity**: pick a type, a name and a passphrase. The free brain is fine. |
-| **5. Say hello** | Click it in the left column, open **Conversations → Chat**, and type "Hi! What can you do?" |
+| **1. Download** | The newest `waifu-ai-vX.Y.Z-win-x64.zip` from [**Latest**](../../releases/latest) (or [**v0.99.18**](../../releases/tag/v0.99.18), the pre-release). |
+| **2. Unzip** | Into a folder you'll keep, such as Documents (not Downloads). There is nothing to install. |
+| **3. Start** | Double-click **`Waifu AI.exe`**, then read and accept the Terms of Use. |
+| **4. Make a companion** | On **Today**, press **Create your first identity**. Pick a type and a name. The free brain is fine to start. |
+| **5. Protect it** | Set a passphrase when the wizard asks (or later in **Settings → Security & backups**). Weekly backups then start on their own. |
+| **6. Say hello** | Click your companion in the left column, open **Conversations → Chat**, and type: *"Hi! What can you do?"* |
 
 > 🛡️ **"Windows protected your PC"?** The app isn't code-signed yet. Click **More info → Run anyway**.
+> Some antivirus programs (for example Bitdefender) may quarantine the unsigned `Waifu AI.exe`. If it disappears,
+> restore it from your antivirus quarantine and add an exception for the folder you keep it in.
 > Full walkthrough: [Getting started](docs/guides/01-getting-started.md).
 
 <table>
@@ -58,27 +80,95 @@ phone, or give one a body: a **Hologram Companion** on your Wi-Fi speaks its rep
 </tr>
 </table>
 
-## How it works
+## Things you can do
 
-<p align="center"><img src="assets/diagrams/how-it-works.svg" alt="How Waifu AI fits together: the hub on your PC, the ways you reach it, the Waifu AI Network and the services you choose" width="100%"></p>
+A few everyday examples. Each one works with the free brain unless it says otherwise.
 
-The thinking happens on **your PC**. Four small always-on services on the Internet Computer give your companions
-a public name, a shared memory and a way to tell us what broke, and the hub works without any of them. Every
-message, from every channel, goes through **one door** where the same checks run every time.
-More in [**How it works**](docs/HOW_IT_WORKS.md).
+### 🌅 A morning helper that knows you
+> **You:** "Remember that I start work at 9 and I hate being late."<br>
+> **You, next morning:** "What's my day look like?"
+
+Your companion keeps notes, writes a short page for each day, and answers from what it knows about you. Ask it
+"what did we talk about yesterday?" and it can tell you.
+
+### ⏰ Reminders by voice, text or chat
+> "Remind me at 7:30 to call mum." · "Remind me in 20 minutes to take the pizza out."
+
+Reminders ring in the app, on your phone, or out loud on your Hologram Companion. See them all under **Reminders**.
+
+### 📱 Run things from your phone
+Text your companion from your phone (Sneed SMS) or message it on Telegram or your Discord DM:
+> "Did anyone message me?" · "Tell Ana I'm running late." · `stop all writes` (the emergency brake)
+
+Anything that sends or changes something asks you first, with a short code you reply with.
+
+### ✨ A Hologram Companion on your desk
+Pair a Hologram Companion on your Wi-Fi, and your companion speaks its replies out loud. Say its name first:
+> "Mika, what's the weather like?" · "Mika, stop talking."
+
+People in the room can chat with it, but only *you* can make it send messages or change settings.
+
+### 🌉 Your companion in another place (new)
+Put a Hologram Companion at your parents' house, your studio or a holiday flat, with **Waifu AI Bridge** on a PC
+next to it.
+- Choose **My place** for somewhere you control: your companion knows it's you (after you've used the app in the last
+  15 minutes) and can read you your messages, notes and wallet. Asking it to change things out loud through a bridge
+  comes in a later update; until then, use the app or your phone for that.
+- Choose **Public companion** for a shop window or a waiting room: it chats with visitors in character, but nobody
+  there can change your hub.
+
+Away from home with no access to your PC? Text your phone: *"bridge code for Mika, my place"*, approve it with your
+authenticator code, and type the one-time code into the bridge.
+
+### 🏠 Control your home (Home Assistant)
+Connect Home Assistant and tick the devices your companion may use:
+> "Turn on the living room lights." · "Is the front door locked?"
+
+Lights and comfort devices can just work. Locks, alarms and garages always wait for your OK, and "unlock" never runs
+from a voice alone.
+
+### 🤝 A team of companions
+Make a few companions with different jobs: one for chat, one for coding, one as your orchestrator. They can message
+each other and share one memory. Your orchestrator can run small jobs across the others, within the budget you set.
+
+### 💬 Use your companions from ChatGPT
+Link ChatGPT to your hub (through a gateway you run). ChatGPT can then read the memories you approve, and ask your
+companion to send a message, which waits for your OK.
+
+### 🪙 A wallet that never moves money behind your back
+Each companion can hold tokens on the Internet Computer. Sending always shows you exactly what goes where and waits
+for your OK, unless you set a spending cap. A connected app can never move money.
+
+Eleven bigger setups, from one companion on a desk to a 50-bot creator network, with diagrams and budgets:
+[**Use cases**](docs/USE_CASES.md).
+
+## Waifu AI Bridge (new in 0.99.18)
+
+The bridge lets a Hologram Companion **somewhere else** talk to your hub at home.
+
+1. On your hub, open your companion → **Device → Through a bridge**. Choose **Public companion** or **My place**,
+   and press **New bridge token** (My place asks for your passphrase).
+2. On a Windows PC next to the Hologram Companion, download **`waifu-ai-bridge-v0.99.18-win-x64.zip`** from the
+   [v0.99.18 release](../../releases/tag/v0.99.18), unzip it, and double-click **`Waifu AI Bridge.exe`**.
+3. It asks for the Hologram Companion's address, the code it shows, your hub's address and the token, then checks
+   everything and offers to start with Windows.
+4. From another network, connect both PCs with **Tailscale** (free); the Device card shows the address to use.
+
+Revoke a bridge any time from the Device card, or from your phone: *"revoke the bridge for Mika"*. You can also give
+a bridge an expiry date. Full steps are in `HOW-TO-RUN.txt` inside the bridge zip.
 
 ## You stay in charge
 
 <p align="center"><img src="assets/diagrams/permissions.svg" alt="Who may do what on a normal day: reads run for you everywhere; writes ask first in the app and wait for your OK elsewhere; friends and strangers get almost nothing" width="100%"></p>
 
-- **Writes wait for you** by default. Loosen it per companion under **Behaviour → Actions & autonomy**, with
-  starter profiles and Undo.
-- **Money never moves on its own** unless you set a spend cap. A connected app never moves money at all.
+- **Writes wait for you** by default. Loosen it per companion under **Behaviour → Actions & autonomy**.
+- **One OK, one action:** an approval covers exactly what the card shows, and it runs once.
+- **Money never moves on its own** unless you set a spend cap.
 - **Someone else's words** (a web page, a picture, a stranger's message, something heard in the room) make
   anything that turn wants to do wait for you.
 - **Emergency brake:** text `stop all writes` from your phone. `resume writes` lifts it.
-- **Unsafe mode** (off by default) lets what *you* ask from your own Discord DM run with no confirmation, until
-  the time you pick. Turn it off from anywhere by texting `unsafe off`.
+- **Unsafe mode** (off by default) lets what *you* ask from your own Discord DM run without confirmation, until the
+  time you pick. Turn it off from anywhere by texting `unsafe off`.
 
 ## Pick a brain
 
@@ -92,24 +182,12 @@ More in [**How it works**](docs/HOW_IT_WORKS.md).
 When a companion's budget runs out, it uses the free brain until the 1st. More in
 [Companions and brains](docs/guides/02-companions-and-brains.md).
 
-## Talk anywhere
-
-<table>
-<tr>
-<td width="34%" valign="top"><img src="assets/screenshots/discord-card.png" alt="Connections, Discord"><br><sub><b>Discord:</b> a bot of its own, with guided setup.</sub></td>
-<td width="33%" valign="top"><img src="assets/screenshots/reminders.png" alt="Reminders"><br><sub><b>Reminders:</b> "remind me at 7:30 to call mum".</sub></td>
-<td width="33%" valign="top"><img src="assets/screenshots/phone-today.png" alt="Today on a phone-sized window" width="60%"><br><sub><b>Phone-sized:</b> a bar of four at the bottom.</sub></td>
-</tr>
-</table>
-
-💬 The app's Chat · 🎮 a Discord bot per companion · ✈️ one Telegram bot per hub · 📱 Sneed SMS from your phone ·
-✨ out loud to a Hologram Companion · 🔌 your own AI tools over MCP.
-
 ## What you need
 
 - A **Windows PC, 64-bit (x64)**, with an internet connection. The unzipped app is about 100 MB.
-- That's all to start. Optional: an **Anthropic** or **OpenAI** API key, a **Discord** server you own,
-  **Telegram**, an **Internet Identity** (free) for the shared memory bank, and a **Hologram Companion**.
+- That's all to start. Optional: an **Anthropic** or **OpenAI** API key, a **Discord** server you own, **Telegram**,
+  **Home Assistant**, an **Internet Identity** (free) for the shared memory bank, a **Hologram Companion**, and for a
+  companion in another place, a second PC for **Waifu AI Bridge** (plus **Tailscale** across networks).
 
 Your companions are online only while Waifu AI runs: a sleeping PC means a sleeping bot.
 
@@ -121,14 +199,13 @@ Your companions are online only while Waifu AI runs: a sleeping PC means a sleep
 | 🧩 | [02 · Companions and brains](docs/guides/02-companions-and-brains.md) | You want more companions, a smarter brain, or an orchestrator |
 | 💬 | [03 · Talking everywhere](docs/guides/03-talking-everywhere.md) | Discord, Telegram, your phone, approvals, Unsafe mode |
 | 🌙 | [04 · Memory and dreams](docs/guides/04-memory-and-dreams.md) | Notes, day pages, dreaming, the memory bank, reminders |
-| ✨ | [05 · Your Hologram Companion](docs/guides/05-your-hologram-companion.md) | You have the hologram device |
+| ✨ | [05 · Your Hologram Companion](docs/guides/05-your-hologram-companion.md) | You have the hologram device, or a bridge |
 | 🛡️ | [06 · Money and safety](docs/guides/06-money-and-safety.md) | Passphrase, backups, the wallet, approvals, limits |
 | 🔧 | [07 · Updates and troubleshooting](docs/guides/07-updates-and-troubleshooting.md) | A new version is out, or something is off |
 
-Prefer one page with charts and screenshots? Read the [**Waifu AI Handbook**](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
 Inside the app, **Help** in the **☰** menu and the **?** on each card open help for exactly where you are.
-From one Hologram Companion on a desk to a 50-bot creator network: eleven [**use cases**](docs/USE_CASES.md)
-with diagrams, budgets and the limits to plan around.
+More: [How it works](docs/HOW_IT_WORKS.md) · [The Waifu AI Network](docs/NETWORK.md) ·
+[Handbook](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
 
 ## Privacy, in plain words
 
@@ -136,16 +213,15 @@ with diagrams, budgets and the limits to plan around.
 |---|---|
 | Your companions' keys and your passphrase | A message, through the service that carries it (Discord, Telegram, Sneed SMS) |
 | Your API keys and bot tokens | A reply's prompt, to the brain you picked, with your key |
-| Your conversations, local notes and contacts | Memories you put in the shared bank, readable only by you and your enrolled companions |
+| Your conversations, local notes and contacts | Memories you put in the shared bank, readable by you and the apps you enrol |
 
-On Windows these are encrypted even before you set a passphrase; a passphrase locks them tighter.
-⚠️ Sneed SMS messages are **not encrypted**: treat them like postcards.
-
-**The anonymous daily usage report** sends **counts only** once a day: app version, system type, which features
-and brains are used, success and error counts, timing ranges and crash signatures. It **never** includes your
-messages, memories, contacts, names, keys, addresses, Discord or phone IDs, or anything you type, and it carries
-only a random number that changes every month. Read the last one, exactly as sent, in
-**Settings → Updates → Usage report**.
+- On Windows these are encrypted even before you set a passphrase; a passphrase locks them tighter.
+- ⚠️ Sneed SMS messages are **not encrypted**: treat them like postcards.
+- An app or AI tool you **enrol** in your memory bank can read everything shared there, including summaries of your
+  private phone and Discord chats. Enrol only tools you trust.
+- **The anonymous daily usage report** sends **counts only**: app version, system type, which features and brains
+  are used, success and error counts, and crash signatures. It never includes your messages, memories, contacts,
+  names, keys or anything you type. Read the last one, or switch it off, in **Settings → Updates → Usage report**.
 
 ## Updating
 
@@ -155,17 +231,19 @@ Waifu AI checks for a new version once a day (it sends nothing about you; untick
 2. Unzip it into a **new** folder.
 3. Quit Waifu AI (**☰ → Quit**), then start `Waifu AI.exe` from the new folder.
 
-Your companions, keys and settings live apart from the app folder, so nothing is lost. Each release lists the
-zip's `sha256` so you can check the download yourself.
+Your companions, keys and settings live apart from the app folder, so nothing is lost. Each release lists the zip's
+`sha256` so you can check the download yourself. The bridge updates separately: download its new zip on the bridge PC.
 
 ## Your data and backups
 
-Everything your companions are lives in Waifu AI's data folder under `%APPDATA%`, not in the app folder.
-But a companion **is** its key: lose the key without a backup and that companion is gone for good.
+Everything your companions are lives in Waifu AI's data folder under `%APPDATA%`, not in the app folder. A companion
+**is** its key: lose the key without a backup and that companion is gone for good.
 
-1. **Set a passphrase:** **Settings → Security & backups → Keys → Set a passphrase**. A forgotten one can't be recovered, so also…
-2. **Back up:** **Back up keys** (just the companions) or **Export hub** (everything, and how you move to a new PC).
-3. **Turn on scheduled backups**, daily or weekly, to a drive that isn't this PC's disk.
+1. **Set a passphrase:** **Settings → Security & backups → Keys → Set a passphrase**. A forgotten passphrase can't be
+   recovered.
+2. **Weekly backups** then run on their own. Point them at a drive that isn't this PC's disk; the app warns you if
+   they sit on the same drive.
+3. **Moving to a new PC?** Use **Export hub**, then import it on the new PC.
 
 More in [Money and safety](docs/guides/06-money-and-safety.md).
 

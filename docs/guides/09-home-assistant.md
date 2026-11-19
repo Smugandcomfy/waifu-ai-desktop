@@ -2,7 +2,7 @@
 
 <sub>📖 <a href="README.md">All guides</a> · Guide 9 of 9 · <a href="../../README.md">Home</a></sub>
 
-If you run **[Home Assistant](https://www.home-assistant.io)**, your companions can turn on the lights, warm up the
+If you run **[Home Assistant](https://www.home-assistant.io)**, your identities can turn on the lights, warm up the
 living room and tell you whether the front door is locked, by voice, by text or in chat. 🏠
 
 > "Turn on the living room lights." · "Is the front door locked?" · "Set the bedroom to 20 degrees." ·
@@ -15,7 +15,7 @@ your home stays out of reach.
 
 - Home Assistant on your home network (or reachable with `https://`).
 - A separate Home Assistant user for Waifu AI that is **not** an administrator, with a **long-lived access token**
-  (that user's profile → **Security**). Your companions can then do only what that user may do.
+  (that user's profile → **Security**). Your identities can then do only what that user may do.
 
 ## 1. Connect
 
@@ -28,7 +28,7 @@ your home stays out of reach.
 
 ## 2. Choose the devices
 
-Tick each device your companions may use and give it your own friendly label ("Hall light"). Your companions only
+Tick each device your identities may use and give it your own friendly label ("Hall light"). Your identities only
 ever see that label.
 
 - Give devices an **area** to group them by room. **Fill in the areas from Home Assistant** copies the rooms you

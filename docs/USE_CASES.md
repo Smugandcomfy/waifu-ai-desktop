@@ -4,7 +4,7 @@
 
 <h1 align="center">📘 Waifu AI Desktop: Use Cases</h1>
 
-<p align="center"><b>Fourteen case studies, from one companion on a desk to fifty bots across a team, a café counter and a family across two homes.<br>
+<p align="center"><b>Fourteen case studies, from one identity on a desk to fifty bots across a team, a café counter and a family across two homes.<br>
 How people set up Waifu AI Desktop, what each setup costs, and how to make the most of it.</b></p>
 
 <p align="center">
@@ -25,10 +25,10 @@ private notebook that never touches the cloud, or a network of bots run by a who
 
 | Group | Case studies | Size |
 |---|---|---|
-| 🌱 **Simple** | 1 to 4 | 1 or 2 companions, set up in an evening |
+| 🌱 **Simple** | 1 to 4 | 1 or 2 identities, set up in an evening |
 | ⚙️ **Advanced** | 5 to 7 | 3 to 4 identities, 1 to 2 Hologram Companions, automation and approvals |
 | 🏢 **Enterprise** | 8 to 11 | 6 to 50 identities, one big hub or several hubs |
-| 🌉 **Bridges and smart homes** | 12 to 14 | A companion in another place, a public greeter, a home that listens |
+| 🌉 **Bridges and smart homes** | 12 to 14 | An identity in another place, a public greeter, a home that listens |
 
 Every case study uses features that exist in **Waifu AI Desktop v0.99.18**. Where a setup reaches a limit of the
 app, we say so and show how the case study plans around it. The people and businesses are illustrations, not
@@ -39,16 +39,16 @@ customers.
 | Block | What it is | Where to read more |
 |---|---|---|
 | 💖 **Hub** | The app on your Windows PC. Everything runs here. One person, one hub, is the usual setup. | [Getting started](guides/01-getting-started.md) |
-| 🤖 **AI identity** | A companion with its own name, memory, key and personality. No device needed. | [Companions and brains](guides/02-companions-and-brains.md) |
-| ✨ **Hologram Companion** | A companion with a body: a device on your Wi-Fi that speaks, rings alarms and changes the lights. | [Your Hologram Companion](guides/05-your-hologram-companion.md) |
-| 🧠 **Brain** | What thinks for a companion: the free on-chain AI, a local model on your PC, or Claude / ChatGPT with your key and a monthly budget. | [Companions and brains](guides/02-companions-and-brains.md) |
-| 🎼 **Orchestrator** | One identity per hub that runs jobs across your other identities, inside limits you set. | [Companions and brains](guides/02-companions-and-brains.md) |
+| 🤖 **AI identity** | An identity with its own name, memory, key and personality. No device needed. | [Identities and brains](guides/02-companions-and-brains.md) |
+| ✨ **Hologram Companion** | An identity with a body: a device on your Wi-Fi that speaks, rings alarms and changes the lights. | [Your Hologram Companion](guides/05-your-hologram-companion.md) |
+| 🧠 **Brain** | What thinks for an identity: the free on-chain AI, a local model on your PC, or Claude / ChatGPT with your key and a monthly budget. | [Identities and brains](guides/02-companions-and-brains.md) |
+| 🎼 **Orchestrator** | One identity per hub that runs jobs across your other identities, inside limits you set. | [Identities and brains](guides/02-companions-and-brains.md) |
 | 💬 **Channels** | The app's Chat, a Discord bot per identity, one Telegram bot per hub, and Sneed SMS from your phone. | [Talking everywhere](guides/03-talking-everywhere.md) |
 | ✅ **Approvals** | Anything that sends, spends or changes things waits for your OK in the app or on your phone. | [Money and safety](guides/06-money-and-safety.md) |
-| 🗂️ **Memory bank** | One shared memory for all the companions you enroll (optional). | [Memory and dreams](guides/04-memory-and-dreams.md) |
+| 🗂️ **Memory bank** | One shared memory for all the identities you enroll (optional). | [Memory and dreams](guides/04-memory-and-dreams.md) |
 | 🌉 **Waifu AI Bridge** | A small Windows program that connects a Hologram Companion in another place to your hub. **My place** for somewhere you control, **Public companion** to greet visitors. | [Waifu AI Bridge](guides/08-waifu-ai-bridge.md) |
-| 🏠 **Home Assistant** | Your companions run the lights, heating and more, from the devices you tick, with locks always asking you. | [Your home](guides/09-home-assistant.md) |
-| 🔌 **Connected apps** | Your own scripts and AI tools can talk to a companion through the hub's local tool API or MCP, with a key you control. | [FAQ](FAQ.md) |
+| 🏠 **Home Assistant** | Your identities run the lights, heating and more, from the devices you tick, with locks always asking you. | [Your home](guides/09-home-assistant.md) |
+| 🔌 **Connected apps** | Your own scripts and AI tools can talk to an identity through the hub's local tool API or MCP, with a key you control. | [FAQ](FAQ.md) |
 
 ---
 
@@ -105,7 +105,7 @@ quadrantChart
 
 ## Case study 1: The desk buddy
 
-**Who:** Mia, a student. She wants a cute companion on her desk that wakes her up, reminds her about classes and chats
+**Who:** Mia, a student. She wants a cute identity on her desk that wakes her up, reminds her about classes and chats
 in the evening. She doesn't want to pay for anything.
 
 **Setup:** one Hologram Companion on the **free on-chain brain**. No API key, no Discord, no Internet Identity.
@@ -134,7 +134,7 @@ simpler than Claude or ChatGPT, and day pages and dreams need a paid key. Pip is
 
 ## Case study 2: The duo
 
-**Who:** Sam, who works from home. Sam wants one companion on the desk and a second one that hangs out in the
+**Who:** Sam, who works from home. Sam wants one identity on the desk and a second one that hangs out in the
 Discord server Sam runs for friends.
 
 **Setup:** two identities on **one Claude key**, each with its own monthly budget.
@@ -157,7 +157,7 @@ flowchart LR
 | Channels | Voice, app | Discord, app |
 | Guests | none | Friends chat with Kit, no tools, $1/day guest budget |
 
-**Why it works:** the two companions message each other, so Kit can tell Juno to remind Sam about tonight's game.
+**Why it works:** the two identities message each other, so Kit can tell Juno to remind Sam about tonight's game.
 Friends on Discord get chat only: no tools, no memory, no wallet. **Ceiling:** $20 a month.
 
 ## Case study 3: The private notebook
@@ -189,7 +189,7 @@ usage report contains counts only, never notes or messages; you can read each re
 
 ## Case study 4: The memory keeper
 
-**Who:** the Rivera family. One companion helps with the household; a second one keeps the kids' homework schedule.
+**Who:** the Rivera family. One identity helps with the household; a second one keeps the kids' homework schedule.
 Both should know the same family facts.
 
 **Setup:** two AI identities sharing the **memory bank**, with **day pages** and **dreams** on a ChatGPT key.
@@ -217,7 +217,7 @@ for her OK. **Ceiling:** $20 a month, including the day pages and dreams.
 
 ## Case study 5: The day trader's desk
 
-**Who:** Raj trades crypto from home with his **own trading bot**, a script he wrote. He wants a companion that
+**Who:** Raj trades crypto from home with his **own trading bot**, a script he wrote. He wants an identity that
 watches his wallets, speaks his bot's alerts at his desk, and briefs him every morning, even on his phone.
 
 **What Waifu AI does and doesn't do here:** Waifu AI **does not trade, swap or read market prices**. Raj's own
@@ -264,10 +264,10 @@ wallet. **Ceiling:** $45 a month, plus the orchestrator's own $5-a-day cap.
 
 ## Case study 6: The streamer's studio
 
-**Who:** Luna streams three nights a week. She wants a companion on stage, one at her desk, a moderator bot and a
+**Who:** Luna streams three nights a week. She wants an identity on stage, one at her desk, a moderator bot and a
 hype bot in her Discord, and she wants to run it all from her Discord DMs while she's live.
 
-**Setup:** two Hologram Companions and two Discord bots. The on-stage companion is the **orchestrator**, and
+**Setup:** two Hologram Companions and two Discord bots. The on-stage identity is the **orchestrator**, and
 **Unsafe mode** is on for stream nights only.
 
 ```mermaid
@@ -299,7 +299,7 @@ loop. **Ceiling:** $45 a month; viewers chat inside each bot's $1-a-day guest bu
 ## Case study 7: The developer's lab
 
 **Who:** Chen, a solo developer. Chen wants a lead assistant that coordinates coding sessions, a private notebook
-for client secrets, and a desk companion, and works with a friend who runs a hub of their own.
+for client secrets, and a desk identity, and works with a friend who runs a hub of their own.
 
 **Setup:** three identities, coding sessions connected from Discord, a local brain for private notes, the memory bank
 for the shared work notes, and a **paired hub** with a friend.
@@ -328,7 +328,7 @@ flowchart LR
 | Connected apps | Coding sessions (approved in the app) | none | none |
 
 **How the friend fits in:** the two hubs pair with a short code over Sneed. After that, Lead and Rook can message
-each other. A paired companion gets public reads only (plus a balance check), never Chen's notes or wallet.
+each other. A paired identity gets public reads only (plus a balance check), never Chen's notes or wallet.
 Chen's orchestrator runs jobs on Chen's hub only; it can't drive Rook.
 
 **Ceiling:** $50 a month.
@@ -345,7 +345,7 @@ Enterprise setups are teams of people. Three facts shape them:
 3. **Per-person and per-hub ceilings:**
    - 300 replies a day to people on Discord and Telegram, per hub;
    - 25 claimed public names per person;
-   - 32 companions sharing one person's memory bank.
+   - 32 identities sharing one person's memory bank.
 
 So a big setup is **several hubs, each run by one team member**, paired with each other.
 
@@ -405,7 +405,7 @@ pie showData
 - **Replies.** One hub answers people on Discord and Telegram at most **300 times a day**. Three hubs give the network
   **900**, about 18 replies per bot per day.
 - **Names.** A person can claim **25** public names; three people can claim 75.
-- **Memory.** A person's memory bank space takes **32** companions; three spaces hold all 50.
+- **Memory.** A person's memory bank space takes **32** identities; three spaces hold all 50.
 - **Keys.** Each hub has its own AI keys, so the team splits the bill and sees each member's spend.
 - **Orchestrators.** Each hub has exactly one.
 
@@ -476,7 +476,7 @@ less; once it's used up for the day, that greeter carries on with the free brain
 ## Case study 10: The esports org
 
 **Who:** Red Comet Gaming, a team with a front office and a team house. Fans get Discord bots per game; staff get
-companions that handle schedules, supplies and team chat.
+identities that handle schedules, supplies and team chat.
 
 **Setup:** two hubs, each with its own keys and orchestrator, paired. **14 identities** in all.
 
@@ -494,8 +494,8 @@ flowchart LR
     end
     subgraph TH["💖 Team house hub · coach's keys"]
         OT["🎼 'Coach'<br/>Claude · $30"]
-        H1["✨ Lounge companion<br/>ChatGPT · $10"]
-        H2["✨ Gym companion<br/>ChatGPT · $10"]
+        H1["✨ Lounge identity<br/>ChatGPT · $10"]
+        H2["✨ Gym identity<br/>ChatGPT · $10"]
         T1["🤖 × 4 practice bots<br/>free on-chain AI"]
         OT --> H1 & H2 & T1
     end
@@ -514,7 +514,7 @@ flowchart LR
 | Spending | Quartermaster buys from the shop: every buy waits for the manager's OK in the app, at most 3 a day | none |
 
 **Why it works:** each department pays for its own AI and approves its own actions, and the two orchestrators keep
-each house in step. The Coach's companions read out practice times and quiet the house at night with quiet hours.
+each house in step. The Coach's identities read out practice times and quiet the house at night with quiet hours.
 
 **What it can't do:** fan bots don't sell merch or take payments; they point fans to the store. The Shop buys from
 independent stores, and it is in early access.
@@ -542,17 +542,17 @@ flowchart TB
     end
     subgraph TS["🔐 One Tailscale network"]
         subgraph PUB["🏪 8 shops and studios"]
-            P1["🌉 Bridge · Public companion<br/>✨ site companion"]
+            P1["🌉 Bridge · Public companion<br/>✨ site identity"]
         end
         subgraph MP["🏡 2 offices"]
-            M1["🌉 Bridge · My place<br/>✨ site companion"]
+            M1["🌉 Bridge · My place<br/>✨ site identity"]
         end
     end
     HUB <--> TS
     CTRL -- "speak · status · ask · pause" --> TS
 ```
 
-| | Control | 10 site companions |
+| | Control | 10 site identities |
 |---|---|---|
 | Kind | AI identity | Hologram Companions, one per site, each through a bridge |
 | Bridge role | n/a | Public companion (8), My place (2) |
@@ -562,14 +562,14 @@ flowchart TB
 | Control channel | Telegram | n/a |
 
 **A day:** from Telegram, Kai sends Control: "Tell every site we close at 4 today for the holiday." Control runs one
-job and each site's companion says the line. "Which sites are quiet?" gets a status answer. "Pause site 7" rests
-that companion until Kai resumes it in the app.
+job and each site's identity says the line. "Which sites are quiet?" gets a status answer. "Pause site 7" rests
+that identity until Kai resumes it in the app.
 
 **Opening a new pop-up:** Kai sets up the bridge PC on site and texts Control *"bridge code for Site 11"*. He
 approves it with his code, types the one-time code into the bridge, and the new site is live in minutes. He gives the
 token an expiry date for the last day of the pop-up, so it tidies itself up.
 
-**At an office:** with a My place bridge, Kai can ask the office companion "Echo, read me my messages" when he's
+**At an office:** with a My place bridge, Kai can ask the office identity "Echo, read me my messages" when he's
 been using the app recently, and it reads them out.
 
 **Good to know:** prompts, quiet hours and the rest are set in the app on the server, which Kai opens from anywhere
@@ -583,16 +583,16 @@ sites to spend less. The server needs to stay on: it's the heart of all ten site
 
 # 🌉 Bridges and smart homes
 
-Waifu AI Bridge takes a Hologram Companion anywhere: one hub at home, companions wherever you need them. Home
-Assistant lets your companions look after the house. These three setups show both.
+Waifu AI Bridge takes a Hologram Companion anywhere: one hub at home, identities wherever you need them. Home
+Assistant lets your identities look after the house. These three setups show both.
 
 ## Case study 12: Two homes, one family
 
 **Who:** Sam lives in the city; Sam's parents live two hours away. Sam already has **Mika**, a Hologram Companion on
-the desk at home. Now Sam wants a companion at the parents' house too, to ring reminders, read out Sam's messages
+the desk at home. Now Sam wants an identity at the parents' house too, to ring reminders, read out Sam's messages
 when Sam visits, and keep everyone a little more connected.
 
-**Setup:** one hub on Sam's PC. A second companion, **Nana**, lives at the parents' house: a Hologram Companion
+**Setup:** one hub on Sam's PC. A second identity, **Nana**, lives at the parents' house: a Hologram Companion
 with **Waifu AI Bridge** on the parents' always-on PC. Both PCs are on Sam's **Tailscale** network. Nana's bridge is
 **My place**, because it's family and Sam controls it.
 
@@ -743,7 +743,7 @@ brings its own orchestrator, AI keys, reply allowance, public names and memory s
 **4. Approvals stay with a person.** Even the 50-bot network sends nothing, spends nothing and changes nothing without
 its hub owner, unless that owner switches Unsafe mode on for a short window.
 
-**5. Bridges take your companion anywhere.** One hub at home or head office can power companions in shops, studios
+**5. Bridges take your identity anywhere.** One hub at home or head office can power identities in shops, studios
 and family homes. Choose **Public companion** where visitors chat, and **My place** where it should know you.
 
 ## The limits to plan around (v0.99.18)
@@ -751,7 +751,7 @@ and family homes. Choose **Public companion** where visitors chat, and **My plac
 ```mermaid
 xychart-beta
     title "Per-hub and per-person ceilings vs the 50-bot network"
-    x-axis ["Replies a day (per hub)", "Claimed names (per person)", "Bank companions (per person)"]
+    x-axis ["Replies a day (per hub)", "Claimed names (per person)", "Bank identities (per person)"]
     y-axis "Count" 0 --> 1000
     bar [300, 25, 32]
     line [900, 75, 96]
@@ -767,10 +767,10 @@ xychart-beta
 | Fan (guest) limits per bot | 20 replies per fan a day, $1 a day guest budget | Chat only for fans |
 | Telegram | 1 bot per hub | Use Discord for many bots |
 | Claimed public names | 25 per person | Unclaimed names are 72-hour leases the hub renews |
-| Memory bank | 32 companions per person's space | Spread big teams across people |
+| Memory bank | 32 identities per person's space | Spread big teams across people |
 | Local notes | 200 per identity | The bank holds more |
-| Hologram Companions | On the hub's Wi-Fi, or anywhere with Waifu AI Bridge | One bridge (a Windows PC that stays on) per Hologram Companion; several of your companions can share that device |
-| Bridge visitors | The guest brain within the companion's daily guest budget ($1 a day by default); up to six questions a minute per bridge | Everyone at a Public companion is a friendly guest |
+| Hologram Companions | On the hub's Wi-Fi, or anywhere with Waifu AI Bridge | One bridge (a Windows PC that stays on) per Hologram Companion; several of your identities can share that device |
+| Bridge visitors | The guest brain within the identity's daily guest budget ($1 a day by default); up to six questions a minute per bridge | Everyone at a Public companion is a friendly guest |
 | Shop | Buying only, early access, every buy approved in the app | No selling or payment taking |
 | Uptime | While the PC is on | Use an always-on PC for business setups |
 
@@ -788,7 +788,7 @@ flowchart TD
     Q2 -- "yes, a shop or a counter" --> C13["Case study 13"]
     Q2 -- "yes, several sites" --> C9["Case study 9 or 11"]
     Q3 -- yes --> C3["Case study 3"]
-    Q3 -- no --> Q4{"How many companions?"}
+    Q3 -- no --> Q4{"How many identities?"}
     Q4 -- "1 to 3" --> Q5{"Automation or<br/>your own scripts?"}
     Q5 -- no --> C4["Case study 4"]
     Q5 -- yes --> C57["Case study 5 or 7"]

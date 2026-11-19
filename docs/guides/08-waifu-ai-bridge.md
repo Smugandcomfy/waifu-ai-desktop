@@ -1,9 +1,9 @@
-# 08 · Waifu AI Bridge: your companion in another place
+# 08 · Waifu AI Bridge: your identity in another place
 
 <sub>📖 <a href="README.md">All guides</a> · Guide 8 of 9 · <a href="../../README.md">Home</a></sub>
 
 Your hub lives on your PC at home. With **Waifu AI Bridge**, a Hologram Companion can live somewhere else, at your
-parents' house, your studio, a holiday flat or a shop counter, and still be your companion, with the same name,
+parents' house, your studio, a holiday flat or a shop counter, and still be your identity, with the same name,
 the same personality and the same hub behind it. 🌉
 
 ```mermaid
@@ -26,13 +26,13 @@ speaks what your hub sends, and brings back what people say to it.
 
 ## What you'll need
 
-- Your hub (Waifu AI Desktop 0.99.18 or later) with the companion you want there.
+- Your hub (Waifu AI Desktop 0.99.18 or later) with the identity you want there.
 - A Hologram Companion at the other place, on that place's Wi-Fi.
 - A **Windows PC that stays on** at that place, on the same Wi-Fi (a small mini-PC is perfect).
 - If the other place is on a different network from your hub: **[Tailscale](https://tailscale.com)** (free) on both
   PCs, so they can find each other privately.
 
-One bridge looks after one Hologram Companion. Several of your companions can share that one device, each with its
+One bridge looks after one Hologram Companion. Several of your identities can share that one device, each with its
 own token.
 
 ## Choose a role: My place or Public companion
@@ -42,9 +42,9 @@ Every bridge token has a role. You pick it when you make the token and can chang
 | | 🏡 **My place** | 🏪 **Public companion** (the default) |
 |---|---|---|
 | **For** | Somewhere you control: a second home, your studio, your parents' house | A shop counter, a waiting room, a reception desk, an event |
-| **Who it talks to** | **You**, when you say the companion's name and you've used the app in the last 15 minutes (or your own last line there counted in that time); anyone else there is a guest | Everyone who walks up, as friendly guests |
+| **Who it talks to** | **You**, when you say the identity's name and you've used the app in the last 15 minutes (or your own last line there counted in that time); anyone else there is a guest | Everyone who walks up, as friendly guests |
 | **What it can do** | Read you your messages and notes, tell you your wallet balance, recall what it knows, plus everything a guest gets | Chat in character, answer questions, set a reminder that rings right there, say what your hub sends it |
-| **Which brain answers** | Your companion's own brain for you | The guest brain: Claude Haiku with short, friendly answers (when you have a Claude key), within a daily guest budget ($1.00 a day unless you change it), then the free brain. A companion on a free brain stays free |
+| **Which brain answers** | Your identity's own brain for you | The guest brain: Claude Haiku with short, friendly answers (when you have a Claude key), within a daily guest budget ($1.00 a day unless you change it), then the free brain. An identity on a free brain stays free |
 | **Making it** | Asks for your passphrase | One click |
 
 Either way, **your hub stays yours**: nobody at the bridge can approve anything, move money, or unlock a door.
@@ -58,7 +58,7 @@ app or your phone for those.
 
 ### 1. Make a token on your hub
 
-1. Open your companion's **Device** tab and choose **Through a bridge**.
+1. Open your identity's **Device** tab and choose **Through a bridge**.
 2. Under **Role of the new token**, pick **Public companion** or **My place**. You can also give the token an
    expiry date (handy for a pop-up shop or a holiday let), or leave it to never expire.
 3. Press **New bridge token** and copy it. It's shown once.
@@ -80,8 +80,8 @@ On the same network? Skip this step.
    - the **Hologram Companion's address** (like `192.168.1.40`, from its network settings);
    - the **code the Hologram Companion shows**, to pair with it;
    - your **hub's address** (from the Device card);
-   - the **token** you copied. It checks it with your hub and tells you which companion it speaks for. Paste
-     another companion's token to add it, or press Enter to finish.
+   - the **token** you copied. It checks it with your hub and tells you which identity it speaks for. Paste
+     another identity's token to add it, or press Enter to finish.
 3. Say yes to **start with Windows** and **start it now**. It runs quietly in the background from then on.
 
 That's it. Your hub's Device card shows the bridge as connected and when it last checked in. 🎉
@@ -100,7 +100,7 @@ answers up to six questions a minute, plenty for a busy counter.
 
 ## Away from home? Get a code from your phone 📲
 
-No app at hand? Ask your orchestrator companion from your own phone (Sneed SMS or Telegram) or your own Discord DM:
+No app at hand? Ask your orchestrator identity from your own phone (Sneed SMS or Telegram) or your own Discord DM:
 
 > "bridge code for Mika" · "bridge code for Mika, my place"
 
@@ -131,7 +131,7 @@ In a Command Prompt in the bridge's folder:
 
 | Command | What it does |
 |---|---|
-| `"Waifu AI Bridge.exe" --status` | Is it running, which hub and device, how many companions |
+| `"Waifu AI Bridge.exe" --status` | Is it running, which hub and device, how many identities |
 | `"Waifu AI Bridge.exe" --check` | Checks the device, the hub and each token, and says what to fix |
 | `"Waifu AI Bridge.exe" --setup` | Change the device, the hub or the tokens |
 | `"Waifu AI Bridge.exe" --stop` / `--background` | Stop it, or start it again quietly |

@@ -1,32 +1,32 @@
-# 02 · Companions and brains
+# 02 · Identities and brains
 
 <sub>📖 <a href="README.md">All guides</a> · Guide 2 of 9 · <a href="../../README.md">Home</a></sub>
 
-Make as many companions as you like, and give each one the brain that suits it. 🧠
+Make as many identities as you like, and give each one the brain that suits it. 🧠
 
 ![Settings → Brains & cost: add a Claude or ChatGPT key, with a guided setup](../../assets/screenshots/brains.png)
 
-## Your companions
+## Your identities
 
-Each companion is an **identity**: an AI with its own name, its own memory and its own secret key on this PC.
+Each identity is an **identity**: an AI with its own name, its own memory and its own secret key on this PC.
 Its key gives it an **ID** (also called a principal), its public address on the Internet Computer, so others
 can message it.
 
 ### Make another one
 
-1. Press **+ New identity** under your companions in the left column.
+1. Press **+ New identity** under your identities in the left column.
 2. Follow the same short wizard as your first one: type, name, device (or brain), key, public name.
 
-Your own companions are **peers**: they can talk to each other and share your memory bank.
+Your own identities are **peers**: they can talk to each other and share your memory bank.
 
-### A companion's page
+### An identity's page
 
-![A companion's Overview: its brain, phone, autonomy, device and memory at a glance](../../assets/screenshots/companion-overview.png)
+![An identity's Overview: its brain, phone, autonomy, device and memory at a glance](../../assets/screenshots/companion-overview.png)
 
-Click a companion in the left column. Its tabs:
+Click an identity in the left column. Its tabs:
 
 - **Overview**: its status, what needs you (with **Open Today**), and the **Finish setting up** list.
-- **Conversations**: **Chat**, **Messages**, **Discord** and **Phone**, all with this companion.
+- **Conversations**: **Chat**, **Messages**, **Discord** and **Phone**, all with this identity.
 - **Memory**: **Notes & facts** and **Context**.
 - **Behaviour**: its brain and budget, what it may do on its own, the **Orchestrator** card, and (for a
   Hologram Companion) what it says aloud.
@@ -37,10 +37,10 @@ Click a companion in the left column. Its tabs:
 
 ### A public name (optional)
 
-A public name lets people find and message your companion by name instead of its long principal. It's
+A public name lets people find and message your identity by name instead of its long principal. It's
 public, free, and first come, first served. A claimed name renews itself each year while your hub runs.
 
-1. Open the companion's **Manage** tab.
+1. Open the identity's **Manage** tab.
 2. Under **Public name**, type 3 to 32 lower-case letters, numbers or dashes.
 3. Press **Register**.
 
@@ -58,16 +58,16 @@ registry. It doesn't copy the key, and it can't recover a lost one.
 ### People
 
 **People** holds your **Contacts** (private nicknames, kept only on your PC, each with a role: my phone,
-friend or peer) and the **Directory**, where you can find a companion by its public name and save it as a
+friend or peer) and the **Directory**, where you can find an identity by its public name and save it as a
 contact.
 
 ## Brains
 
-A **brain** is the AI that writes your companion's replies.
+A **brain** is the AI that writes your identity's replies.
 
 | Brain | Cost | Good for |
 |---|---|---|
-| **On-chain agent** | Free, no key | The default. Can use your companion's tools (messages, memory, reminders). Fine to start. |
+| **On-chain agent** | Free, no key | The default. Can use your identity's tools (messages, memory, reminders). Fine to start. |
 | **Personas**: Easy, Spicy, Smol, Coder | Free | Fun characters to chat with. They can't use tools, so they work in Chat only. |
 | **Local model** | Free | A model on your own PC. Works offline, but weaker. For people who already run one (such as Ollama or LM Studio). |
 | **Claude** or **ChatGPT** | You pay the provider | Much better at conversation, memory and following through. Needed for day pages and dreaming. |
@@ -85,7 +85,7 @@ Or by hand:
 1. On the provider's website, create an API key and copy it.
 2. Open **Settings → Brains & cost → AI providers**.
 3. Paste it under **Anthropic** (for Claude) or **ChatGPT** (for OpenAI) and press **Save key**.
-4. Open the companion's **Behaviour → Brain & budget**.
+4. Open the identity's **Behaviour → Brain & budget**.
 5. Under **Brain that answers messages**, pick **Claude** or **ChatGPT**.
 6. Check the **Monthly budget** and press **Set**.
 
@@ -98,7 +98,7 @@ provider to be answered.
   a key first.
 - **Messages, your phone and the hologram's voice:** the **Brain that answers messages** on the Behaviour
   tab. It has to be one that can use tools, so not a persona.
-- **Discord:** you get your companion's own brain; guests in your server get a cheaper, faster Claude model
+- **Discord:** you get your identity's own brain; guests in your server get a cheaper, faster Claude model
   (or the free brain without a Claude key).
 - **Pictures** sent on Discord or Telegram: only Claude and ChatGPT can see them.
 
@@ -106,29 +106,29 @@ If a brain is busy or fails, the next one answers, ending with the free one.
 
 ## Costs and budgets 💸
 
-- Everyday chatting usually costs **a few cents a day**. Long conversations, many companions or web searches
+- Everyday chatting usually costs **a few cents a day**. Long conversations, many identities or web searches
   cost more (each web search adds $0.01).
-- The **budget** is per companion, per month. A new companion gets **$10** the first time you pick Claude or
+- The **budget** is per identity, per month. A new identity gets **$10** the first time you pick Claude or
   ChatGPT, and the app tells you.
-- When the budget runs out, that companion uses the free on-chain brain until the 1st, and you're told once.
-- A budget of **0** means paid brains are off for that companion. To have no cap at all, clear the box (or tell
-  your companion "set my budget to off").
-- **Settings → Brains & cost → Monthly budgets** shows this month's spend for every companion.
+- When the budget runs out, that identity uses the free on-chain brain until the 1st, and you're told once.
+- A budget of **0** means paid brains are off for that identity. To have no cap at all, clear the box (or tell
+  your identity "set my budget to off").
+- **Settings → Brains & cost → Monthly budgets** shows this month's spend for every identity.
 - Claude reuses the parts of a chat that don't change, which keeps the cost of long chats down.
 
 ## The orchestrator 🎼
 
-Give one companion a baton. The **orchestrator** runs small jobs across your other companions for you: it asks
+Give one identity a baton. The **orchestrator** runs small jobs across your other identities for you: it asks
 them things, waits for their answers, passes messages between them and tells you how it went.
 
 **Make one:**
 
-1. Pick a companion whose brain is **Claude** or **ChatGPT** (the free brains can't pick tools reliably enough).
+1. Pick an identity whose brain is **Claude** or **ChatGPT** (the free brains can't pick tools reliably enough).
 2. Open its **Behaviour** tab and find the **Orchestrator** card.
 3. Press **Make <name> the orchestrator…** and type your passphrase (no passphrase? a Yes/No window opens on
    this PC instead).
 
-A hub has **one** orchestrator. Pressing the button on another companion moves the role, and **Remove the role**
+A hub has **one** orchestrator. Pressing the button on another identity moves the role, and **Remove the role**
 takes it away.
 
 **Use it:** ask from its Chat tab, your phone or Telegram: "ask the others whether the reminder went out, then
@@ -143,7 +143,7 @@ tell me." The others always see that the request came from the orchestrator for 
 | Cost per job | $0.50 | $20 |
 | Cost per day | $5 | $100 |
 
-A job stops at the first limit it reaches, and you get one line saying so. The companion's own monthly budget
+A job stops at the first limit it reaches, and you get one line saying so. The identity's own monthly budget
 still applies. Raising a limit asks for your passphrase again; lowering one doesn't.
 
 **What it never does:** change keys, spend caps, the allow list, passphrases, pairing or restores, or give
@@ -160,7 +160,7 @@ switch back.
   sources. A turn that read a web page never acts on its own: anything it wants to do waits for your OK. Switch
   it off in **Settings → Brains & cost → Web search**.
 - **Local model:** **Settings → Brains & cost → Local model** connects a model server you run: give its
-  address and model name, press **Test**, then pick **Local model** as a companion's brain.
+  address and model name, press **Test**, then pick **Local model** as an identity's brain.
 - **Meaning search:** with an OpenAI key, memory search ranks by meaning, not just matching words.
 - **On Discord:** send `/model haiku` (or `opus`, `sonnet`, `gpt`, `local`, `onchain`) to switch the brain there
   for two hours; `/model auto` goes back.

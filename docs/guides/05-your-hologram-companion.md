@@ -2,7 +2,7 @@
 
 <sub>📖 <a href="README.md">All guides</a> · Guide 5 of 9 · <a href="../../README.md">Home</a></sub>
 
-Give your companion a body. A Hologram Companion speaks its replies out loud, rings its own alarms and can
+Give your identity a body. A Hologram Companion speaks its replies out loud, rings its own alarms and can
 change the room's lights. ✨
 
 ![The Device tab: a practice device, a real one, or one through Waifu AI Bridge](../../assets/screenshots/device.png)
@@ -17,12 +17,12 @@ text in the app. Switch to the real thing any time.
 
 ## Connect it
 
-**The easy way:** on the companion's **Device** tab, press **Guided setup**. It finds the address, saves it,
+**The easy way:** on the identity's **Device** tab, press **Guided setup**. It finds the address, saves it,
 pairs, and checks that you hear it speak.
 
 **By hand:**
 
-1. Open the companion's **Device** tab.
+1. Open the identity's **Device** tab.
 2. Under **Device mode**, pick the real device instead of **Mock**, then connect.
 3. Enter the device's address (like `http://<the device's IP>:8081`) and its time zone. The device's IP is in
    its own network settings, or in your router's list of devices. (The new-identity wizard can also look for it
@@ -36,7 +36,7 @@ memory, reminders, Discord) works the same with the practice device.
 
 ## Talk to it 🗣️
 
-- **Who answers messages:** the hologram's own character (in its own voice), or the helper (your companion's
+- **Who answers messages:** the hologram's own character (in its own voice), or the helper (your identity's
   brain, with tools).
 - **By voice:** start with the wake word, then "remind me at 7 to call mum".
 - **Speech:** the log of what it said. Type in the test box and press **Say** to hear it; nothing is sent
@@ -91,7 +91,7 @@ Ask from your phone or your Discord DM, in your own words:
 ## A device in another place 🌉
 
 Your Hologram Companion doesn't have to live next to your PC. Put it at your parents' house, your studio or a shop
-counter, run **Waifu AI Bridge** on a PC beside it, and it's still your companion, connected to your hub at home.
+counter, run **Waifu AI Bridge** on a PC beside it, and it's still your identity, connected to your hub at home.
 Choose **My place** for somewhere you control, or **Public companion** to greet visitors.
 
 The full walkthrough: [08 · Waifu AI Bridge](08-waifu-ai-bridge.md).

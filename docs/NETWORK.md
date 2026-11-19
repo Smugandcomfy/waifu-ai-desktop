@@ -5,7 +5,7 @@
 <h1 align="center">🌐 The Waifu AI Network</h1>
 
 <p align="center"><b>The small set of on-chain services that every copy of Waifu AI Desktop shares.<br>
-Your hub does the thinking on your PC; the network gives your companions a name, a shared memory and a way to tell us what broke.</b></p>
+Your hub does the thinking on your PC; the network gives your identities a name, a shared memory and a way to tell us what broke.</b></p>
 
 <p align="center">
   <a href="../README.md">🏠 Home</a> ·
@@ -19,7 +19,7 @@ Your hub does the thinking on your PC; the network gives your companions a name,
 
 ## The big picture
 
-Waifu AI Desktop is mostly **your PC**. Your companions' keys, your chats, your contacts and your settings live
+Waifu AI Desktop is mostly **your PC**. Your identities' keys, your chats, your contacts and your settings live
 there. But a few things need a place that is always on and that every hub can reach, so we run them as
 **canisters**: small programs that live on the [Internet Computer](https://internetcomputer.org), a public
 blockchain network. Nobody has to keep a server switched on, and anyone can check that they are there.
@@ -27,7 +27,7 @@ blockchain network. Nobody has to keep a server switched on, and anyone can chec
 ```mermaid
 flowchart TB
     subgraph PC["🖥️ Your PC at home"]
-        HUB["💖 Waifu AI hub<br/>companions · keys · chats · settings"]
+        HUB["💖 Waifu AI hub<br/>identities · keys · chats · settings"]
     end
 
     HOLO["✨ Hologram Companion<br/>on your Wi-Fi"]
@@ -76,29 +76,29 @@ flowchart TB
 ```
 
 The pink boxes are **the Waifu AI Network**: four canisters we run for every user. The green boxes are **Waifu AI
-Bridges**, carrying your companions to other places. Everything else is your own PC, your own home, or a service you
+Bridges**, carrying your identities to other places. Everything else is your own PC, your own home, or a service you
 choose to switch on.
 
 ## The four canisters
 
 | | Canister | What it does for you | Canister id |
 |---|---|---|---|
-| 📇 | **Registry** | The phonebook. Gives each companion a unique public name, so companions can find each other and you can claim the ones that are yours. | [`3ssaf-2aaaa-aaaal-qxqvq-cai`](https://dashboard.internetcomputer.org/canister/3ssaf-2aaaa-aaaal-qxqvq-cai) |
+| 📇 | **Registry** | The phonebook. Gives each identity a unique public name, so identities can find each other and you can claim the ones that are yours. | [`3ssaf-2aaaa-aaaal-qxqvq-cai`](https://dashboard.internetcomputer.org/canister/3ssaf-2aaaa-aaaal-qxqvq-cai) |
 | 🗺️ | **Memory directory** | The map. Tells your hub which memory bank holds your memories, and lets you join one. | [`hrgl3-uyaaa-aaaah-aweta-cai`](https://dashboard.internetcomputer.org/canister/hrgl3-uyaaa-aaaah-aweta-cai) |
-| 🧠 | **Memory bank** | The shared memory. One place where all of your companions keep and recall what they have learned about you. Optional. | [`bl6tx-2aaaa-aaaah-awd2a-cai`](https://dashboard.internetcomputer.org/canister/bl6tx-2aaaa-aaaah-awd2a-cai) |
+| 🧠 | **Memory bank** | The shared memory. One place where all of your identities keep and recall what they have learned about you. Optional. | [`bl6tx-2aaaa-aaaah-awd2a-cai`](https://dashboard.internetcomputer.org/canister/bl6tx-2aaaa-aaaah-awd2a-cai) |
 | 📊 | **Usage reports** | The suggestion box. Takes one anonymous report of counts a day from each hub, so we can see what breaks and what to improve. | [`hwhnp-zaaaa-aaaah-awetq-cai`](https://dashboard.internetcomputer.org/canister/hwhnp-zaaaa-aaaah-awetq-cai) |
 
 Click an id to see the canister on the public Internet Computer dashboard.
 
 ---
 
-## 📇 Registry: a name for every companion
+## 📇 Registry: a name for every identity
 
-When you give a companion a **public name** (for example "Aria"), your hub registers it in the registry under
-that companion's own key. Other companions can now look up "Aria" and message it.
+When you give an identity a **public name** (for example "Aria"), your hub registers it in the registry under
+that identity's own key. Other identities can now look up "Aria" and message it.
 
 A new name starts as a **lease**. It stays yours as long as your hub keeps it fresh, and becomes **permanent once
-you claim the companion** with your Internet Identity. That stops anyone from grabbing hundreds of names and
+you claim the identity** with your Internet Identity. That stops anyone from grabbing hundreds of names and
 sitting on them.
 
 ```mermaid
@@ -119,12 +119,12 @@ gantt
 - 💤 **PC off for more than three days?** An *unclaimed* name lapses and someone else may take it.
 - 💖 **Claimed with your Internet Identity?** The name never lapses.
 
-Which companions you own is **not** shown publicly: the registry only says whether a name is claimed, not by whom.
+Which identities you own is **not** shown publicly: the registry only says whether a name is claimed, not by whom.
 
 ## 🧠 Memory directory and bank: one memory for the whole team
 
-Turn on the shared memory and every companion you own reads and writes the **same** memory, so what you tell
-one of them, they all know. Memories are kept per person, and only you and the companions you enrolled can read
+Turn on the shared memory and every identity you own reads and writes the **same** memory, so what you tell
+one of them, they all know. Memories are kept per person, and only you and the identities you enrolled can read
 yours.
 
 Joining takes one click in the app. Behind the scenes:
@@ -145,8 +145,8 @@ sequenceDiagram
     Dir->>Bank: Admit this person
     Bank-->>Dir: Admitted ✅
     Dir-->>Hub: Your bank is number 1
-    Hub->>Bank: Enroll my companions as writers
-    Note over Hub,Bank: From now on every companion remembers into, and recalls from, your space in bank 1
+    Hub->>Bank: Enroll my identities as writers
+    Note over Hub,Bank: From now on every identity remembers into, and recalls from, your space in bank 1
 ```
 
 **Built to grow.** Each bank welcomes hundreds of people. When one fills up we open a new bank from the same
@@ -161,7 +161,7 @@ flowchart LR
     B1 --- K1(["You stay in your bank for good"])
 ```
 
-The shared memory is **optional**. Without it, each companion keeps its own notes on your PC.
+The shared memory is **optional**. Without it, each identity keeps its own notes on your PC.
 
 ## 📊 Usage reports: how we learn what to fix
 
@@ -187,7 +187,7 @@ flowchart LR
 |---|---|
 | App version, Windows version, memory use (as a range) | Your messages, emails or chats |
 | Which features and channels are used, roughly how much | Your memories, notes or files |
-| How often actions succeed, wait for approval or fail, and the kind of error | Names of your companions, contacts or anyone else |
+| How often actions succeed, wait for approval or fail, and the kind of error | Names of your identities, contacts or anyone else |
 | Reply times (as ranges), crash fingerprints | Addresses, phone numbers, Discord or Telegram ids |
 | Setup steps reached, which settings get changed | Keys, tokens, passwords or wallet addresses |
 | Country, language and time zone (to the hour) | Your IP address or precise location |
@@ -197,7 +197,7 @@ word, in **Settings → Updates → Usage report**.
 
 ---
 
-## 🌉 Bridges: your companions in other places
+## 🌉 Bridges: your identities in other places
 
 A bridge is a small Windows program on a PC beside a Hologram Companion in another place. It connects **out** to
 your hub, so nothing at home needs opening up, and it holds none of your hub's keys: just its own bridge token. Over
@@ -229,7 +229,7 @@ sequenceDiagram
 flowchart LR
     subgraph MP["🏡 My place"]
         direction TB
-        Y(["🙋 You: its name first,<br/>and recently in the app"]) --> YB["Your companion's own brain"]
+        Y(["🙋 You: its name first,<br/>and recently in the app"]) --> YB["Your identity's own brain"]
         YB --> YR["Reads your messages, notes,<br/>wallet balance; recalls"]
         G1(["🙂 Anyone else there"]) --> GB1["Guest brain"]
     end
@@ -267,18 +267,18 @@ sequenceDiagram
 
 ## 🧠 Which brain answers whom
 
-Every reply is written by a brain. Your companion picks one in order, and always has the free one to fall back on.
+Every reply is written by a brain. Your identity picks one in order, and always has the free one to fall back on.
 
 ```mermaid
 flowchart TD
-    Q{"Who is talking?"} -- "You" --> O1["Your companion's brain<br/>(the one you picked)"]
+    Q{"Who is talking?"} -- "You" --> O1["Your identity's brain<br/>(the one you picked)"]
     O1 -. "busy or failed" .-> O2["Claude Haiku"] -.-> O3["ChatGPT"] -.-> O4["Free on-chain brain"]
     Q -- "A friend" --> F1["Claude Haiku"] -.-> F2["Free on-chain brain"]
     Q -- "A guest on Discord,<br/>or a visitor at a bridge" --> G1["Claude Haiku, short answers,<br/>within the daily guest budget"]
     G1 -. "budget used up for today" .-> G2["Free on-chain brain"]
 ```
 
-A companion's monthly budget is a ceiling: when it's reached, the free brain answers until the 1st. A companion on
+An identity's monthly budget is a ceiling: when it's reached, the free brain answers until the 1st. An identity on
 a free brain stays free for everyone.
 
 ## Why canisters?
@@ -302,6 +302,6 @@ to *you* when you're there; a Public companion bridge never sees them. Neither h
 **Does the network see my chats?** No. Chats stay on your PC and go only through the services that carry them
 (Discord, Telegram, Sneed SMS) and the AI brain you picked.
 
-**Who can read my shared memories?** You and the companions you enrolled. Not other users.
+**Who can read my shared memories?** You and the identities you enrolled. Not other users.
 
 More answers in the [FAQ](FAQ.md). 💖

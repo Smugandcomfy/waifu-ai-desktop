@@ -6,7 +6,7 @@ Keys, passphrase, backups, and the wallet. The serious bit, kept short. 🛡️
 
 ## Your keys
 
-Each companion **is** a secret key that lives only on this PC. Lose it without a backup and that companion is
+Each identity **is** a secret key that lives only on this PC. Lose it without a backup and that identity is
 gone for good: nothing (not even Internet Identity) can bring it back.
 
 **On Windows, your keys are already encrypted** on this PC with a key Windows keeps for your account. Someone
@@ -34,15 +34,15 @@ and no setting can be changed.
 
 | | What's in it | Use it to |
 |---|---|---|
-| **Back up keys** | Just your companions' keys. Small. | Bring your companions back |
-| **Export hub** | Everything: companions, settings, contacts, brains, the API keys you added, approvals, reminders, notes | Move to a new PC |
+| **Back up keys** | Just your identities' keys. Small. | Bring your identities back |
+| **Export hub** | Everything: identities, settings, contacts, brains, the API keys you added, approvals, reminders, notes | Move to a new PC |
 
 1. Open **Settings → Security & backups**.
 2. Press **Back up keys** (under Keys) or **Export hub** (under Whole hub). With a hub passphrase, type it first.
 3. Choose a passphrase for the backup file (at least 12 characters, or four words).
 4. Save it somewhere that isn't this PC.
 
-Anyone with a backup file **and** its passphrase can use your companions. Keep both private.
+Anyone with a backup file **and** its passphrase can use your identities. Keep both private.
 
 A whole-hub backup can be up to 128 MB, four times the old limit, so even a big hub fits.
 
@@ -62,7 +62,7 @@ you to a new PC.
   4. Restart Waifu AI when it asks.
   5. Quit Waifu AI on the old PC.
 
-Run Waifu AI on **one PC only**: two hubs with the same companion would both answer the same messages.
+Run Waifu AI on **one PC only**: two hubs with the same identity would both answer the same messages.
 
 Three things never travel in a backup: authenticator keys, keys of connected AI apps and devices, and browser
 sign-ins. Set them up again.
@@ -72,10 +72,10 @@ needs fixing. Today shows the lines that need you.
 
 ## The wallet 🪙
 
-Each companion's principal is also a wallet address on the Internet Computer. The wallet is optional and lives in
+Each identity's principal is also a wallet address on the Internet Computer. The wallet is optional and lives in
 **Advanced** mode. **It moves real money: transfers are real and final.**
 
-1. Switch to Advanced (in the **☰** menu) and open the companion's **Money → Wallet**.
+1. Switch to Advanced (in the **☰** menu) and open the identity's **Money → Wallet**.
 2. **To receive:** copy the **Address** and send tokens to it from any wallet. You'll be told when they arrive.
 3. **To send:** pick a token, the recipient and the amount, press **Review send**, check it, then **Send**.
 
@@ -100,21 +100,21 @@ won't let it go twice).
   [Unsafe mode](03-talking-everywhere.md#unsafe-mode-your-discord-dm-with-no-brakes-), which lets what you ask
   from your own Discord DM move money with no confirmation. Leave it off unless you really mean it.
 - **Between my identities** (**Money → Wallet**): an optional daily limit that lets a plain instruction like
-  "send 1 ICP to Mika", typed in Chat or from your Sneed phone, move tokens between your *own* companions at
+  "send 1 ICP to Mika", typed in Chat or from your Sneed phone, move tokens between your *own* identities at
   once. Off until you set it; turning it on asks for your passphrase.
 - **Approvals you gave (allowances):** permission for someone else to take up to an amount until a time. Always
   waits for your OK, must end (one hour by default, 30 days at most), and **Stop** ends it at once.
 
 ### Voting
 
-Add a companion's principal as a **hotkey** on one of your neurons in the community's app (a hotkey can vote
+Add an identity's principal as a **hotkey** on one of your neurons in the community's app (a hotkey can vote
 but never move the stake). Then, on **Money → Govern**: **Scan for neurons**, **Open proposals**, pick the
 neuron to **Vote with**, and vote **Yes** or **No**.
 
 ### The shop (early)
 
-**Money → Shop** lists stores your companion can buy from. Turn a store on, browse its shelf and press **Buy**:
-you pay on the store's own checkout with a short pay code. Your companion never sees a card, and buying always
+**Money → Shop** lists stores your identity can buy from. Turn a store on, browse its shelf and press **Buy**:
+you pay on the store's own checkout with a short pay code. Your identity never sees a card, and buying always
 waits for your OK. The **Your orders** fold lists each order's store, number of items and status.
 
 ## The emergency brake 🛑
@@ -127,7 +127,7 @@ jobs. `resume writes` lifts it. `vacation on` pauses all actions while you're aw
 
 ## Good habits
 
-- Set a passphrase, and back up after each new companion.
+- Set a passphrase, and back up after each new identity.
 - Keep this PC's Windows account to yourself, and lock the hub when you step away.
 - Never send passwords, seed phrases or anything private over Sneed messages: they're not encrypted.
 - Turn on two-factor login on the Discord account you pair.

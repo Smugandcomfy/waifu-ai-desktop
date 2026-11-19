@@ -42,9 +42,9 @@ Every bridge token has a role. You pick it when you make the token and can chang
 | | 🏡 **My place** | 🏪 **Public companion** (the default) |
 |---|---|---|
 | **For** | Somewhere you control: a second home, your studio, your parents' house | A shop counter, a waiting room, a reception desk, an event |
-| **Who it talks to** | **You**, when you've used the app in the last 15 minutes; anyone else there is a guest | Everyone who walks up, as friendly guests |
+| **Who it talks to** | **You**, when you say the companion's name and you've used the app in the last 15 minutes (or your own last line there counted in that time); anyone else there is a guest | Everyone who walks up, as friendly guests |
 | **What it can do** | Read you your messages and notes, tell you your wallet balance, recall what it knows, plus everything a guest gets | Chat in character, answer questions, set a reminder that rings right there, say what your hub sends it |
-| **Which brain answers** | Your companion's own brain for you | The guest brain: Claude Haiku with short, friendly answers, within a daily guest budget ($1.00 a day unless you change it), then the free brain |
+| **Which brain answers** | Your companion's own brain for you | The guest brain: Claude Haiku with short, friendly answers (when you have a Claude key), within a daily guest budget ($1.00 a day unless you change it), then the free brain. A companion on a free brain stays free |
 | **Making it** | Asks for your passphrase | One click |
 
 Either way, **your hub stays yours**: nobody at the bridge can approve anything, move money, or unlock a door.

@@ -36,6 +36,11 @@ on Discord, on Telegram, by text from your phone, or out loud through a **Hologr
 </tr>
 </table>
 
+## What's new in 0.99.20
+
+- 🔄 **Works with the newest Hologram Companion software:** the optional live status from your Hologram Companion
+  uses its new event stream, and still works with the older software.
+
 ## What's new in 0.99.19
 
 - 🧭 **A new layout.** **Today** is a dashboard ("Needs you first", "Waiting"), every identity has clear tabs

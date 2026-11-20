@@ -36,24 +36,24 @@ on Discord, on Telegram, by text from your phone, or out loud through a **Hologr
 </tr>
 </table>
 
-## What's new in 0.99.18 (pre-release)
+## What's new in 0.99.19
 
-> 🧪 **0.99.18 is a pre-release for testers.** Download it from the [**v0.99.18 release**](../../releases/tag/v0.99.18).
-> The newest stable version is always under [**Latest**](../../releases/latest). Your hub keeps offering stable
-> versions only, unless you tick **Also offer test releases** in **Settings → Updates**.
-
-- 🌉 **Waifu AI Bridge**, a separate Windows program: put a Hologram Companion in another room, another house or a
-  shop, and it still talks to your hub. It sets itself up and starts with Windows.
-- 🗣️ **Talk to your identity through the bridge.** Choose per bridge: **My place** (for somewhere you control: it
-  can read you your messages, notes and wallet) or **Public companion** (it chats with visitors but can't change
-  anything). Asking for changes out loud through a bridge comes in a later update.
-- 📲 **Away from your PC?** Text your phone or message your Discord DM: "bridge code for Mika". You get a one-time
-  code to type into the bridge. The real key never appears in a chat.
-- 💾 **Weekly backups are on by default** once your hub has a passphrase, and uninstalling keeps your backups.
-- 🔒 **Safer approvals:** what you approve is exactly what runs, once. Private notes stay out of what your identity
-  says out loud.
-- 🔗 **Linking ChatGPT** now works from a normal browser (update your gateway first).
-- 📊 **Usage reports can be switched off** in **Settings → Updates**. Updated Terms of Use.
+- 🧭 **A new layout.** **Today** is a dashboard ("Needs you first", "Waiting"), every identity has clear tabs
+  (Overview, Chat, Personality, Permissions, Connections & devices, Memory), and Memory, Contacts and Teamwork have
+  their own pages.
+- ✨ **A guided way to make a new identity**: what it's for, its name and personality, its Hologram Companion or
+  Discord bot, its brain and budget, and a first hello.
+- 🏪 **Public Hologram Companions.** Set a Hologram Companion to **Public** for a shop counter or a front desk:
+  visitors talk to it as guests on a small guest budget, it never says your private things, and it can answer as
+  its own character.
+- 🎭 **One personality for every channel, or one per channel**, with "Try a sentence" to compare them.
+- 🔎 **Try a permission change before you save it**, with three simple presets, and **search your earlier
+  conversations**.
+- 🛡️ **Safer by design:** a full security review and a hostile audit, with every finding fixed. Approvals can't be
+  spoofed with hidden characters, payments can't be redirected by a look-alike name, and a restore is checked
+  before it changes anything.
+- 🔁 **Restart unlocked if you choose:** for an always-on PC, an optional "Unlock automatically when this PC starts".
+- 📁 Your data folder is now called **WaifuAI** (moved for you, with a link at the old name). Updated Terms of Use.
 
 Full details are on the [Releases](../../releases) page.
 
@@ -61,7 +61,7 @@ Full details are on the [Releases](../../releases) page.
 
 | Step | What to do |
 |---|---|
-| **1. Download** | The newest `waifu-ai-vX.Y.Z-win-x64.zip` from [**Latest**](../../releases/latest) (or [**v0.99.18**](../../releases/tag/v0.99.18), the pre-release). |
+| **1. Download** | The newest `waifu-ai-vX.Y.Z-win-x64.zip` from [**Latest**](../../releases/latest). |
 | **2. Unzip** | Into a folder you'll keep, such as Documents (not Downloads). There is nothing to install. |
 | **3. Start** | Double-click **`Waifu AI.exe`**, then read and accept the Terms of Use. |
 | **4. Make an identity** | On **Today**, press **Create your first identity**. Pick a type and a name. The free brain is fine to start. |
@@ -143,14 +143,15 @@ Fourteen bigger setups, from one identity on a desk to a 50-bot creator network,
 across two homes, with diagrams and budgets:
 [**Use cases**](docs/USE_CASES.md).
 
-## Waifu AI Bridge (new in 0.99.18)
+## Waifu AI Bridge
 
 The bridge lets a Hologram Companion **somewhere else** talk to your hub at home.
 
 1. On your hub, open your identity → **Device → Through a bridge**. Choose **Public companion** or **My place**,
    and press **New bridge token** (My place asks for your passphrase).
-2. On a Windows PC next to the Hologram Companion, download **`waifu-ai-bridge-v0.99.18-win-x64.zip`** from the
-   [v0.99.18 release](../../releases/tag/v0.99.18), unzip it, and double-click **`Waifu AI Bridge.exe`**.
+2. On a Windows PC next to the Hologram Companion, download the newest **`waifu-ai-bridge-vX.Y.Z-win-x64.zip`**
+   from [**Latest**](../../releases/latest), unzip it, and double-click **`Waifu AI Bridge.exe`**. (On Linux, macOS
+   or a Raspberry Pi, the zip also has `bridge.mjs` and a how-to for running it with Node.)
 3. It asks for the Hologram Companion's address, the code it shows, your hub's address and the token, then checks
    everything and offers to start with Windows.
 4. From another network, connect both PCs with **Tailscale** (free); the Device card shows the address to use.
@@ -206,6 +207,8 @@ Your identities are online only while Waifu AI runs: a sleeping PC means a sleep
 | 🌉 | [08 · Waifu AI Bridge](docs/guides/08-waifu-ai-bridge.md) | You want a Hologram Companion in another place |
 | 🏠 | [09 · Your home (Home Assistant)](docs/guides/09-home-assistant.md) | You'd like your identities to run the lights and heating |
 
+The **[full reference guide](docs/guide/README.md)** is the same help the app shows, for every screen and setting.
+
 Inside the app, **Help** in the **☰** menu and the **?** on each card open help for exactly where you are.
 More: [How it works](docs/HOW_IT_WORKS.md) · [The Waifu AI Network](docs/NETWORK.md) ·
 [Handbook](https://claude.ai/artifact/Hi2RCPNv8xwBT3G7P8QTPZ).
@@ -230,7 +233,8 @@ More: [How it works](docs/HOW_IT_WORKS.md) · [The Waifu AI Network](docs/NETWOR
 
 Waifu AI checks for a new version once a day (it sends nothing about you; untick it in **Settings → Updates**).
 
-1. When **Settings → Updates** offers a new version, press **Download**. It's checked before it's kept.
+1. When **Settings → Updates** says a new version is out, open the official release page from there (one click).
+   In-app downloads switch on once releases are signed.
 2. Unzip it into a **new** folder.
 3. Quit Waifu AI (**☰ → Quit**), then start `Waifu AI.exe` from the new folder.
 
@@ -239,7 +243,7 @@ Your identities, keys and settings live apart from the app folder, so nothing is
 
 ## Your data and backups
 
-Everything your identities are lives in Waifu AI's data folder under `%APPDATA%`, not in the app folder. An identity
+Everything your identities are lives in Waifu AI's data folder, `%APPDATA%\WaifuAI`, not in the app folder. An identity
 **is** its key: lose the key without a backup and that identity is gone for good.
 
 1. **Set a passphrase:** **Settings → Security & backups → Keys → Set a passphrase**. A forgotten passphrase can't be

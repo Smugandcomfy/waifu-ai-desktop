@@ -267,6 +267,10 @@ International Waters Esports Palace; bundled third-party open-source components 
 in [`THIRD_PARTY_NOTICES.txt`](THIRD_PARTY_NOTICES.txt). Being able to see or download these files does not
 grant any right to redistribute them.
 
+**Source:** the source of each release, for reading and review, is the `waifu-ai-vX.Y.Z-source.tar.gz` download on
+its release page (from [v0.99.20](../../releases/tag/v0.99.20)). The same licence applies: reading it gives no right to
+copy, change or redistribute it.
+
 For licensing inquiries: smugandcomfy@gmail.com
 
 ## Support and contact

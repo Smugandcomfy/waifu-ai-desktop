@@ -11,8 +11,8 @@ ChatGPT are smarter and cost a little, paid with your own key.
 
 - **[On-chain agent](glossary.md#on-chain-agent)** (free, no key): the default. It can use your identity's tools (messages, memory,
   reminders). Fine for a start.
-- **[Personas](glossary.md#persona)** (free): Easy, Spicy, Smol and Coder are characters for fun chat, run on the waifu.ic0.ai
-  on-chain models. They can't use tools, so they only work in Chat.
+- **[Personas](glossary.md#persona)** (free): Easy, Spicy and Smol are characters run on the waifu.ic0.ai on-chain models. They
+  can't use tools or memory, so Chat no longer offers them; one can still be the **Ghostwriter** (Personality → the More fold).
 - **[Local model](glossary.md#local-model)** (free): a model running on your own PC. Works offline, but weaker. Setting it up is for
   people who already run one.
 - **Claude** or **ChatGPT** (paid): much better at conversation, memory and following through. You pay the
@@ -55,8 +55,9 @@ The key stays on this PC. Your messages and the tools' results go to that provid
 
 ## Which brain answers where
 
-- **Chat**: the chips above the box pick a brain for that chat only. "(no key)" means that brain needs a key in
-  AI providers first.
+- **Chat**: the chips above the box pick a brain for that chat only: the on-chain agent, Claude, ChatGPT or a
+  local model, all of which can use the identity's tools. "(no key)" means that brain needs a key in AI providers
+  first.
 - **Messages, your phone, the Hologram Companion's voice**: the **Brain that answers messages** on
   **Identity → Personality**. It must be one that can use tools, so not a persona.
 - **Discord**: you get the identity's own brain; your server's [guests](glossary.md#guest) get a cheaper, faster Claude

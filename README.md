@@ -36,6 +36,22 @@ on Discord, on Telegram, by text from your phone, or out loud through a **Hologr
 </tr>
 </table>
 
+## What's new in 0.99.21
+
+- 🧩 **Add-ons:** connect software you already have through its API (up to 20), and write **Skills**: step-by-step
+  routines for an identity. You stay in charge: anything that changes something still waits for your OK.
+- 🏪 **A Public Hologram Companion can sell** from the stores you choose: it reads a quote and gives a pay code, and
+  the visitor pays on the store's own checkout with their own card.
+- 🗣️ **On the newest Hologram Companion software**, its own conversation can ask the hub things, when you switch
+  that on.
+- ✅ **Easier approvals:** a plain "yes" in your own chat approves what was just shown to you in full, and "did it
+  send?" gets a real answer. Sensitive changes (who it answers, how freely it acts) are approved in the app only.
+- 💬 **Messages as conversations**, a simpler **Today** page with "Dream now", clearer identity tabs, **Settings in
+  four groups** with "Find a setting", and "Find people" when you write to someone new.
+- 🖥️ **Open terminals show up by themselves** and pair with a plain yes on the same PC; ask "any new users?" to see
+  who joined the network. "Sign in another device" makes a one-time link for your phone or tablet.
+- 🛡️ Two independent security reviews of everything new, with every finding fixed before release.
+
 ## What's new in 0.99.20
 
 - 🔄 **Works with the newest Hologram Companion software:** the optional live status from your Hologram Companion
@@ -268,7 +284,7 @@ in [`THIRD_PARTY_NOTICES.txt`](THIRD_PARTY_NOTICES.txt). Being able to see or do
 grant any right to redistribute them.
 
 **Source:** the source of each release, for reading and review, is the `waifu-ai-vX.Y.Z-source.tar.gz` download on
-its release page (from [v0.99.20](../../releases/tag/v0.99.20)). The same licence applies: reading it gives no right to
+its release page (from v0.99.20 on). The same licence applies: reading it gives no right to
 copy, change or redistribute it.
 
 For licensing inquiries: smugandcomfy@gmail.com

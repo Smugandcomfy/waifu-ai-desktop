@@ -41,6 +41,10 @@ rewrite does not bring the fact back. Tell it the fact again and it is remembere
 
 ## Days, and "what did we do yesterday?"
 
+The Memory page has three tabs. **Dreaming** holds the nightly tidy-up and the day pages it writes. **Tidy up**
+holds Clean-up. **Shared memory** holds the memory bank, who is in it, ChatGPT memory sharing, and devices and
+roaming. A link to one of these opens its tab for you.
+
 1. Talk with your identity during the day.
 2. After you're done for the day (half an hour after the last message, in the evening), the day page is written.
 3. On Sunday night, a week page is written too.
@@ -68,7 +72,8 @@ small old notes sink, and keeps one short page per person plus a dashboard every
 2. Open **Memory → Dreaming**.
 3. Check it is on and pick **Who dreams** (Automatic is fine).
 4. Press **Dream now** to try it at once. It says "Dream started" straight away, then the outcome when the dream
-   ends, a few minutes later. Today's **Memory overnight** card has the same button and the last result.
+   ends, a few minutes later. Today has the same button twice: the big **Dream now** button at the top, and the
+   **Dreaming** card, which also shows the last result.
 
 From your phone, Telegram or your Discord DM you can also say "run a dream": you get one line when it is done.
 "Did the dream work?" tells you when the last one ran and what it changed.
@@ -96,12 +101,12 @@ With a bank, all your enrolled identities share one memory, and an outside AI to
 **The Waifu AI memory service.** Waifu AI runs a memory bank for everyone, and every hub is already set
 to use it. All you do is sign in and enrol your identities.
 
-**Step by step:** on the identity's Overview, the **Memory bank** card has **Guided setup**: it signs you in,
+**Step by step:** on the identity's **Memory** tab, the **Memory bank** card has **Guided setup**: it signs you in,
 enrols the identity and checks it worked. Or by hand:
 
 1. Open **Settings → You & account → Sign-in**, press **Sign in with Internet Identity**, and sign in.
 2. Under **Memory bank**, press **Enroll** next to each identity. (Or press **Enroll** on the identity's
-   Overview or in Memory.)
+   **Memory** tab. Above its tabs, **Status and set-up** says when it is not enrolled yet.)
 3. If it offers to move the notes kept on this PC into the bank, say yes.
 
 To [enrol](glossary.md#enrol) is one click: you invite the identity with your sign-in, and it accepts with its own key.
@@ -110,7 +115,7 @@ To [enrol](glossary.md#enrol) is one click: you invite the identity with your si
 **Enroll** can't finish, and your memories stay on this PC: nothing is lost, and you can enrol later.
 
 **Another bank.** If someone runs a bank of their own for you and has let your [Internet Identity](glossary.md#internet-identity) in, paste
-its id in the guided setup under **Use a different bank**, or in [Advanced](glossary.md#advanced-mode) under
+its id in the guided setup under **Use a different bank**, or under
 **Settings → Developer → Messages, registry and memory bank**. Clearing the box keeps notes
 on this PC only.
 
@@ -118,7 +123,7 @@ on this PC only.
 
 - Your notes on this PC, and the bank, are yours: only you and your enrolled identities read them. The one
   exception is one you set up yourself: memories you approve one by one for ChatGPT
-  (see [ChatGPT, roaming and drafts](14-chatgpt-roaming-and-drafts.md)).
+  (see [ChatGPT, roaming and drafts](15-chatgpt-roaming-and-drafts.md)).
 - Talk between you and your identities is kept owner-only; guests and friends never get your memories.
 - Codes, keys, tokens and addresses are taken out of every memory before it is written.
 - Guests on Discord are quoted as guests, never taken as your own words.
@@ -129,13 +134,13 @@ on this PC only.
 **Context.** **Identity → Memory → Context** shows the recent turns every brain sees. **Clear** empties it;
 the conversations and memories stay.
 
-**Try your first memory.** On the identity's Overview, **Try your first memory** saves one fact and checks, step by
+**Try your first memory.** Above the identity's tabs, open **Status and set-up**: **Try your first memory** saves one fact and checks, step by
 step, that it was heard, saved and recalled by another identity.
 
 **Limits.** Notes on this PC keep 50 per identity; when full, the oldest copies go first. A bank has its own
 limit and says when it is full.
 
-**Leave the bank.** **Identity → Manage** → **Danger zone** → **Leave the memory bank**. What it wrote
+**Leave the bank.** **Identity → More** → **Danger zone** → **Leave the memory bank**. What it wrote
 stays in the bank.
 
 **Without a Claude or ChatGPT key** your identity still remembers what you tell it; it just doesn't write day

@@ -7,11 +7,11 @@ _An identity's address can hold tokens, show its history, give and stop allowanc
 _This topic is about Advanced mode (☰ menu → Simple | Advanced)._
 
 An identity's [principal](glossary.md#principal) is also a wallet address on the [Internet Computer](glossary.md#internet-computer). Everything here is
-optional and in [Advanced mode](glossary.md#advanced-mode). It moves real money: take care.
+optional, and it is on the identity's **More** tab. It moves real money: take care.
 
 ## The wallet
 
-1. Switch to Advanced and open **Identity → Money** → **Wallet**.
+1. Open **Identity → More** and find the **Wallet** card.
 2. **To receive**: copy the **Address** and send tokens to it from any wallet. Press **Refresh** after.
 3. **To send**: pick a token, the recipient and the amount, press **Review send**, check it, then **Send**.
 
@@ -44,15 +44,15 @@ by itself.
 
 ## Spend caps
 
-On **Identity → Permissions** → **Actions & autonomy** (Advanced), each token can have a cap per
-send and per 24 hours. A token with no cap is never sent without your OK.
+On **Identity → What it may do** → **Actions & autonomy** → **What it may do**, each token can have a cap per
+send and per 24 hours. (On [Essentials](glossary.md#all-details), open **Change what it may do without asking, and its spending limits** there.) A token with no cap is never sent without your OK.
 
 ## Sends between your own identities
 
 Moving tokens from one of your identities to another can run without asking you each time, under a limit you
 set. It is off until you set it.
 
-1. Open **Identity → Money** → **Wallet** and find **Between my identities**.
+1. Open **Identity → More**, the **Wallet** card, and find **Between my identities**.
 2. For each token, type how much may move **a day** and, if you like, the most **per send**. Set how many sends a
    day are allowed in all (10 unless you change it).
 3. Press **Save limit**. Turning the limit on or raising it asks for your hub [passphrase](glossary.md#passphrase), or a **Yes** in a

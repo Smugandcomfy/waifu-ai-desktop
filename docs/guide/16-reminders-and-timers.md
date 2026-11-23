@@ -41,4 +41,4 @@ if the Hologram Companion is offline, it is removed there when it is back, and t
 - A reminder the hub missed because it was off for more than six hours shows under **Missed while the hub was
   off**, not sent late. **Dismiss** clears it.
 - Places ("when I get to the office") are not possible yet.
-- A real Hologram Companion also has its own alarms: see [Your Hologram Companion](16-your-hologram-companion.md).
+- A real Hologram Companion also has its own alarms: see [Your Hologram Companion](17-your-hologram-companion.md).

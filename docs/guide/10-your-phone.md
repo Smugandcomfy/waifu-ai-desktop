@@ -11,7 +11,7 @@ Everything about your phone is in one place: **Settings → Phone & apps**.
 
 - **Telegram** (easiest): see [Talk to your identity on Telegram](09-talk-to-your-identity-on-telegram.md).
 - **Sneed SMS**: message an identity from Sneed Hub on your phone, then trust that sender as your phone.
-- **A phone app on your Wi-Fi**: pair it with a code (needs [LAN tools](glossary.md#lan-tools), an Advanced setting).
+- **A phone app on your Wi-Fi**: pair it with a code (needs [LAN tools](glossary.md#lan-tools) switched on).
 
 **Step by step:** **Settings → Phone & apps** has **Guided setup**. Pick
 Sneed SMS or a phone app; it shows the address to text, finds your message, marks it as your phone, and checks
@@ -27,7 +27,7 @@ Your phone is now an [owner device](glossary.md#owner-device): every identity an
 
 Sneed SMS lets each sender post one message every 10 minutes, and messages are not encrypted. Don't send
 anything private. [Sneed Premium](glossary.md#sneed-premium) raises the limit to one a minute: see **Sneed Premium & limits** on
-**Identity → Permissions**.
+**Identity → More**.
 
 ## Add a phone app
 
@@ -55,7 +55,7 @@ anything private. [Sneed Premium](glossary.md#sneed-premium) raises the limit to
   Hologram Companion in another place, sent to the identity that runs your hub (its [orchestrator](glossary.md#orchestrator)). Answer `yes 1234`; a
   My place code also needs your authenticator code (`yes 1234 123456`), or press **Approve** on the request in the app
   (the code is still sent here). The code comes back here, works once and
-  lasts 10 minutes; you are told here when it is used. See [Your Hologram Companion](16-your-hologram-companion.md).
+  lasts 10 minutes; you are told here when it is used. See [Your Hologram Companion](17-your-hologram-companion.md).
 - `revoke the bridge for <name>` / `revoke all bridges`: stops a bridge at once, no code needed.
 - `help`: the list.
 
@@ -90,7 +90,9 @@ connected, read-only.
 
 **Reaching the hub from elsewhere.** The app window answers only this PC. To open it from another device, use a
 private network such as Tailscale and add its name under
-**Settings → Developer → Reaching this hub** ([Advanced](glossary.md#advanced-mode)). The page still needs your sign-in.
+**Settings → Developer → Reaching this hub**. The page still needs your sign-in:
+make a link for that device under **Settings → Security & backups → Lock**, **Sign in another
+device** (it works once, for one minute).
 
-**The Developer tab** (Advanced) also holds the Sneed SMS network, the registry and the memory
-bank.
+**Developer** (a closed fold at the foot of Settings → You & account) also holds the Sneed SMS network, the
+registry and the memory bank.

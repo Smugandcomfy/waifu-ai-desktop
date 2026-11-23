@@ -14,7 +14,7 @@ pairing app.
 
 ## Steps
 
-**Step by step:** the **Telegram** card on **Identity → Connections & devices** has **Guided setup**. It
+**Step by step:** the **Telegram** card on **Identity → Where it lives** has **Guided setup**. It
 opens BotFather, saves the token, checks the bot connects, trusts your chat, and waits for her first reply. Or by
 hand:
 
@@ -31,7 +31,7 @@ you with a yes or no.
 
 ## Details
 
-- One Telegram bot per hub. The **Telegram** card on **Identity → Connections & devices** shows whether
+- One Telegram bot per hub. The **Telegram** card on **Identity → Where it lives** shows whether
   this identity is the one that answers it.
 - **Forget** under trusted chats turns a chat back into a stranger.
 - The token stays on this PC and is never shown again.

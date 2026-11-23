@@ -14,10 +14,10 @@ what it would say as text. Everything else works the same either way.
 
 ## Connect a real Hologram Companion
 
-**Step by step:** on **Identity → Connections & devices**, press **Guided setup: connect a real Codie**. It finds
+**Step by step:** on **Identity → Where it lives**, press **Guided setup: connect a real Codie**. It finds
 the address, saves it, pairs, and checks that you hear her speak. Or by hand:
 
-1. Open **Identity → Connections & devices**.
+1. Open **Identity → Where it lives**.
 2. Under **Device mode**, pick **Real Codie**, then **Connect real Codie**.
 3. Enter its address, like `http://<the Codie's IP>:8081`, and its timezone. (**Find my Codie…** in the new
    identity window can look for it on your Wi-Fi.)
@@ -29,10 +29,10 @@ The Hologram Companion's IP address is in its own network settings, or in your r
 
 ## Talk to it
 
-On **Identity → Connections & devices** the Hologram Companion comes first: its status (**Right now**)
+On **Identity → Where it lives** the Hologram Companion comes first: its status (**Right now**)
 and the **Device** card (pairing, **Who answers messages**, **Test the connection**). The rest is in a row of
 sub-tabs under it: **What it said** (the speech log), **Alarms & notes**, **Quiet & speaking up** (device quiet hours
-and when it may speak up on its own), **Its memory of you** and, in Advanced, **Lab**.
+and when it may speak up on its own), **Its memory of you** and **Lab**.
 
 - **Speech**: the log of what it said. Type in **Say something to the Codie (testing)** and press **Say** to try
   it; nothing is sent anywhere.
@@ -70,7 +70,7 @@ and when it may speak up on its own), **Its memory of you** and, in Advanced, **
 ## My place or Public companion
 
 A Hologram Companion connected to this PC has a role, the same two a bridge token has. It is on
-**Identity → Permissions** → **Who it answers**, under **The Hologram Companion's role** (the Device card
+**Identity → What it may do** → **Who it answers**, under **The Hologram Companion's role** (the Device card
 shows it as one line). The role stays the same when the Hologram Companion is re-paired or its address changes: it is the same
 device.
 
@@ -108,7 +108,7 @@ device.
 ## Strangers talk to its own character
 
 A Public companion Hologram Companion can let strangers on its Discord bot talk to the Hologram Companion's own character, the way you talk
-to it yourself. Choose it on **Identity → Permissions** → **Who it answers**: **Strangers on
+to it yourself. Choose it on **Identity → What it may do** → **Who it answers**: **Strangers on
 Discord**.
 
 - **the guest brain** (the default): as before, strangers get the guest brain.
@@ -138,6 +138,55 @@ Discord**.
   than this version cannot answer in text only: with text only chosen, it gets the guest brain (or "away") instead.
 - When a stranger is answered, the spoken notice says only that, never their words or the answer (read it in the
   app).
+
+## Its own conversation uses the hub
+
+A paired Hologram Companion on the newer Hologram Companion software can let its own conversation (its usual cloud model, or a model you set
+up on the Hologram Companion) ask the hub things while you talk to it: "what's in my messages", "remember that". Turn it on per
+Hologram Companion on **Identity → What it may do** → **Who it answers**: **Let the Hologram Companion's own conversation use
+the hub's tools**. It is off until you turn it on, and turning it on asks for the hub passphrase (a hub with none
+asks in a window on its PC).
+
+- The hub cannot tell who is talking to the Hologram Companion, so each request is decided as a line said at that Hologram Companion. On **My
+  place** it can read your messages, contacts, notes and Activity only while you are present (you used the hub's
+  app in the last 15 minutes, as for a line said there); otherwise it is someone in the room and gets the public
+  answers only. It can also look things up (Help, the shop, a Hologram Companion name) and ask to remember a note: a note always
+  waits for your OK in the app, and the Hologram Companion says so.
+- While the Hologram Companion's own model is answering someone else's message (a friend, another hub's identity, a Discord chat,
+  your own line in a Discord server channel), and for two minutes after, a request is theirs, not yours: it gets what
+  that person may have anyway (a public answer), never your messages, contacts, notes or Activity, and no note is
+  taken or held. That you used the app a moment ago does not change this.
+- On a **Public companion** it gets the public answers only and nothing ever waits for you.
+- It never moves money, uses keys or sends anything in your name. The words asked are not written to the log.
+- A Hologram Companion on the older software (1.5.3) does not take the hub's tools: the hub says it needs the newer Hologram Companion software
+  and the switch stays off.
+- Turning it off removes the hub's tools from the Hologram Companion (when the Hologram Companion is reachable; otherwise the next time it is).
+- The switch belongs to the Hologram Companion you confirmed it for. Unpairing switches it off, and so does pairing the identity
+  to a Hologram Companion at another address or on another account; turn it on again for that Hologram Companion if you want it. Pairing the
+  same Hologram Companion again keeps it.
+- A backup made while the switch was on shows it in the restore preview ("lets its Codie's own conversation use the
+  hub's tools"), like the other things a restore would open up.
+
+## Selling from a store at a Public companion
+
+A Public companion (a Hologram Companion connected to this PC, or a Public companion bridge token) can sell from the IWEP stores
+you choose. Choose them under **Identity → What it may do** → **Who it answers** → **Selling**, one
+list for the Hologram Companion and one for each Public companion bridge token. None is chosen at first, and then it takes no
+orders.
+
+- A visitor asks for something ("buy the mug" with the Hologram Companion's name first, or in their own words). The Hologram Companion reads the quote back: the
+  items, the subtotal, that shipping and tax are added on the store's checkout, the estimated total and how long the
+  price holds. Nothing is bought.
+- When the visitor says yes, the Hologram Companion gives a short code and the page to enter it on ("go to iwep.app/p and enter
+  K 3 M 7 Q X"). "Say the code again" repeats it. The visitor pays on the store's own checkout, on their own phone,
+  with their own card. "Did my order go through?" reads where it is.
+- Your wallet, keys and approvals are never used, nothing is bought in your name, and nothing waits for your OK.
+  Each visitor gets their own buyer for a few minutes, so one visitor never sees another's order, and the hub keeps
+  no visitor details. The code is said in the hub's own words, never the brain's.
+- At most 20 quotes and 10 codes an hour at each Public companion. Each code is a line in Activity (the store, the
+  total and when the code ends) and the Selling section counts today's quotes and codes.
+- Strangers on Discord who talk to its own character cannot buy: that mode has no tools. Buying needs the guest
+  brain. A My place Hologram Companion or bridge does not sell this way: buying for yourself is the **Shop** card on its More tab.
 
 ## Its own features (a paired real Hologram Companion)
 
@@ -206,7 +255,7 @@ Ask her from your phone or your DM, in your own words:
 
 ## Quiet hours
 
-**Device quiet hours** (the **Quiet & speaking up** sub-tab on **Identity → Connections & devices**) sets when the Hologram Companion says nothing except answers to what
+**Device quiet hours** (the **Quiet & speaking up** sub-tab on **Identity → Where it lives**) sets when the Hologram Companion says nothing except answers to what
 you asked. What came in meanwhile becomes one line when quiet hours end. To make every Hologram Companion keep the hub's own quiet
 hours instead, turn on **Also silence the Codies** in **Settings → Quiet & away → Quiet hours**.
 
@@ -281,11 +330,11 @@ are told a code was used and it was not you, revoke the bridge at once.
 To use this hub's app from that place too, open it over Tailscale: add the hub's Tailscale name under
 Settings → Developer → Reaching this hub, then open that address in a browser there.
 
-**The Lab** (Advanced) opens the Hologram Companion's own management page inside the app. With a paired Hologram Companion, **Read the Lab check**
+**The Lab** (the last sub-tab of the Hologram Companion, on **Where it lives**) opens the Hologram Companion's own management page inside the app. With a paired Hologram Companion, **Read the Lab check**
 there shows what the Hologram Companion reports for its language, its music, its notes and reminders and its speech volume, as
 plain text. It only reads; nothing on the Hologram Companion changes.
 
-**Announce to a device** (Advanced) sends incoming messages to another voice device on your network.
+**Announce to a device** (in the **More** fold of **Where it lives**) sends incoming messages to another voice device on your network.
 
 **Her own words, or the hub's.** When you text her and the hub has the answer (a balance, a status), she says it
 in her own voice. If what she said is not the hub's answer (a stock line of the device, for example), the hub's own

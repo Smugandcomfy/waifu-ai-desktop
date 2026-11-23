@@ -15,7 +15,8 @@ home is ever read or touched.
 
 ## Connect
 
-1. Open **Settings → Home**.
+1. Open **Settings → Home** (Home is a heading on the Settings → Connections page,
+   under Phone & apps).
 2. Type Home Assistant's address and paste the token, then press **Connect**. With a passphrase set, the hub asks
    for it; without one, a Yes/No window opens on this PC.
 3. The hub tests the token before it saves anything. Afterwards it shows only the token's last four characters.
@@ -27,6 +28,10 @@ Home Assistant has it. On a hub without a passphrase the token is kept like your
 recommended (**Settings → Security & backups → Keys**).
 
 ## Choose the devices
+
+The device list, the groups, who may control what, the alerts and each Hologram Companion's area are in the **Home devices and
+rules** fold at the foot of the Settings → Connections page. It is closed until you open it; a link from this page
+opens it for you (**Settings → Home → Devices**).
 
 Tick a device to put it on the list and give it your own label ("Hall light"): your identities see only that label.
 Give it an area to group it. A heater keeps between the temperatures you set (inside 16–26 °C). A switch is treated

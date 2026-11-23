@@ -29,7 +29,7 @@ four sections:
 ## Make an identity the orchestrator
 
 1. Open **Teamwork → The orchestrator** and pick the identity. (The identity's
-   Permissions tab points there.)
+   **What it may do** tab points there.)
 2. Press **Make … the orchestrator…** and type your passphrase (or answer the window on this PC).
 3. Set its limits on the same card if you want them tighter.
 

@@ -11,7 +11,7 @@ Then you can text "how's the terminal session doing?" from your phone and hear b
 
 ## You'll need
 
-- [Advanced mode](glossary.md#advanced-mode), and an AI coding tool that supports MCP.
+- An AI coding tool that supports MCP.
 - Your phone trusted as your phone (see [Your phone](10-your-phone.md)).
 
 ## Connect a session
@@ -32,6 +32,28 @@ sessions card shows the command; there is no key to copy). The session asks to c
   seen words that are not yours. On Telegram the notice only tells you; say yes in the app or from your phone.
 - A request lasts 10 minutes. At most one notice goes out every 2 minutes, and a notice is never sent late.
 
+**Or pair a terminal that is already open.** With the start hook set up (`waifu-agent.mjs start-hook`), each
+terminal you open on this PC is listed on the hub by itself as "waiting to be paired". Only its session name and
+folder are shown, never what it is doing, and it gets nothing until you pair it:
+
+- Ask an identity "is a terminal open?" from your phone, your Discord DM or the Chat tab. It lists the terminals
+  waiting to be paired apart from the sessions already connected (with when each was last heard from).
+- Say `pair <name>` (for example `pair my-project-ab12cd`) in that same conversation. The identity answers with the
+  request and its code. Then reply `yes` within 10 minutes and the terminal is connected. `no` leaves it unpaired.
+- The plain `yes` is enough only because the terminal is on this PC and you asked for it yourself, in your own DM
+  or from your phone, just before. Anywhere else the usual rule stays: your authenticator code on Discord, or the
+  app, or `connect P1234` from your phone. A plain `yes` never works on Telegram, in a server channel, in a
+  conversation that has seen someone else's words, or more than 10 minutes later.
+- The Coding sessions card lists the waiting terminals too, each with **Connect**.
+- If two terminals offer the same name, the name alone does not say which one is yours. The identity then lists
+  each with its folder, when it opened and a short code like `W4821`, and `pair <name>` alone is refused. Each
+  terminal's listener prints its own code in that terminal: say `pair <name> W4821` with the code your own terminal
+  shows, then `yes`. The card shows the same code on each row. A name is treated this way for 10 minutes after
+  another terminal used it.
+- A paired terminal still needs **may receive tasks** and your task approval before it is given a job.
+
+A terminal stops being listed when its Claude Code session ends, or 3 minutes after it was last heard from.
+
 **It keeps listening.** Once a session is connected and its key is saved, a small listener in the background
 receives your questions, and the session's monitor prints them. A monitor stops after 30 minutes; started again,
 it misses nothing and repeats nothing. The listener opens no port and ends with the session (or after a day with
@@ -50,7 +72,8 @@ identities, and the notice shows only the last two parts of the folder.
 
 **By hand:**
 
-1. Open the identity's **Connections & devices** tab, the **Coding sessions** card (**Identity → Connections & devices**).
+1. Open the identity's **Where it lives** tab (**Identity → Where it lives**) and find the **Coding sessions** card. It is in the
+   **More** fold at the foot of the tab until the identity has a session; after that it shows above the fold.
    **Settings → Developer → Coding sessions** lists every identity with a link there.
 2. Name the session, and press **Make a coding-session key**.
 3. Copy the key and the setup it shows (it is shown once) into the terminal where the session runs.

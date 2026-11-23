@@ -31,7 +31,7 @@ Keep the old folder until the new one has run once.
 
 ## Details
 
-- **Also offer test releases** (**Settings → Developer → Release channel**, [Advanced](glossary.md#advanced-mode))
+- **Also offer test releases** (**Settings → Developer → Release channel**)
   adds early versions. Leave it off unless you want to try them.
 - **Verified** means the release is signed with the Waifu AI update key; Waifu AI also checks the installer's
   Windows signature before it runs it. A release that fails these checks is never downloaded. Once a build
@@ -47,7 +47,7 @@ Keep the old folder until the new one has run once.
   builds can point it anywhere else, and the screen warns you when they do.
 - Starting a newer copy while an older one runs asks the older one to quit first.
 - Only one Waifu AI uses your data at a time, and a running one is never replaced. If a start is refused, a box
-  says why: see [Waifu AI says it is already running (Troubleshooting)](20-troubleshooting.md#waifu-ai-says-it-is-already-running).
+  says why: see [Waifu AI says it is already running (Troubleshooting)](21-troubleshooting.md#waifu-ai-says-it-is-already-running).
 - Don't run an older copy of Waifu AI on the same data while a newer one runs: an old copy does not look for the
   newer one. Quit the newer one first.
 - **Stop:** ☰ → **Quit**. Closing the window alone leaves Waifu AI running.
@@ -59,23 +59,29 @@ Keep the old folder until the new one has run once.
   folder, quit and delete the folder. Your identities stay in the data folder until you delete that too; back up
   first ([Keys and safety](03-keys-and-safety.md)).
 
-## Terms, the usage report and the Developer tab
+## Terms, the usage report and Developer
+
+Updates is a heading on the Settings → You & account page. Terms and the Usage report are in that page's **More**
+fold, and Developer is a closed fold at its foot; a link from here opens the fold for you.
 
 - **Terms** on **Settings → Updates** shows what you accepted and when, and the text again.
   When an update brings new Terms of Use, the app shows them once more before anything else: accept them to
   carry on. You can always take access away before accepting: revoke a key or a bridge, unpair a phone, turn
   autonomy or Unsafe mode off, or disconnect ChatGPT. Turning anything on waits for the Terms.
-- **Usage report** shows the last anonymous usage report exactly as it was sent. Untick **Send anonymous usage
+- **Usage report** shows the last anonymous usage report exactly as it was sent. Under it, **Integration failures it
+  counted** lists which connection failed (only ones you switched on, such as Telegram), what kind of failure it
+  was, and how many times that day as a range, never the exact count; or "It counted no integration failures."
+  No message, name or address is in it. Untick **Send anonymous usage
   reports** there to stop them: nothing is counted or sent from then on, and the counts gathered so far are
   dropped. It is on unless you turn it off, and it stays off after a restart, an update or a restore. Checking for
   updates is not a usage report: it keeps working either way.
-- **Settings → Developer** (Advanced) holds what only a developer needs: the Sneed SMS
+- **Settings → Developer** holds what only a developer needs: the Sneed SMS
   network, the registry and memory bank ids, the host names this page answers, coding sessions, the release
   channel, and **Owner canisters**: on the hub of whoever runs the Waifu AI canisters, type `waifu-ai` and this
   hub checks their cycles and warns you when one runs low. It also warns that person when the shared memory
   service is filling up, so another [memory bank](glossary.md#memory-bank) can be added before new people are told "full, try
   later". Leave it empty on any other hub. Each Hologram Companion's Lab and
-  webhook stay on its Connections & devices tab; Developer lists them.
+  webhook stay on its **Where it lives** tab; Developer lists them.
 - A **memory bank id** that is not one of Waifu AI's own banks is used only once you confirm it: the app asks for
   your passphrase (or, with none, a window on this PC asks). The hub never takes another bank from the memory
   service or from a backup by itself; if one is named, Today says so and nothing is written to it.

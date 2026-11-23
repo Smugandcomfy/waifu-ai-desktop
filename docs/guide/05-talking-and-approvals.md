@@ -36,8 +36,8 @@ nothing leaves this PC, and while the hub is locked it finds nothing until you u
 Anything that sends a message, sends tokens, votes, buys or changes settings waits for you, unless you allowed
 it. You see it in three places:
 
-- **Today → Needs you first**, for every Identity.
-- The identity's **Overview** says in one line what needs you; **Open Today** shows Today for that identity.
+- **Today → Needs you**, for every Identity.
+- Above the identity's tabs, one line says what needs you; **Open Today** shows Today for that identity.
 - Right in Chat, under the reply.
 
 Press **Approve** to run it once, or **Don't** to drop it. Unanswered approvals expire after a week (an
@@ -53,7 +53,7 @@ tried again: the approval closes and Today lists the action as one that may or m
 check it before anything is sent again.
 
 An approval for a send shows the full address it pays and is fixed to that address and amount: see
-[Money: wallet, shop and voting](18-money-wallet-shop-and-voting.md).
+[Money: wallet, shop and voting](19-money-wallet-shop-and-voting.md).
 
 **Sending to a registered name.** When a message or a payment goes to a name from the registry (not one of your
 contacts or identities), the hub checks who holds that name with a lookup the whole network vouches for. If that
@@ -61,6 +61,10 @@ check can't be made just now, nothing is sent: you're told why, and you can try 
 contact or the full address instead.
 
 You can also answer from your phone: reply **yes** within 10 minutes, or text `pending` and then `yes 2`.
+
+In your own Discord DM with an identity, a plain **yes** also approves what it just asked you there (a message, a
+reply, a post, a setting), within 10 minutes. It never approves money or the shop. The rules, and the switch to turn
+it off, are in [Approve with a plain yes in my own chat (Keys and safety)](03-keys-and-safety.md#approve-with-a-plain-yes-in-my-own-chat).
 
 In the app, answer with the buttons. A line like `yes 2` followed by an authenticator code typed in Chat, said to
 the voice box or said at the Hologram Companion approves nothing: the code is not checked, no brain sees it, and it is kept
@@ -87,7 +91,7 @@ Everything else (keys, pairing, backups, security, payments) is changed in the a
 
 ## What it does on its own
 
-Open **Identity → Permissions** → **Actions & autonomy**. **How much can it do on its own?**
+Open **Identity → What it may do** → **Actions & autonomy**, the first card. **How much can it do on its own?**
 has three cards:
 
 - **Ask me first**: it reads new messages and suggests what to do; every action waits for your OK (When you're
@@ -120,18 +124,22 @@ strangers; for a Hologram Companion, the people at it and strangers on Discord) 
 - **Reply to strangers (in character, no tools)**: whether people the hub doesn't know get a short reply. Off
   for a new identity; turn it on if you want strangers answered.
 
-**What it can do**, the last card, is read-only: for every action the hub knows, whether it runs, asks you first,
+**What it can do** is read-only: for every action the hub knows, whether it runs, asks you first,
 is held for your OK, or is not offered, for you in this app, your phone, a friend or a stranger on Discord (and,
-in Advanced, an AI app with a write key). It is read from the hub's own rules (the tool matrix) for your
-settings, and it also says when all writes are stopped or Unsafe mode is on. In Simple mode it shows one line per
+on [All details](glossary.md#all-details), an AI app with a write key). It is read from the hub's own rules (the tool matrix) for your
+settings, and it also says when all writes are stopped or Unsafe mode is on. On Essentials it shows one line per
 kind of person; **Every action, one by one** opens the table.
+
+**Starter profiles**, right under Actions & autonomy, are presets over the level and who it answers: you see
+exactly what changes before anything is applied. **Try this sentence** tests one request and says what would
+happen: nothing is sent, run or saved.
 
 ## Its personality
 
 **Identity → Personality** is the one place for who it is and how it talks: its name
 (**Rename**), its **Personality** (the same everywhere or one per channel: [Identities](02-identities.md)), its brain and
-budget, the starter profiles, **Try this sentence**, and the channel parts: the Hologram Companion's character (a paired Hologram Companion), the Discord persona, what the Hologram Companion says aloud, and in Advanced the
-**Ghostwriter** (who words a message its brain declined to write). A Chat can still use another persona or brain
+budget, its skills, and the channel parts: the Hologram Companion's character (a paired Hologram Companion), the Discord persona and what the Hologram Companion says aloud. In the tab's **More** fold is the
+**Ghostwriter** (who words a message its brain declined to write). A Chat can still use another brain
 for that chat only.
 
 ## Details

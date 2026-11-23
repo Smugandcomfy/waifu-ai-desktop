@@ -9,12 +9,14 @@ _Also: activity log._
 The list of everything the hub did and saw, newest first: messages in and out, approvals, reminders, problems. Open
 it from the ☰ menu.
 
-## Advanced mode
+## All details
 
-_Also: Advanced, Simple, Simple mode, Simple and Advanced, Simple / Advanced._
+_Also: Essentials, Essentials and All details, Essentials / All details, More fold, Advanced mode, Advanced, Simple, Simple mode, Simple and Advanced, Simple / Advanced._
 
-The app starts in Simple mode, which shows the everyday screens. Advanced mode adds the power-user parts (Money,
-the Developer settings, outside AIs, developer tools). Switch in the ☰ menu or in Settings → Appearance.
+How much each page shows. The app starts on Essentials: the everyday cards, with the ones most people never need
+in a closed "More" fold at the foot of their page (one click opens it). All details opens every More fold and
+shows the technical details. Nothing is out of reach in either. Switch in the ☰ menu or in Settings → Appearance.
+(These were called Simple and Advanced.)
 
 ## Allowance
 
@@ -105,7 +107,7 @@ Nothing is forgotten until you tick it and press Forget selected.
 _Also: coding sessions, terminal session, coding-session key, agent key._
 
 An AI coding tool running in a terminal on your PC that reports to one of your identities, so you can ask how
-it's going from your phone. Each session connects with a coding-session key. An Advanced feature, under
+it's going from your phone. Each session connects with a coding-session key. Set up under
 Settings → Developer → Coding sessions.
 
 ## Connector
@@ -308,7 +310,7 @@ passphrase.
 _Also: outside AI, outside AIs, AI app key, MCP client, Tool API._
 
 A standard way for an AI app on your PC (such as Claude Desktop) to use an identity's tools with a key you give
-it (an AI app key). An Advanced feature.
+it (an AI app key). Its card, Outside AIs & devices, is in the More fold of the identity's "Where it lives" tab.
 
 ## Memory bank
 
@@ -327,8 +329,8 @@ A pretend Hologram Companion: everything works, but spoken replies show as text 
 
 _Also: neurons, voting._
 
-Locked tokens that give a vote in an Internet Computer community. An identity can vote with one you share with it.
-An Advanced feature.
+Locked tokens that give a vote in an Internet Computer community. An identity can vote with one you share with it,
+under Govern on its More tab.
 
 ## Notes & facts
 
@@ -349,7 +351,7 @@ simpler than Claude or ChatGPT.
 _Also: orchestrator role, job, jobs._
 
 One identity you pick to manage the hub for you. In a job you start, it checks on and asks your other identities,
-within limits you set on its Permissions tab. It works under you: it is not a second owner.
+within limits you set on Teamwork. It works under you: it is not a second owner.
 
 ## Owner device
 
@@ -387,8 +389,8 @@ Another of your own identities. Peers talk freely and share your memory bank, bu
 
 _Also: personas, Easy, Spicy, Smol, Coder._
 
-A free character to chat with for fun (Easy, Spicy, Smol, Coder). Personas can't use tools, so they only work in
-Chat, not for answering messages.
+A free character brain (Easy, Spicy, Smol, Coder). Personas can't use tools or memory, so they are not offered in
+Chat or for answering messages; one can be the Ghostwriter that words a message a brain declined to write.
 
 ## Place
 
@@ -410,7 +412,7 @@ _Also: My place, device role._
 
 The role of a Hologram Companion set up for other people, like one in a shop window or at a reception desk: everyone who talks
 to it is a guest, you too, and it never says anything meant for you. The other role, My place, is your own Hologram Companion.
-Choose it on the identity's Permissions tab.
+Choose it on the identity's "What it may do" tab.
 
 ## Public name
 
@@ -472,7 +474,7 @@ it. Messages are not encrypted, and each sender can send one every 10 minutes.
 _Also: standby, Active on this hub, second hub._
 
 A copy of an identity on a second PC that shows messages but answers none, so two hubs never both reply. Switch
-it on under Manage → This hub to make that copy the one that acts.
+it on under This hub, on the identity's More tab, to make that copy the one that acts.
 
 ## Stranger
 

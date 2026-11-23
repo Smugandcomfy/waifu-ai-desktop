@@ -11,12 +11,11 @@ balances and memory, and (if you allow it) send messages. Each app gets its own 
 
 ## You'll need
 
-- [Advanced mode](glossary.md#advanced-mode).
 - An AI app that supports MCP, on this PC (or on your Wi-Fi with [LAN tools](glossary.md#lan-tools) on).
 
 ## Steps
 
-1. Open **Identity → Connections & devices** and find **Outside AIs & devices**.
+1. Open **Identity → Where it lives**, open the **More** fold at the foot of the tab, and find **Outside AIs & devices**.
 2. Give the client a name, pick its kind, and press **Add a client**.
 3. Copy the key now: it is shown once. **Copy config** gives a ready snippet for the app.
 4. Paste the snippet into your AI app's MCP settings and restart the app.

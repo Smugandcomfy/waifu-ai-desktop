@@ -10,7 +10,8 @@ someone else help you.
 ## She doesn't answer
 
 1. Look at the status light under the left column (in the header on a phone). **Offline** means no internet: replies come when it is back.
-2. Open Today → **Needs you first** and **Fix these**: she may be waiting for your OK.
+   **Sneed offline** beside **Live** means only Sneed messages are waiting; chat in the app, Discord and Telegram still work.
+2. Open Today → **Needs you**: she may be waiting for your OK, or something under **To fix** may be stopping her.
 3. On **Identity → Personality**, check the **Brain that answers messages**. "(no key)" means it
    needs a key: add one in **Settings → Brains & keys → AI providers**, or pick
    **On-chain agent** (free).
@@ -23,7 +24,7 @@ on. Send it again.
 ## The bot is offline
 
 1. The bot is online only while Waifu AI runs on this PC. A sleeping PC takes it offline.
-2. Open the **Discord** card on **Identity → Connections & devices** and press **Test**.
+2. Open the **Discord** card on **Identity → Where it lives** and press **Test**.
 3. **Blocked** with "token": the token was reset in the [Developer Portal](glossary.md#developer-portal). Copy the new one, paste it and
    press **Save**.
 4. **Blocked** with "Message Content": a listen channel needs that switch on in the Developer Portal, or set the
@@ -61,6 +62,9 @@ it normally just opens the one that is running. If it can't, a box says why:
   Waifu AI again. If the message says the number comes from an old lock file, check the process's name first: it
   may be another program.
 - **"Another program is holding this hub's lock name"**: restart the PC, then start Waifu AI again.
+- **"There is a folder named hub.lock in this hub's data folder"**: something made a folder where Waifu AI keeps its
+  lock file. Waifu AI never deletes it. Open the data folder, move or rename the `hub.lock` folder, then start
+  Waifu AI again. Restarting the PC does not help here.
 
 The box also says where the log is. When the running copy was not answering, or another program held the lock,
 **Settings → Security & backups → Health** keeps a line about the refused start until
@@ -84,8 +88,8 @@ Don't run an older copy of Waifu AI on the same data while a newer one runs. Qui
 - **"No backup has been verified yet"**: back up once with this version (**Back up now**, or **Back up keys**).
 - **"The Waifu AI memory service is full"** when you enrol: nothing is lost, your memories stay on this PC. Try
   again later.
-- **ChatGPT memory sharing, roaming or a saved draft shows an error**: see [ChatGPT, roaming and drafts](14-chatgpt-roaming-and-drafts.md).
-- **Enroll is refused**: the memory bank hasn't admitted you. See [Set up the memory bank (optional) (Memory)](13-memory.md#set-up-the-memory-bank-optional).
+- **ChatGPT memory sharing, roaming or a saved draft shows an error**: see [ChatGPT, roaming and drafts](15-chatgpt-roaming-and-drafts.md).
+- **Enroll is refused**: the memory bank hasn't admitted you. See [Set up the memory bank (optional) (Memory)](14-memory.md#set-up-the-memory-bank-optional).
 - **"Unlock the hub to change settings"**: nothing in Settings can be changed while the hub is locked. Type
   your passphrase on the lock screen first.
 - **"A restore was interrupted and could not be undone"** (a red line on every page): the hub changes nothing until
@@ -100,7 +104,7 @@ Don't run an older copy of Waifu AI on the same data while a newer one runs. Qui
 - **A connected app is told to slow down**: each connected app, device and coding session has its own limit
   per minute. It clears by itself within a minute.
 - **A real Hologram Companion is unreachable**: it must be on the same Wi-Fi as this PC (or use a bridge). See
-  [Your Hologram Companion](16-your-hologram-companion.md).
+  [Your Hologram Companion](17-your-hologram-companion.md).
 
 ## Where the log is
 

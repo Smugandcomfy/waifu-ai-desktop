@@ -7,7 +7,7 @@ _Give it its own Discord bot, invite it to your server, pair your account, and t
 Your identity can have its own Discord bot. In your server it chats with your members; in a private message
 with you it is your whole hub, just like your phone.
 
-**Start the guided setup:** open **Identity → Connections & devices → Discord** and press
+**Start the guided setup:** open **Identity → Where it lives → Discord** and press
 **Guided setup**. It walks you through every step below and checks each one (the token, the connection, the
 invite, the pairing).
 
@@ -31,7 +31,7 @@ Never share the token. Anyone with it can speak as your bot.
 
 ## Connect it to your identity
 
-1. Open **Identity → Connections & devices** and find the **Discord** card.
+1. Open **Identity → Where it lives** and find the **Discord** card.
 2. Paste the token under **Bot token** and press **Save**.
 3. Press **Test**. Wait until it says **Connected** (press Test again if it says it is still connecting).
 4. Press **Invite to a server**. Discord opens: pick your server and press **Authorize**.
@@ -78,9 +78,11 @@ own card, with your passphrase), and the Telegram bot (it answers private chats 
 - **Friends**: press **Make a friend** under **Contacts → People on Discord** to give someone public answers too.
 - **Changes wait for your OK.** Anything more than a simple setting that you ask for on Discord, in your DM too (a
   message, a contact, a post, a vote, a reminder, a payment), becomes an [approval](glossary.md#approval) that you give in the app
-  or on your phone. If you turned on **Approve from my Discord DM** (see [Approve from my Discord DM (Keys and safety)](03-keys-and-safety.md#approve-from-my-discord-dm)),
-  you can also answer it in your DM with its code; otherwise "yes" on Discord never approves it. Reads answer at
-  once, and so do simple settings such as your name, the time zone, quiet hours and the dream.
+  or on your phone. In your own DM, a plain "yes" approves a message, a reply or a post the identity just asked you
+  about there (see [Approve with a plain yes in my own chat (Keys and safety)](03-keys-and-safety.md#approve-with-a-plain-yes-in-my-own-chat)); it never approves money, the
+  shop, a contact or a vote. If you turned on **Approve from my Discord DM** (see [Approve from my Discord DM (Keys and safety)](03-keys-and-safety.md#approve-from-my-discord-dm)),
+  you can also answer an approval in your DM with its code. Reads answer at once, and so do simple settings such as
+  your name, the time zone, quiet hours and the dream.
 - Money, a vote or a purchase asked for in a server channel moves to your DM: the bot says "On it. I'll do that
   in your DM."
 - In a server channel where other people have spoken, a settings change you ask for waits for your OK, and a
@@ -129,7 +131,7 @@ hub's version.
 Guests' answers can cost money, so **Guest limits** caps them: a daily guest budget (default $1.00), replies per
 member per day, and the gap between replies. When the budget is spent, guests get the free brain until tomorrow.
 An identity whose Hologram Companion is a Public companion can let strangers talk to the Hologram Companion's own character instead: no API
-cost, no tools, and the hub sends nothing of yours (the Hologram Companion's own memory may still hold your words). See "Strangers talk to its own character" in [Your Hologram Companion](16-your-hologram-companion.md).
+cost, no tools, and the hub sends nothing of yours (the Hologram Companion's own memory may still hold your words). See "Strangers talk to its own character" in [Your Hologram Companion](17-your-hologram-companion.md).
 
 ## Pictures
 
@@ -176,6 +178,8 @@ once for each new version, when that version is released: the hub's update check
 channel first. A version that is not released yet (a test build, or one you run before it is published) posts
 nothing by itself. If you turned off the update check (Settings → Updates), the note is never posted by itself;
 **Post now** still posts it, and asks first when the version is not public yet. The release memory waits the same way.
+If the hub skipped a version or two (you updated straight past one), the notes it missed go out too, oldest first,
+at most three at a time; a version older than the newest one already posted is never posted.
 
 **Notices follow you.** Things the hub tells you by itself (a pairing request, "the Codie is offline", the dream
 is done) go to the place you last wrote from in the last 15 minutes; after that to your DM, then Telegram, then
@@ -203,7 +207,7 @@ in the app or from your phone. See [Text your coding session](12-text-your-codin
 My place code also needs your authenticator code: "yes 1234 123456"), or press **Approve** on the request in the app,
 which sends the code to the DM. It answers in the DM with a one-time code for the
 bridge program, which works once and lasts 10 minutes. Never in a server channel. "revoke the bridge for <her name>"
-stops a bridge at once. See [Your Hologram Companion](16-your-hologram-companion.md).
+stops a bridge at once. See [Your Hologram Companion](17-your-hologram-companion.md).
 
 **Unpair.** **Unpair** under **Your Discord account** stops that account acting as you at once.
 

@@ -19,14 +19,15 @@ The app labels your Hologram Companion's identity type "Codie". Wherever the gui
 | 10 | [Your phone](10-your-phone.md) | Text your identities from your phone, approve from it, and choose what it is told and when. |
 | 11 | [Connect an outside AI](11-connect-an-outside-ai.md) (Advanced mode) | Let an AI app on your PC, or a device, use one identity's tools with a key you control. |
 | 12 | [Text your coding session](12-text-your-coding-session.md) (Advanced mode) | Let an AI coding session in a terminal report to an identity, and ask it how it's going from your phone. |
-| 13 | [Memory](13-memory.md) | How your identities remember, day pages and "what did we do yesterday?", dreaming, clean-up, and the optional memory bank. |
-| 14 | [ChatGPT, roaming and drafts](14-chatgpt-roaming-and-drafts.md) (Advanced mode) | Let ChatGPT read the memories you approve, use your identities at more than one device, and get back what you were typing. |
-| 15 | [Reminders and timers](15-reminders-and-timers.md) | Ask for a reminder in your own words, anywhere, and see them all on the Reminders page. |
-| 16 | [Your Hologram Companion](16-your-hologram-companion.md) | Mock or real Hologram Companion, pairing a real one, speech, its character, quiet hours, and the bridge. |
-| 17 | [Your home (Home Assistant)](17-your-home-home-assistant.md) | Connect Home Assistant, choose the devices your identities may use, and who may control what from where. |
-| 18 | [Money: wallet, shop and voting](18-money-wallet-shop-and-voting.md) (Advanced mode) | An identity's address can hold tokens, show its history, give and stop allowances, shop, and vote with a neuron you share with it. |
-| 19 | [Updates](19-updates.md) | Find out when a new version is out, download it, and switch to it without losing anything. |
-| 20 | [Troubleshooting](20-troubleshooting.md) | What to do when she doesn't answer, the bot is offline, Days is empty, or you forgot your passphrase. |
+| 13 | ["Add-ons: connect your own software"](13-add-ons-connect-your-own-software.md) (Advanced mode) | Let your identities use software you already have (a to-do app, a NAS, a home server) through its API, safely. |
+| 14 | [Memory](14-memory.md) | How your identities remember, day pages and "what did we do yesterday?", dreaming, clean-up, and the optional memory bank. |
+| 15 | [ChatGPT, roaming and drafts](15-chatgpt-roaming-and-drafts.md) (Advanced mode) | Let ChatGPT read the memories you approve, use your identities at more than one device, and get back what you were typing. |
+| 16 | [Reminders and timers](16-reminders-and-timers.md) | Ask for a reminder in your own words, anywhere, and see them all on the Reminders page. |
+| 17 | [Your Hologram Companion](17-your-hologram-companion.md) | Mock or real Hologram Companion, pairing a real one, speech, its character, quiet hours, and the bridge. |
+| 18 | [Your home (Home Assistant)](18-your-home-home-assistant.md) | Connect Home Assistant, choose the devices your identities may use, and who may control what from where. |
+| 19 | [Money: wallet, shop and voting](19-money-wallet-shop-and-voting.md) (Advanced mode) | An identity's address can hold tokens, show its history, give and stop allowances, shop, and vote with a neuron you share with it. |
+| 20 | [Updates](20-updates.md) | Find out when a new version is out, download it, and switch to it without losing anything. |
+| 21 | [Troubleshooting](21-troubleshooting.md) | What to do when she doesn't answer, the bot is offline, Days is empty, or you forgot your passphrase. |
 | | [Glossary](glossary.md) | Every term the topics use, in one place. |
 
 Topics marked Advanced mode are about screens the app shows once you switch to Advanced (☰ menu → Simple | Advanced).

@@ -97,6 +97,11 @@ These stop what comes next. They cannot take back what ChatGPT or the gateway al
   the hub's credential, so the hub stopped trying. Press **Retry now** if the gateway was mistaken. Otherwise get
   a new credential from whoever runs the gateway, type it under **Replace credential and pair again**, and enter
   the new code in ChatGPT. The memories and conversations you approved stay approved.
+- **"This gateway's name now points at a private or local network address"**: the gateway's address used to be a
+  public site and now leads to a computer on a home or office network, so the hub stopped connecting to it. Your
+  approvals are kept. If you run the gateway yourself, put its address right and press **Retry now**. If you do not
+  know why it changed, press **Stop trusting this gateway**. **Disconnect and revoke** works again once the address
+  is right.
 - **"Set a hub passphrase before connecting ChatGPT"**: set one, then press **Check protection again**.
 - **The section asks for the Terms of Use**: read and accept them, then press **Check again**. A connector that
   was already set up stays off until then. You can still press **Pause access**, **Stop trusting this gateway** or
@@ -122,7 +127,7 @@ a gateway.
 
 1. Open **Memory → Devices and roaming**.
 2. Pick the bridge, type a [place](glossary.md#place) for it (your own word, such as "Home office") and press **Assign
-   place**. If no bridge is listed, make one first: see [Your Hologram Companion](16-your-hologram-companion.md).
+   place**. If no bridge is listed, make one first: see [Your Hologram Companion](17-your-hologram-companion.md).
 3. When you are at that device, pick it, tick **Allow spoken replies here for 15 minutes** if it may speak, and
    press **Continue here**. **Leave** ends it.
 

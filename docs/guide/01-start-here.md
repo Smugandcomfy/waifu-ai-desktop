@@ -22,17 +22,20 @@ identities are online only while it runs.
 The left column (the bar at the bottom on a phone) has these places, with your identities after Today:
 
 - **Today**: what needs you, what is happening now, what is coming up, and what to fix.
-- **Your identities**: one row per identity. Click one to open its page, with one row of tabs: **Overview**,
-  **Chat**, **Personality**, **Permissions**, **Connections & devices**, **Memory** and, in Advanced, **Money** and
-  **Manage** (see [An identity's page (Identities)](02-identities.md#an-identitys-page)). On a phone they open from the button next to the logo.
+- **Your identities**: one row per identity. Click one to open its page: a short summary on top, then one row of tabs:
+  **Chat**, **Personality**, **What it may do**, **Where it lives**, **Memory** and **More**
+  (see [An identity's page (Identities)](02-identities.md#an-identitys-page)). On a phone they open from the button next to the logo.
 - **Memory**: the memory bank and who writes to it, the day pages, clean-up, dreaming and ChatGPT sharing.
 - **Reminders**: everything you asked to be reminded of.
 - **Contacts**: your contacts, the public directory and the people on your Discord bots.
 - **Teamwork** (once you have two identities): the team, the orchestrator and Unsafe mode.
-- **Settings**: You & account, Phone & apps, Home, Brains & keys, Quiet & away, Security & backups, Updates,
-  Appearance and, in Advanced, Developer.
+- **Settings**: four pages. **You & account** (with Appearance, Updates and Quiet & away under their own headings,
+  and Developer in a closed fold at the foot), **Brains & keys**, **Connections** (Phone & apps and Home) and
+  **Security & backups**. It opens on You & account. The **Find a setting** box above them finds any setting by
+  name. Help writes a place as **Settings → Updates → Usage report**: Updates is a heading on the You & account page,
+  and the link opens it for you.
 
-The ☰ menu (top left) holds Help, [Activity](glossary.md#activity), the Simple | Advanced switch, Insights (on the owner's hub),
+The ☰ menu (top left) holds Help, [Activity](glossary.md#activity), the Essentials | All details switch, Insights (on the owner's hub),
 Lock now (with a passphrase) and Quit. Appearance, desktop pop-ups and your account are in Settings. The status
 light sits under the left column.
 
@@ -52,44 +55,62 @@ as "7 of 8 done · Try a reminder", with that step's button; open the line to se
 
 ## Today
 
-Today is the home page. At the top: the **Waifu AI Desktop** title and quick links to Identities, Memory, Settings
-and Contacts. Then, in this order:
+Today is the home page. At the top, under the **Waifu AI Desktop** title, are big buttons for the things you do
+most:
 
-- **Needs you first**: [approvals](glossary.md#approval) to answer (with who asked; **Approve** or **Don't** right there, and the
-  passphrase or code when one is needed), sends to check ("Did these go out?") and notes. It shows 5 of each, grouped
-  by Identity, with **Show all**. When nothing needs you it says so: "Nothing needs you."
-- **Waiting**: what is under way and needs no answer yet: sends queued, messages held for an outside AI, a send whose
-  result is not known, reminders due within the hour, the orchestrator's open jobs, a Hologram Companion the hub cannot reach.
-- **Plans**: a plan that is running or has stopped (a stopped one has **Retry** and **Dismiss**).
-- **Happening now**: replies being watched and coding sessions; 3 of each, with "N more".
-- **Coming up**: today's reminders.
-- **Memory overnight**: whether the nightly dream is on, when it runs next, the last result, and **Dream now**.
+- **Dream now**: tidy your memory now (see [Memory](14-memory.md)). The line under it says when the last dream was, or
+  "Dreaming now…". If nobody can dream yet it says what is missing, such as "Needs a Claude or ChatGPT key", and
+  the button takes you there.
+- **Chat**: talk to the identity you used last.
+- **Remind me**: set a reminder or a timer.
+- **New identity**: make another AI.
+
+Then, in this order:
+
+- **Needs you**: everything that waits for you, in one list. [Approvals](glossary.md#approval) to answer (with who asked;
+  **Approve** or **Don't** right there, and the passphrase or code when one is needed), sends to check ("Did these
+  go out?"), a line when a newer version of Waifu AI is available (**See the update**), and notes. It shows 5
+  approvals and 5 checks, grouped by Identity, with **Show all**. Under **To fix** are settings worth fixing (no
+  passphrase, no backup, an Identity not enrolled…) and the safety warnings, each with one button that fixes it or
+  takes you to it. A safety warning you chose on purpose can be settled with **Keep it this way**: it moves to the
+  Safety summary (see [Keys and safety](03-keys-and-safety.md)). The number at the top counts all of these. When nothing needs you
+  it says so: "Nothing needs you."
+- **Start here**: the getting-started steps, until you finish or hide them. The next step to do has the filled
+  button.
+- **Updates**: what is going on and needs no answer, in one card. It shows only the groups that have something:
+  - **Waiting**: sends queued, messages held for an outside AI, a send whose result is not known, reminders due
+    within the hour, the orchestrator's open jobs, a Hologram Companion the hub cannot reach.
+  - **Plans**: a plan that is running or has stopped (a stopped one has **Retry** and **Dismiss**).
+  - **Happening now**: replies being watched and coding sessions; 3 of each, with "N more".
+  - **Coming up**: today's reminders.
+
+  When none of them has anything, the card says "Nothing else is going on".
+- **Dreaming**: whether the nightly dream is on, when it runs next, who dreams, the last result, and **Dream now**.
 - **Coding tasks**: the jobs your coding sessions were given, when you use them (see [Text your coding session](12-text-your-coding-session.md)).
-- **Fix these**: settings worth fixing (no passphrase, no backup, an Identity not enrolled…) and the safety
-  warnings, each with a one-click fix. A safety warning you chose on purpose can be settled with **Keep it this
-  way**: it moves to the Safety summary (see [Keys and safety](03-keys-and-safety.md)).
 
-Every card below Waiting has **–** (shrink it to its title) and **✕** (close it). A closed card is listed at the
-bottom under **Hidden cards**, with **Restore**. What you shrink or close is remembered in this browser. Fix these
-comes back by itself when something new is on it, and a week after you closed it. Needs you first can't be closed:
-approvals wait there until you answer them.
+Updates, Dreaming and Coding tasks each have **–** (shrink it to its title) and **✕** (close it). A closed card is
+listed at the bottom under **Hidden cards**, with **Restore**. What you shrink or close is remembered in this
+browser. Needs you can't be shrunk or closed: approvals, and the lines to fix, wait there until you deal with them.
 
 Today updates in place: what you are typing, an open fold and where you scrolled stay put when something changes.
 
-## Simple and Advanced
+## Essentials and All details
 
-The app starts in [Simple mode](glossary.md#advanced-mode), which keeps the everyday screens tidy. Advanced mode adds the Money tab,
-the Developer settings, outside AIs and developer tools. Nothing is hidden for safety: a link to an Advanced place
-says so and offers to switch.
+The app starts on [Essentials](glossary.md#all-details), which keeps the everyday screens tidy. Nothing is out of reach there: the
+cards most people never need sit in a closed **More** fold at the foot of their page, and one click opens it.
+**All details** opens every More fold and shows the technical details (ids, extra columns, the full logs).
 
-1. To switch, press **Simple | Advanced** in the ☰ menu.
+1. To switch, press **Essentials | All details** in the ☰ menu.
 2. Or open **Settings → Appearance → Mode**.
+
+The browser remembers your choice. Every page, tab and setting opens in both.
 
 ## Details
 
 **The status light.** **Live** means the hub is answering and the page is current. **Degraded** means some
-services it uses are unreachable. **Offline** means no internet: nothing is lost, it catches up later. Hover it
-to see what is down.
+services it uses are unreachable. **Offline** means no internet: nothing is lost, it catches up later. **Live** with
+**Sneed offline** after the time means only Sneed (messages) can't be reached: inbox checks wait and one runs every
+minute, and the rest of the hub carries on. Hover it to see what is down.
 
 **Themes.** **Settings → Appearance → Theme** has six looks: Kawaii (the default),
 Kawaii Night, Daylight, Sandstone, Slate and Midnight. This browser remembers your choice.

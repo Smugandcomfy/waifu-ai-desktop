@@ -105,6 +105,9 @@ type its passphrase. It adds the identities this hub doesn't have yet.
 
 Run Waifu AI on one PC only. Two hubs with the same identity would both answer the same messages.
 
+A backup file can be at most 171 MB. A larger file is refused before it is read ("That file is larger than any hub
+backup can be"): pick the `.hubbackup` file this hub made.
+
 **Before it restores, the hub tells you** what the backup would change that matters: contacts it makes peers, a
 Telegram or Discord bot token that is new or different (never the token itself), new device addresses, tokens on
 another ledger, and how many queued sends and reminders it holds.
@@ -129,7 +132,12 @@ update is not installed.
 
 A lock also signs out every page open on another device (a phone or a PC that reaches the hub over Tailscale), so a
 lost phone that was still signed in can do nothing more. Pages on this PC stay signed in. To use the app on that
-device again, sign it in again the way you signed it in before; until then, unlock at this PC.
+device again, unlock at this PC, then make it a new sign-in link:
+**Settings → Security & backups → Lock**, **Sign in another device**. The hub asks for your
+passphrase (with no passphrase: Yes in a window on this PC) and shows a link and a QR code. Open the link on the other
+device, or scan the code with it, straight away: it works once, for one minute. Only the app on the hub's own PC can
+make this link, and only for an address you listed for the hub. Whoever opens it first is signed in as you, so never
+send it to anyone.
 
 The hub checks one unlock at a time. A second try while one is being checked gets "An unlock is already running;
 try again in a moment", and each wrong passphrase makes the next try wait a little longer.
@@ -179,7 +187,7 @@ starts on this PC, so bridges and messages carry on after a reboot.
 **Settings → Security & backups → Health** shows how your keys and files are kept, in one list:
 encrypted with your passphrase, with Windows's key, or in plain text; plain copies of the key file still on disk;
 files that were damaged, that stay closed or that can't be saved; your backups, and whether the last one was
-verified; and how the last start went (see [Waifu AI says it is already running (Troubleshooting)](20-troubleshooting.md#waifu-ai-says-it-is-already-running)). Today
+verified; and how the last start went (see [Waifu AI says it is already running (Troubleshooting)](21-troubleshooting.md#waifu-ai-says-it-is-already-running)). Today
 shows the ones that need you. A damaged file that holds keys, contacts or approvals stays closed until you restore a backup or press
 **Reset** (it then starts empty; a copy of the damaged file is kept). **Hide** removes a line about something
 that is over.
@@ -227,7 +235,7 @@ a file in the data folder to delete by hand instead.
 The hub warns about settings that can cost money or let things happen without asking: an Identity that runs every
 action without asking, one that answers strangers with a paid brain, a paid brain with no monthly budget, the
 ghostwriter, a connected app or key that may change things, sends with no cap, tool doors open on your Wi-Fi. Each
-warning has a one-click fix on **Today** (Fix these), on the Identity's Overview and in
+warning has a one-click fix on **Today** (in **Needs you**, under **To fix**), above the identity's tabs and in
 **Settings → Security & backups → Safety summary**.
 
 Some of these you chose on purpose. Press **Keep it this way** and the warning becomes one quiet line in the Safety
@@ -238,8 +246,8 @@ reaches 80% of its monthly budget; keep it again and it stays quiet for the rest
 back only if the spend reaches 80% again). **Warn me again** in the Safety summary brings it back at once. The hub keeps these choices, so they are the
 same in every browser you use.
 
-A warning you did not settle stays on Fix these. If you close that card, it comes back when a new warning appears,
-and a week after you closed it.
+A warning you did not settle stays on Today, in **Needs you** under **To fix**, and counts in that card's number.
+Needs you can't be closed, so a warning never goes out of sight until you fix it or keep it.
 
 ## Approve from my Discord DM
 
@@ -253,6 +261,49 @@ Turning it on asks for your passphrase (without one, a Yes/No window opens on th
 - Never from Discord: keys, pairing, permission levels, the orchestrator, Unsafe mode, plans, votes and follows. A
   server channel, a reply, a forward, a quote or an edited message never counts.
 - At most 20 Discord approvals an hour. Locking the hub or **Stop all writes** pauses it.
+
+## Approve with a plain yes in my own chat
+
+On unless you turn it off, in **Settings → Security & backups → Approve with a plain yes in my own chat**.
+Turning it off asks nothing. Turning it back on asks for your passphrase (without one, a Yes/No window opens on this
+PC).
+
+While it is on, when an identity asks for your OK in your own Discord DM with it, you can reply **yes** right there.
+No code is needed. It works like this:
+
+- **What it covers:** a message, a reply, a Discord post or DM to someone else, a setting, a reminder or note on the
+  Hologram Companion: the things you asked that identity for in that DM.
+- **What it never covers:** money and the shop. For those a plain yes is not enough: approve them in the app, from
+  your phone, or (with **Approve from my Discord DM** on) with the code and your authenticator code. Keys, pairing,
+  permission levels, plans, votes, follows, contacts and your home also stay as they were.
+- **The words:** "yes", "yes please", "do it", "go ahead", "approve", "ok" or "send it", and nothing else in the
+  message. Anything longer is read as talk.
+- **Only your own new message counts:** typed by you in your own DM. A server channel, a reply to a message, a
+  forward, a quote or an edited message approves nothing.
+- **Only what was just asked:** the request must have been made in that same DM in the last 10 minutes. If two
+  things are waiting, the identity asks "Which one?" and you answer "yes 1" or "yes 2".
+- **Not after other people's words came in:** if you forwarded or quoted someone, sent a picture, or the identity
+  read other people's words after it asked, a plain yes is not taken. Ask again, then say yes. What the identity
+  read *before* it asked does not block your yes: you see the exact text in its request.
+- **Not if it changed:** if what the request would do is no longer what you were shown, nothing is done.
+- **Only what you were shown in full:** if the request was too long to show whole in the DM, or it carries hidden
+  characters that were left out, it does not say "Reply yes" and a yes approves nothing: open the app to read and
+  approve it. The same goes for a further action an identity asks for right after you approved one: it waits for
+  its own OK in the app.
+- **The hub asks in its own line:** when an identity wants to change a setting, something on the Hologram Companion or something
+  in your home, the request you answer is the hub's own line after the identity's words ("I need your OK to …"). It
+  is the same from your phone and Telegram. If the identity had read other people's words, the line says so.
+- **In the app only:** a permission level (who an identity answers, and how freely it acts) is never approved by a
+  text, Telegram or Discord. Nor is a change of its persona, brain or budget, or of who it answers, that it asked for
+  after reading other people's words, nor a value that would show as a link or a picture.
+- At most 20 Discord approvals an hour (shared with **Approve from my Discord DM**). **Stop all writes** pauses it,
+  a locked hub approves nothing, and after the hub restarts you ask again.
+
+Every approval given this way is in Activity as: approved by your "yes" in your Discord DM. With the switch off,
+Discord works as it did before: a plain yes approves only a simple setting you asked for yourself.
+
+Your phone's **yes** approves what you asked from the phone, as before, with the same rule: only a request the
+text showed you in full. For one it could not show whole, text "pending" and answer with its number, or use the app.
 
 ## What this protects against
 
@@ -362,7 +413,7 @@ the rest stay as you set them. Today says which one, and the old file is kept in
 
 **Two hubs.** A copy of an identity restored on a second PC starts as a [standby hub](glossary.md#standby-hub): it shows messages
 and answers none. To make it the one that acts, switch **Active on this hub** on, on
-**Identity → Manage → This hub**. **Contacts → Other hubs**
+**Identity → More**, in the **This hub** card. **Contacts → Other hubs**
 (pick the identity) pairs two hubs so their identities treat each other as peers.
 
 **The key and Internet Identity.** Signing in with [Internet Identity](glossary.md#internet-identity) records who owns an identity. It

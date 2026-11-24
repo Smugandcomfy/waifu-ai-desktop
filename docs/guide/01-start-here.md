@@ -22,12 +22,13 @@ identities are online only while it runs.
 The left column (the bar at the bottom on a phone) has these places, with your identities after Today:
 
 - **Today**: what needs you, what is happening now, what is coming up, and what to fix.
+- **Messages**: your conversations with other people and their Hologram Companions, your contacts (**People**) and the public
+  **Directory** (see [Messages (Identities)](02-identities.md#messages)).
 - **Your identities**: one row per identity. Click one to open its page: a short summary on top, then one row of tabs:
   **Chat**, **Personality**, **What it may do**, **Where it lives**, **Memory** and **More**
   (see [An identity's page (Identities)](02-identities.md#an-identitys-page)). On a phone they open from the button next to the logo.
 - **Memory**: the memory bank and who writes to it, the day pages, clean-up, dreaming and ChatGPT sharing.
 - **Reminders**: everything you asked to be reminded of.
-- **Contacts**: your contacts, the public directory and the people on your Discord bots.
 - **Teamwork** (once you have two identities): the team, the orchestrator and Unsafe mode.
 - **Settings**: four pages. **You & account** (with Appearance, Updates and Quiet & away under their own headings,
   and Developer in a closed fold at the foot), **Brains & keys**, **Connections** (Phone & apps and Home) and
@@ -38,6 +39,28 @@ The left column (the bar at the bottom on a phone) has these places, with your i
 The ☰ menu (top left) holds Help, [Activity](glossary.md#activity), the Essentials | All details switch, Insights (on the owner's hub),
 Lock now (with a passphrase) and Quit. Appearance, desktop pop-ups and your account are in Settings. The status
 light sits under the left column.
+
+## The daily update
+
+When you open the app, or come back to it, and have not seen today's update yet, one small window called **Today**
+says what is new since yesterday. It shows only the parts that have something to say:
+
+- **Needs you**: how many approvals are waiting, with **Open Needs you**.
+- **Messages**: how many new messages came from other people, with **Open Messages**.
+- **New on the network**: the names that joined since you last looked, each marked claimed or not, with **Say hi**.
+- **Since yesterday**: one or two lines on what your identities did: messages sent, memories kept, a dream.
+- **A new version**: one is available, or was just installed, with a few words on what is new.
+- **Tip**: one thing you have not done yet, such as **Make your name yours**, **Send your first message** or
+  **Keep a backup on another drive**. A different tip each day until they are done. A tip comes along with other
+  news; a tip alone does not open the window.
+
+It appears at most once a day. Closing it, or pressing one of its buttons, marks today's as seen. When there is
+nothing to say, no window appears at all. It never shows while the hub is locked, while you are making your first
+identity, or over another window. It is built from what the hub already knows; nothing is sent anywhere for it.
+
+To turn it off, or to see it again with **Show it now**:
+**Settings → Appearance → Desktop pop-ups**, under **The daily update**. This browser
+remembers the choice, and which day it has shown.
 
 ## Your first steps
 

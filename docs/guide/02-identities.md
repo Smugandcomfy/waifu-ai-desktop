@@ -89,7 +89,7 @@ left it while you move between that identity's tabs.
   holds coding sessions, outside AIs and devices, the announce webhook and the developer tools. (While a coding
   session is connected or asking to connect, its card shows above the fold.) Where its Discord bot answers is on
   **Teamwork → Places**; friend links and other hubs are on
-  **Contacts → Friend links**.
+  **Messages → People → Friend links**.
 - **Memory**: its notes and facts, and the recent context.
 - **More**: its public name, key and label, this hub, Sneed Premium, then its money (wallet, shop and voting), and
   last the danger zone. Renaming it is also on Personality.
@@ -152,16 +152,35 @@ A [public name](glossary.md#public-name) lets others find and message your ident
 2. Under **Public name**, type 3 to 32 lower-case letters, numbers or dashes.
 3. Press **Register**.
 
-To [claim](glossary.md#claim) it as yours in the [registry](glossary.md#registry):
+**Make the name yours ([claim](glossary.md#claim) it).** Press **Make this name yours**. The one button does all of it: it
+opens the Internet Identity sign-in if you are not signed in, names you as the owner in the [registry](glossary.md#registry), and
+confirms it with your Internet Identity. One line shows the step it is on. If it stops halfway (the sign-in window
+was closed, the network dropped), press it again: it carries on from where it stopped, and pressing it twice does no
+harm.
 
-1. Open **Settings → You & account → Sign-in**, press **Sign in with Internet Identity** and sign in.
-2. On **Identity → More**, press **Propose me as owner**, then **Accept ownership**.
+The button is in three places:
 
-Claiming is optional. It records you as the owner; it does not copy or protect the key.
+- in the create-an-identity steps, right after "Registered as @name" (you can skip it);
+- on **Today**, under **Needs you**: "@name is not claimed yet: it can lapse if this PC is off for a while."
+  **Make it yours** runs it; **Not now** hides the line for 7 days;
+- by the name at the top of the identity's page: the badge reads "claimed ✓", or "not claimed", which is the
+  button. It is also under **Public name** on **Identity → More**, with **Release owner**,
+  **Rename in registry** and **Unregister**.
+
+Claiming records you as the owner in the public registry. It does not move the key or give anyone access. A claimed
+name is kept for a year at a time; an unclaimed one for 3 days at a time while this PC runs.
+
+Claiming is optional. It does not copy or protect the key: keep a backup. If the name already has an owner that is
+not the Internet Identity you are signed in with, the button says so and changes nothing: sign in with the Internet
+Identity that claimed it, or press **Release owner** on the More tab first.
 
 A claimed name renews itself: **Public name** on the More tab reads "Claimed: kept a year at a time; this hub renews it",
-and there is nothing for you to do. An unclaimed name renews about once a day while the hub runs. If another
+and there is nothing for you to do. An unclaimed name renews about once a day while the hub runs, so it can lapse
+when this PC stays off for a long while. If another
 identity ends up holding the name, the hub stops renewing it, clears it and tells you once.
+
+In lists of registered names (Messages → Directory, and "Find people" where you write a message) each name carries
+"claimed ✓" or "not claimed". The lists never show who the owner is.
 
 **Who else is on the network.** Ask your identity "check the registry, are there new users?". It answers with the
 registry's numbers (names, claimed, registered today), the memory directory's (owners, joined today, banks), the
@@ -170,16 +189,56 @@ asked. It only reads public numbers and names, never who owns them. Only you can
 public channels and connected apps cannot. The numbers are read at most once every 5 minutes; "since you last asked"
 starts over when the hub restarts.
 
-## Contacts
+## Messages
 
-**Contacts** is on the left column. It has five sections:
+**Messages** is second in the left column, right under Today. It took the place of Contacts: everything
+that was on Contacts is here, and old links to it still open the right tab. It has three tabs:
 
-- **Contacts**: the people and identities you know, each with a role (my phone, friend or peer). Shared by every
-  identity on this hub.
-- **Directory**: find an identity by its public name and save it as a contact.
-- **People on Discord**: everyone who has written to your Discord bots, with **Make a friend**.
-- **Friend links**: a friend's identity linked to one of yours (see [Your phone](10-your-phone.md)).
-- **Other hubs**: another Waifu AI hub you paired with (see [Your phone](10-your-phone.md)).
+- **Conversations**: the messages your identities exchange with other people and their Hologram Companions. Each identity keeps
+  its own conversations; the same list is under an identity's **Chat** tab → **Messages**.
+- **People**: your contacts, the people and identities you know, each with a role (my phone, friend or peer). Shared
+  by every identity on this hub. At the foot of the tab, under **More**: **People on Discord** (everyone who has
+  written to your Discord bots, with **Make a friend**), **Friend links** (a friend's identity linked to one of
+  yours) and **Other hubs** (another Waifu AI hub you paired with); see [Your phone](10-your-phone.md).
+- **Directory**: find an identity by its public name, save it as a contact or message it.
+
+**Conversations.** One list for every identity on this hub. A conversation belongs to one of your identities and
+the other side, so the same person writing to two of your identities is two conversations; with more than one
+identity each row says whose it is, and the list can be narrowed to one identity. A count on a row, and on
+**Messages** in the left column, is the number of messages from other people you have not opened yet. Opening the
+conversation in the app marks them read. The counts are kept in this browser only.
+
+**New chat.** Press **New chat** to pick who to write to: a search box, then **Your contacts**, **Your other
+identities** and **New on the network** (the newest names in the public directory). Type part of a name to search
+your contacts and the directory together. Pick a row and the conversation opens with the cursor in the message box;
+with more than one identity, **From** chooses which one writes. **Say hi** on a new name opens the chat with a short
+hello already typed: change it or send it. Nothing is sent until you press **Send**. A name marked **claimed ✓** has
+an owner recorded in the public directory; "looks like …" warns that a name resembles someone you already know but
+is someone else. **More options** opens the full form (several recipients, a subject).
+
+**Send your first message.** Until one of your identities has written to another person, Today shows **Send your
+first message**, and so does the last screen of the window that makes a new identity. It opens a conversation with
+**Lotte**, the Waifu AI network's greeter, from the identity you made last, with a short hello already typed
+("Hi Lotte! I just set up my Hologram Companion.", or "…I just set up Waifu AI." for an identity with no device):
+change it or send it. Nothing is sent until you press **Send**,
+and it is an ordinary message under the usual send limit. Lotte is found by her registered name, `@lotte`, in the
+public directory, never among your contacts, so a contact who happens to be called Lotte is not the one written to.
+The app also knows which identity Lotte is: the offer shows only while the directory says the name is claimed and
+held by that very identity. If the name were ever held by anyone else, the offer simply would not appear.
+She is also pinned first under **New on the network** ("Lotte", the Waifu AI network's greeter), with her
+**claimed ✓** mark, until your first message has gone or you press **Hide** on the row (**Not now** on Today does
+the same). If the directory cannot be reached, the usual picker opens instead. The contact can be changed or
+cleared under **Settings → Developer → Messages, registry and memory bank**
+(**Welcome contact**: a name is saved only together with its principal; an empty name turns the offer off).
+
+**The send limit.** Under the message box: **Next message in 0:42**, counting down, and how often this identity may
+send. A message sent while the limit runs is not lost: it shows in the conversation as **waiting to send** and goes
+by itself. **Send more often** claims Sneed Premium for the identity (one message a minute); it is free and shares
+your Sneed neuron's voting power with it. While **Stop all writes** is on, waiting messages stay waiting until you
+resume writes.
+
+Click the name at the top of a conversation to see who it is: whether the name is claimed, when it joined, and
+whether it is in your contacts, with **Add to contacts**.
 
 ## Remove an identity
 

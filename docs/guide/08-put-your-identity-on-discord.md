@@ -75,7 +75,7 @@ own card, with your passphrase), and the Telegram bot (it answers private chats 
   a server channel it keeps private things private and answers those in your DM.
 - **Everyone else** is a [guest](glossary.md#guest): chat only, no tools, no memory, no wallet. Being in your server never
   makes someone a friend.
-- **Friends**: press **Make a friend** under **Contacts → People on Discord** to give someone public answers too.
+- **Friends**: press **Make a friend** under **Messages → People → People on Discord** to give someone public answers too.
 - **Changes wait for your OK.** Anything more than a simple setting that you ask for on Discord, in your DM too (a
   message, a contact, a post, a vote, a reminder, a payment), becomes an [approval](glossary.md#approval) that you give in the app
   or on your phone. In your own DM, a plain "yes" approves a message, a reply or a post the identity just asked you

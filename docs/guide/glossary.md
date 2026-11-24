@@ -90,10 +90,11 @@ manage one to use the app.
 
 ## Claim
 
-_Also: claiming, propose me as owner._
+_Also: claiming, claimed, make this name yours, propose me as owner._
 
-Recording you as the owner of an identity in the registry, signed with your Internet Identity. Optional. It does
-not move or copy the key, and it cannot recover a lost key.
+Recording you as the owner of an identity's public name in the registry, signed with your Internet Identity: the
+button "Make this name yours". Optional. It does not move or copy the key, gives nobody access, and cannot recover a
+lost key. A claimed name is kept for a year at a time; an unclaimed one for 3 days at a time while this PC runs.
 
 ## Clean-up
 
@@ -123,6 +124,14 @@ _Also: recent context._
 
 The last few turns of all your identities' conversations, which every brain reads, so one identity can pick up
 where another left off. Shown in Memory → Context.
+
+## Daily update
+
+_Also: Today window, daily pop-up, what's new today._
+
+One small window, **Today**, when you open the app and have not seen today's update: what needs you, new messages,
+new people, what your identities did, a new version and a tip. Once a day at most, and not at all when there is
+nothing to say. Turn it off in Settings → Appearance → Desktop pop-ups.
 
 ## Day page
 
@@ -425,7 +434,7 @@ served, free; chatting doesn't need one.
 
 _Also: directory._
 
-The public list of identity names on the Internet Computer. Contacts → Directory searches it.
+The public list of identity names on the Internet Computer. Messages → Directory searches it.
 
 ## Reminder
 
@@ -514,3 +523,10 @@ It never lifts the hold on someone else's words, keys always asking, "stop all w
 _Also: release channel._
 
 Where the hub looks for new versions. Leave it as it is unless you know you want test releases.
+
+## Welcome contact
+
+_Also: greeter, Lotte, first message._
+
+The registered name a new owner is offered to write to first: Lotte, the Waifu AI network's greeter. She is always
+found by her name in the public directory, never among your contacts. Nothing is sent until you press Send.

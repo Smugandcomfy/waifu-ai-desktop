@@ -240,6 +240,29 @@ Ask her from your phone or your DM, in your own words:
 - **Colour**: a colour word ("blue", "pink", "warm white") or a colour code. "Black" or "off" switches them off.
 - **Brightness**: a number from 1 to 100 is a percent, so 1 means 1%, the dimmest.
 
+## Switched off on the Hologram Companion
+
+The Hologram Companion has its own switches for what an app like this hub may use: alarms, notes and reminders, memory cards,
+lights and music. They are on the Hologram Companion itself, in its own settings under **Lab** (Laboratory), not in this app.
+
+When one is off, the Hologram Companion refuses that part and everything else keeps working. The hub then stops asking for it in
+the background, writes one row in Activity, and shows one line on Today: "Mira's Codie has alarms and notes
+switched off in its own settings (Lab): turn them on there, or ignore this".
+
+- **To use them:** open the Hologram Companion's own settings, go to Lab, and switch the named ones on. The hub notices within a
+  few minutes; the line goes away by itself.
+- **To leave them off:** press **Ignore** on the line. It comes back only if something else is switched off.
+- Asking for an alarm or a note yourself still gets a plain answer saying which switch is off.
+
+If the Hologram Companion refuses a background job for another reason (for example older Hologram Companion software that does not have it),
+Today says which one, with **Try again**. The hub tries by itself once a day, and at once after you pair the Hologram Companion
+again.
+
+If the Hologram Companion is a Public companion and still holds memory cards the hub wrote for you, because it refuses to let the
+hub remove them, Today says so on a line of its own: "Mira's Codie still holds 2 of your memory cards and visitors use
+it". **Ignore** does not hide that line. Switch memory cards on in the Hologram Companion's Lab settings and press **Try again**,
+or delete the cards on the Hologram Companion itself.
+
 ## When the Hologram Companion is offline
 
 - You are told once, by text, after about ten minutes. Nothing is said aloud about it later.

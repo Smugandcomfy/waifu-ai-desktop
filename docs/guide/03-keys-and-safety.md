@@ -413,7 +413,7 @@ the rest stay as you set them. Today says which one, and the old file is kept in
 
 **Two hubs.** A copy of an identity restored on a second PC starts as a [standby hub](glossary.md#standby-hub): it shows messages
 and answers none. To make it the one that acts, switch **Active on this hub** on, on
-**Identity → More**, in the **This hub** card. **Contacts → Other hubs**
+**Identity → More**, in the **This hub** card. **Messages → People → Other hubs**
 (pick the identity) pairs two hubs so their identities treat each other as peers.
 
 **The key and Internet Identity.** Signing in with [Internet Identity](glossary.md#internet-identity) records who owns an identity. It

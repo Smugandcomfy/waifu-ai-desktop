@@ -79,7 +79,7 @@ last. Approval codes go to your Sneed SMS phone only.
 
 ## Details
 
-**Friend links.** **Contacts → Friend links** (pick the identity) makes a link that lets one
+**Friend links.** **Messages → People → Friend links** (pick the identity) makes a link that lets one
 person become a [friend](glossary.md#friend) (public answers only), or a chat-only link. **Rotate link secret** voids every
 link you have shared.
 

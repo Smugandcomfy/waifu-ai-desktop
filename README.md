@@ -36,6 +36,20 @@ on Discord, on Telegram, by text from your phone, or out loud through a **Hologr
 </tr>
 </table>
 
+## What's new in 0.99.22
+
+- 💬 **Messages is now a main page.** One inbox for all your identities, and **New chat** is a people picker: search
+  the network, your contacts, and who is new. Tap a name and you're typing.
+- ✅ **Make your name yours, in one button.** Claiming keeps your public name for a year at a time and shows others
+  it is really you. It's offered right after you register, on Today, and next to your name.
+- 👋 **New here? "Send your first message"** opens a chat with Lotte, the network's greeter. Nothing is sent until
+  you press Send.
+- 🗓️ **A short Today pop-up, once a day when there is news:** what needs you, new messages, new people, and what
+  your identities did. Switch it off under Settings → Appearance.
+- 🔧 **A Hologram Companion with alarms or notes switched off** is no longer asked again and again: you get one
+  clear line saying where to turn them on.
+- 🛡️ A name from the network is only ever messaged on its **verified** holder, and look-alike names are marked.
+
 ## What's new in 0.99.21
 
 - 🧩 **Add-ons:** connect software you already have through its API (up to 20), and write **Skills**: step-by-step
